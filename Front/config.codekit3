@@ -25,6 +25,326 @@
 		"oAP": "/common-header.php",
 		"oF": 0
 		},
+	"/fonts/Nexa-Bold.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/Nexa-Bold.otf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-Regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-Regular.ttf",
+		"oF": 0
+		},
+	"/img/common/arrow-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/img/common/arrow-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/common-shape-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/common-shape-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/demo-cover.png": {
+		"ft": 32768,
+		"iS": 991680,
+		"oA": 0,
+		"oAP": "/img/common/demo-cover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/common/quote.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/quote.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/home-obj-desktop-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/home-obj-desktop-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/home-obj-desktop-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/home-obj-desktop-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/home-obj-desktop-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/home-obj-desktop-3.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/home-obj-mobile-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/home-obj-mobile-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/icn-ftr-cloud.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/icn-ftr-cloud.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/icn-ftr-folder.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/icn-ftr-folder.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/icn-ftr-key.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/icn-ftr-key.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/icn-ftr-protection.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/icn-ftr-protection.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/illu-pres-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/illu-pres-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/illu-pres-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/illu-pres-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/illu-pres-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/home/illu-pres-3.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/home/section-logos/agrico@2x.png": {
+		"ft": 32768,
+		"iS": 4225,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/agrico@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/bio@2x.png": {
+		"ft": 32768,
+		"iS": 2975,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/bio@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/BonneGueule@2x.png": {
+		"ft": 32768,
+		"iS": 4659,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/BonneGueule@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/care@2x.png": {
+		"ft": 32768,
+		"iS": 5574,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/care@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/everoad@2x.png": {
+		"ft": 32768,
+		"iS": 4286,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/everoad@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/finance@2x.png": {
+		"ft": 32768,
+		"iS": 5820,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/finance@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/inops@2x.png": {
+		"ft": 32768,
+		"iS": 2383,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/inops@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/lavoir@2x.png": {
+		"ft": 32768,
+		"iS": 5282,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/lavoir@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/mobile@2x.png": {
+		"ft": 32768,
+		"iS": 4703,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/mobile@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/payfit@2x.png": {
+		"ft": 32768,
+		"iS": 3471,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/payfit@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/phantom@2x.png": {
+		"ft": 32768,
+		"iS": 4840,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/phantom@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/plugwine@2x.png": {
+		"ft": 32768,
+		"iS": 4486,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/plugwine@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-logos/prestashop@2x.png": {
+		"ft": 32768,
+		"iS": 5724,
+		"oA": 0,
+		"oAP": "/img/home/section-logos/prestashop@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/shape-lines.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/home/shape-lines.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/img-test/background-1.jpg": {
 		"ft": 16384,
 		"iS": 1065333,
@@ -69,15 +389,48 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/img/img-test/user.jpg": {
+	"/img/img-test/user-1.jpg": {
 		"ft": 16384,
 		"iS": 34491,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/img-test/user.jpg",
+		"oAP": "/img/img-test/user-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/img/img-test/user-2.jpg": {
+		"ft": 16384,
+		"iS": 26764,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-test/user-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-test/user-3.jpg": {
+		"ft": 16384,
+		"iS": 31010,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-test/user-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-test/user-4.jpg": {
+		"ft": 16384,
+		"iS": 28511,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-test/user-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/index.php": {
@@ -110,6 +463,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/js/jquery.parallax-scroll.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/jquery.parallax-scroll-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/index-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -128,6 +492,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/script/minify/jQuery.3.3.1-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/minify/jquery.parallax-scroll-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/jquery.parallax-scroll-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -201,8 +576,8 @@
 	},
 "projectAttributes": {
 	"creationDate": 561315058.37998199,
-	"displayValue": "File",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "Uplaw",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 0
 	},
