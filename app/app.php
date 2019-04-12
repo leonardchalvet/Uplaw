@@ -23,7 +23,7 @@ require_once 'includes/http.php';
  */
 
 // Previews
-$app->get('/preview', function ($request, $response) use ($app, $prismic) {
+$app->get('/previe', function ($request, $response) use ($app, $prismic) {
     $token = $request->getParam('token');
     $url = $prismic->get_api()->previewSession($token, $prismic->linkResolver, '/');
     return $response->withStatus(302)->withHeader('Location', $url);
