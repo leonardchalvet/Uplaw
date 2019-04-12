@@ -35,6 +35,37 @@ $app->get('/', function ($request, $response) use ($app, $prismic) {
 });
 
 // 404 Page (Keep at the bottom of the routes)
+/*
 $app->get('/{id}', function ($request, $response) use ($app, $prismic) {
     render($app, '404');
+});
+*/
+
+
+
+/**
+ * Webhook github
+ * auto pull if push on master
+ */
+$app->post('/github-webhook', function() use ($app) {
+    $data = json_decode(file_get_contents('php://input'), true);
+    $ref = $data["ref"] ?? "none";
+    $dir = __DIR__."/prod-test/prismic";
+    if ($ref != "refs/heads/master") {
+        shell_exec("cd $dir && echo $ref >> git.log 2>&1");
+    }
+    shell_exec("cd $dir && git pull >> git.log 2>&1");
+});
+
+/**
+ * Webhook github
+ * manual pull
+ */
+$app->get('/github-webhook', function() use ($app) {
+    $dir = __DIR__."/prod-test/prismic";
+    echo "<pre>";
+    echo nl2br(shell_exec("cd $dir && git pull 2>&1"));
+    echo "<hr>";
+    echo nl2br(shell_exec("cd $dir && git log  --pretty=oneline -10"));
+    echo "<pre>";
 });
