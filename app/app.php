@@ -69,7 +69,7 @@ function switchLanguages($lg) {
         case 'US': $lglg = 'en-us'; break;
         case 'DE': $lglg = 'de-de'; break;
         
-        default: $lglg = false; break;
+        default: return false;
     }
 
     return [ 'lang' => $lglg ];

@@ -1,3 +1,7 @@
+<?php 
+use Prismic\Dom\RichText;
+$document = $WPGLOBAL['document']->data;
+?>
 <html>
 	<head>
 
@@ -26,26 +30,22 @@
 			<section id="section-home">
 				<div class="wrapper">
 					<div class="container-text">
-						<h1>
-							Externalisez la gestion de votre corporate.
-						</h1>
-						<p>
-							Uplaw est la solution idéale pour tous ceux qui ont besoin d'accéder de manière simple, fiable et rapide aux documents et aux données corporate, le tout certifié et garantie par un cabinet d’avocats.
-						</p>
-						<a href="#" class="hover-left">
+						<?= RichText::asHtml($document->cover_title); ?>
+						<?= RichText::asHtml($document->cover_text); ?>
+						<a href="<?=$document->cover_cta_link->url; ?>" class="hover-left">
 							<span class="btn-text">
-								Demander une démo
+								<?= RichText::asText($document->cover_cta_text); ?>
 							</span>
 							<svg class="btn-arrow" viewBox="0 0 13 6">
 							   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
 							</svg>
 						</a>
 					</div>
-					<img class="obj-desktop-1" src="/img/home/home-obj-desktop-1.svg" alt="">
-					<img class="obj-desktop-2" src="/img/home/home-obj-desktop-2.svg" alt="">
-					<img class="obj-desktop-3" src="/img/home/home-obj-desktop-3.svg" alt="">
+					<img class="obj-desktop-1" src="<?= $document->cover_illu_1_desktop->url; ?>" alt="">
+					<img class="obj-desktop-2" src="<?= $document->cover_illu_2_desktop->url; ?>" alt="">
+					<img class="obj-desktop-3" src="<?= $document->cover_illu_3_desktop->url; ?>" alt="">
 
-					<img class="obj-mobile-1" src="/img/home/home-obj-mobile-1.svg" alt="">
+					<img class="obj-mobile-1" src="<?= $document->cover_illu_mobile->url; ?>" alt="">
 				</div>
 			</section>
 
@@ -53,102 +53,19 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<div class="line"></div>
-						<h2>
-							ILS NOUS FONT CONFIANCE
-						</h2>
+						<?= RichText::asHtml($document->logos_title); ?>
 						<div class="line"></div>
 					</div>
 					<div class="container-el">
-						<div class="el">
-							<img src="/img/home/section-logos/agrico@2x.png" alt="">
-							<img src="/img/home/section-logos/bio@2x.png" alt="">
-							<img src="/img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="/img/home/section-logos/care@2x.png" alt="">
-							<img src="/img/home/section-logos/everoad@2x.png" alt="">
-							<img src="/img/home/section-logos/finance@2x.png" alt="">
-							<img src="/img/home/section-logos/inops@2x.png" alt="">
-							<img src="/img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="/img/home/section-logos/mobile@2x.png" alt="">
-							<img src="/img/home/section-logos/payfit@2x.png" alt="">
-							<img src="/img/home/section-logos/phantom@2x.png" alt="">
-							<img src="/img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="/img/home/section-logos/prestashop@2x.png" alt="">
-						</div>
-						<div class="el">
-							<img src="/img/home/section-logos/agrico@2x.png" alt="">
-							<img src="/img/home/section-logos/bio@2x.png" alt="">
-							<img src="/img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="/img/home/section-logos/care@2x.png" alt="">
-							<img src="/img/home/section-logos/everoad@2x.png" alt="">
-							<img src="/img/home/section-logos/finance@2x.png" alt="">
-							<img src="/img/home/section-logos/inops@2x.png" alt="">
-							<img src="/img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="/img/home/section-logos/mobile@2x.png" alt="">
-							<img src="/img/home/section-logos/payfit@2x.png" alt="">
-							<img src="/img/home/section-logos/phantom@2x.png" alt="">
-							<img src="/img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="/img/home/section-logos/prestashop@2x.png" alt="">
-						</div>
-						<div class="el">
-							<img src="/img/home/section-logos/agrico@2x.png" alt="">
-							<img src="/img/home/section-logos/bio@2x.png" alt="">
-							<img src="/img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="/img/home/section-logos/care@2x.png" alt="">
-							<img src="/img/home/section-logos/everoad@2x.png" alt="">
-							<img src="/img/home/section-logos/finance@2x.png" alt="">
-							<img src="/img/home/section-logos/inops@2x.png" alt="">
-							<img src="/img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="/img/home/section-logos/mobile@2x.png" alt="">
-							<img src="/img/home/section-logos/payfit@2x.png" alt="">
-							<img src="/img/home/section-logos/phantom@2x.png" alt="">
-							<img src="/img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="/img/home/section-logos/prestashop@2x.png" alt="">
-						</div>
-						<div class="el">
-							<img src="/img/home/section-logos/agrico@2x.png" alt="">
-							<img src="/img/home/section-logos/bio@2x.png" alt="">
-							<img src="/img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="/img/home/section-logos/care@2x.png" alt="">
-							<img src="/img/home/section-logos/everoad@2x.png" alt="">
-							<img src="/img/home/section-logos/finance@2x.png" alt="">
-							<img src="/img/home/section-logos/inops@2x.png" alt="">
-							<img src="/img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="/img/home/section-logos/mobile@2x.png" alt="">
-							<img src="/img/home/section-logos/payfit@2x.png" alt="">
-							<img src="/img/home/section-logos/phantom@2x.png" alt="">
-							<img src="/img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="/img/home/section-logos/prestashop@2x.png" alt="">
-						</div>
-						<div class="el">
-							<img src="/img/home/section-logos/agrico@2x.png" alt="">
-							<img src="/img/home/section-logos/bio@2x.png" alt="">
-							<img src="/img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="/img/home/section-logos/care@2x.png" alt="">
-							<img src="/img/home/section-logos/everoad@2x.png" alt="">
-							<img src="/img/home/section-logos/finance@2x.png" alt="">
-							<img src="/img/home/section-logos/inops@2x.png" alt="">
-							<img src="/img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="/img/home/section-logos/mobile@2x.png" alt="">
-							<img src="/img/home/section-logos/payfit@2x.png" alt="">
-							<img src="/img/home/section-logos/phantom@2x.png" alt="">
-							<img src="/img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="/img/home/section-logos/prestashop@2x.png" alt="">
-						</div>
-						<div class="el">
-							<img src="/img/home/section-logos/agrico@2x.png" alt="">
-							<img src="/img/home/section-logos/bio@2x.png" alt="">
-							<img src="/img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="/img/home/section-logos/care@2x.png" alt="">
-							<img src="/img/home/section-logos/everoad@2x.png" alt="">
-							<img src="/img/home/section-logos/finance@2x.png" alt="">
-							<img src="/img/home/section-logos/inops@2x.png" alt="">
-							<img src="/img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="/img/home/section-logos/mobile@2x.png" alt="">
-							<img src="/img/home/section-logos/payfit@2x.png" alt="">
-							<img src="/img/home/section-logos/phantom@2x.png" alt="">
-							<img src="/img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="/img/home/section-logos/prestashop@2x.png" alt="">
-						</div>
+						<?php 
+							for($i=0;$i<6;$i++) { 
+								echo '<div class="el">';
+								foreach ($document->logos_all_parteners_logo as $logo) { ?>
+									<img src="<?= $logo->logos_partner_logo->url; ?>" alt="">
+						<?php 	}
+								echo '</div>'; 
+							} 
+						?>
 					</div>
 				</div>
 			</section>
@@ -156,68 +73,32 @@
 			<section id="section-features">
 				<div class="wrapper">
 					<div class="container-text">
-						<h2>
-							Votre documentation corporate parfaitement tenue.
-						</h2>
+						<?= RichText::asHtml($document->features_title); ?>
 						<div class="sep"></div>
-						<p>
-							Uplaw ne se contente d'être un simple logiciel. Nous fournissons la prestation globale consistant à injecter vos documents dans notre outil au travers d'un processus de chargement de données encadré.
-						</p>
-						<a href="">
+						<?= RichText::asHtml($document->features_text); ?>
+						<a href="<?=$document->features_cta_link->url; ?>">
 							<span class="link-arrow">
 								>
 							</span>
 							<span class="link-text">
-								Voir les fonctionnalités
+								<?= RichText::asText($document->features_cta_text); ?>
 							</span>
 						</a>
 					</div>
 					<div class="container-features">
 						<div class="container-el">
-							<div class="el">
-								<div class="icn">
-									<img src="/img/home/icn-ftr-cloud.svg" alt="">
-								</div>
-								<h3>
-									Centralisez vos informations corporate
-								</h3>
-								<p>
-									Uplaw vous permet de centraliser vos documents et données juridiques sur une seule et même interface afin d'avoir un accès rapide à vos informations corporate.
-								</p>
-							</div>
-							<div class="el">
-								<div class="icn">
-									<img src="/img/home/icn-ftr-folder.svg" alt="">
-								</div>
-								<h3>
-									Transformez vos documents en data
-								</h3>
-								<p>
-									Les données juridiques, toujours extraites à partir des documents, sont vérifiables à tout moment. Nous vous garantissons l'exactitude de la captable sous réserve d'exhaustivité des documents transmis.
-								</p>
-							</div>
-							<div class="el">
-								<div class="icn">
-									<img src="/img/home/icn-ftr-key.svg" alt="">
-								</div>
-								<h3>
-									Partagez efficacement votre corporate
-								</h3>
-								<p>
-									Nous fonctionnons comme une plateforme collaborative. Vous pouvez ainsi inviter vos associés et partenaires (avocats, experts-comptables, salariés, fonds d'investissement) dans notre application et contrôler étroitement leurs droits d’accès.
-								</p>
-							</div>
-							<div class="el">
-								<div class="icn">
-									<img src="/img/home/icn-ftr-protection.svg" alt="">
-								</div>
-								<h3>
-									Soyez Audit-Ready à tout moment
-								</h3>
-								<p>
-									Nous vous permettons de migrer tous vos documents existants dans Uplaw. Nous nous chargeons de vous onboarder et en profitons pour réaliser un audit documentaire et, éventuellement, un audit de captable.
-								</p>
-							</div>
+							<?php
+								foreach ($document->features_functionalities as $functionality) { ?>
+									<div class="el">
+										<div class="icn">
+											<img src="<?= $functionality->features_functionality_icon->url; ?>" alt="">
+										</div>
+										<?= RichText::asHtml($functionality->features_fonctionality_title); ?>
+										<?= RichText::asHtml($functionality->features_fonctionality_text); ?>
+									</div>
+							<?php 
+								}
+							?>
 						</div>
 					</div>
 
@@ -230,108 +111,90 @@
 				<img class="obj-1" src="/img/common/common-shape-1.svg" alt="">
 				<div class="wrapper">
 					<div class="container-text">
-						<h2>
-							Reposez-vous sur un cabinet d’avocats.
-						</h2>
+						<?= RichText::asHtml($document->pres_title); ?>
 						<div class="sep"></div>
-						<p>
-							Parce que seuls des avocats spécialisés en corporate peuvent traiter sérieusement ce sujet avec un haut niveau d’exigence professionnelle.
-						</p>
-						<a href="">
+						<?= RichText::asHtml($document->pres_text); ?>
+						<a href="<?=$document->pres_cta_link->url; ?>">
 							<span class="link-arrow">
 								>
 							</span>
 							<span class="link-text">
-								En savoir plus
+								<?= RichText::asText($document->pres_cta_text); ?>
 							</span>
 						</a>
 					</div>
 					<div class="container-el">
-						<div class="el">
-							<img src="/img/home/illu-pres-1.svg" alt="">
-							<h4>
-								Confidentialité
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
-						<div class="el">
-							<img src="/img/home/illu-pres-2.svg" alt="">
-							<h4>
-								Expertise
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
-						<div class="el">
-							<img src="/img/home/illu-pres-3.svg" alt="">
-							<h4>
-								Sécurité
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
+						<?php
+							foreach ($document->pres_all_skills as $skill) { ?>
+								<div class="el">
+									<img src="<?= $skill->pres_illutration_skill->url; ?>" alt="">
+									<?= RichText::asHtml($skill->pres_title_skill); ?>
+									<?= RichText::asHtml($skill->pres_text_skill); ?>
+								</div>
+						<?php 
+							}
+						?>
 					</div>
 				</div>
 			</section>
 
-			<section id="section-quotes">
-				<div class="wrapper">
-					<div class="container-pp">
-						<div style="background-image: url(/img/img-test/user-1.jpg);" class="pp pp-1"></div>
-						<div style="background-image: url(/img/img-test/user-2.jpg);" class="pp pp-2"></div>
-						<div style="background-image: url(/img/img-test/user-3.jpg);" class="pp pp-3"></div>
-					</div>
-					<div class="container-text">
-						<div class="container-quotes">
-							<div class="quote" data-pp="pp-1">
-								<img class="obj" src="/img/common/quote.svg" alt="">
-								<q>
-									1Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make
-								</q>
-								<div class="sep"></div>
-								<div class="name">Barthélémy Chalvet</div>
-								<div class="job">Ceo - Co-founder AgenceMe</div>
-							</div>
+			<?php
+			$showSectionQuotes = strtolower(trim($document->quotes_show_or_hide[0]->text));
+			if($showSectionQuotes === 'true') { 
+			?>
 
-							<div class="quote" data-pp="pp-2">
-								<img class="obj" src="/img/common/quote.svg" alt="">
-								<q>
-									2Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make
-								</q>
-								<div class="sep"></div>
-								<div class="name">Barthélémy Chalvet</div>
-								<div class="job">Ceo - Co-founder AgenceMe</div>
+				<section id="section-quotes">
+					<div class="wrapper">
+						<div class="container-pp">
+							<?php
+							$i = 1;
+							foreach ($document->quotes_peoples as $quote) { ?>
+								<div style="background-image: url(<?= $quote->quotes_picture_people->url; ?>);" class="pp pp-<?php echo $i; ?>"></div>
+							<?php 
+								$i++; 
+							} ?>
+						</div>
+						<div class="container-text">
+							<div class="container-quotes">
+								<?php
+								$i = 1;
+								foreach ($document->quotes_peoples as $quote) { ?>
+									<div class="quote" data-pp="pp-<?php echo $i; ?>">
+										<img class="obj" src="/img/common/quote.svg" alt="">
+										<q>
+											<?= RichText::asText($quote->quotes_quote_people); ?>
+										</q>
+										<div class="sep"></div>
+										<div class="name">
+											<?= RichText::asText($quote->quotes_name_people); ?>
+										</div>
+										<div class="job">
+											<?= RichText::asText($quote->quotes_job_people); ?>
+										</div>
+									</div>
+								<?php 
+									$i++; 
+								} ?>
 							</div>
-
-							<div class="quote" data-pp="pp-3">
-								<img class="obj" src="/img/common/quote.svg" alt="">
-								<q>
-									3Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make
-								</q>
-								<div class="sep"></div>
-								<div class="name">Barthélémy Chalvet</div>
-								<div class="job">Ceo - Co-founder AgenceMe</div>
+							<div class="nav">
+								<div class="btn-nav">
+									<svg class="btn-arrow" viewBox="0 0 13 6">
+									   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+									</svg>
+								</div>
+								<div class="btn-nav">
+									<svg class="btn-arrow" viewBox="0 0 13 6">
+									   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+									</svg>
+								</div>
 							</div>
 						</div>
-						<div class="nav">
-							<div class="btn-nav">
-								<svg class="btn-arrow" viewBox="0 0 13 6">
-								   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-								</svg>
-							</div>
-							<div class="btn-nav">
-								<svg class="btn-arrow" viewBox="0 0 13 6">
-								   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-								</svg>
-							</div>
-						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			
+			<?php
+			}
+			?>
 
 			<section id="section-demo">
 				<div class="cover" style="background-image: url(/img/common/demo-cover.png);"></div>
