@@ -23,7 +23,7 @@ require_once 'includes/http.php';
  */
 
 // Previews
-$app->get('/previe', function ($request, $response) use ($app, $prismic) {
+$app->get('/preview', function ($request, $response) use ($app, $prismic) {
     $token = $request->getParam('token');
     $url = $prismic->get_api()->previewSession($token, $prismic->linkResolver, '/');
     return $response->withStatus(302)->withHeader('Location', $url);
@@ -34,13 +34,46 @@ $app->get('/', function ($request, $response) use ($app, $prismic) {
     render($app, 'home');
 });
 
-// 404 Page (Keep at the bottom of the routes)
-/*
-$app->get('/{id}', function ($request, $response) use ($app, $prismic) {
-    render($app, '404');
-});
-*/
+$app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prismic) {
+    $api = $prismic->get_api(); // PART 1 - Call api
 
+    //PART 2 - Select languages
+    $options = switchLanguages($args['lg']);
+    if(!$options) {
+        header('Location: /en/'.$args['uid']);
+        exit;
+    }
+
+    //PART 3 - Call Header & Footer
+    
+    //PART 4 - Call current page
+    $document = NULL;
+    $typeSelect = '';
+    $arrayTypes = ['home', 'solutions']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    foreach ($arrayTypes as $type) {
+        $document = $api->getByUID($type, $args['uid'], $options);
+        if($document != NULL) break;
+    }
+
+    //PART 5 - Call good view
+    render($app, 'home', array('document' => $document));
+});
+
+//ADD LANGUAGES FOR MORE POSSIBILITIES
+function switchLanguages($lg) {
+
+    $lglg = '';
+    switch (strtoupper($lg)) {
+        case 'FR': $lglg = 'fr-fr'; break;
+        case 'EN': $lglg = 'en-us'; break;
+        case 'US': $lglg = 'en-us'; break;
+        case 'DE': $lglg = 'de-de'; break;
+        
+        default: $lglg = false; break;
+    }
+
+    return [ 'lang' => $lglg ];
+}
 
 
 /**
