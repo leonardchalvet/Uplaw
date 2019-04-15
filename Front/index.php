@@ -357,6 +357,8 @@
 
 		<?php include('common-footer.php') ?>
 
+		<script type="text/javascript" src="script/minify/common-min.js"></script>
+
 		<script type="text/javascript" src="script/minify/index-min.js"></script>
 	</body>
 </html>

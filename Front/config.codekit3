@@ -61,6 +61,16 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common/connect-icone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/connect-icone.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common/demo-cover.png": {
 		"ft": 32768,
 		"iS": 991680,
@@ -71,6 +81,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/common/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/logo.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
 		},
 	"/img/common/quote.svg": {
 		"ft": 2097152,
@@ -440,6 +460,17 @@
 		"oA": 0,
 		"oAP": "/index.php",
 		"oF": 0
+		},
+	"/script/js/common.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/common-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		},
 	"/script/js/index.js": {
 		"bF": 0,

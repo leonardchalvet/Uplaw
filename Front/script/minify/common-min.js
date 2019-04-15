@@ -1,0 +1,1 @@
+$(window).on("load",function(){$window=$(window),$window.scroll(function(){$window.scrollTop()>=1?$("#header-desktop").addClass("scroll"):$("#header-desktop").removeClass("scroll")})});
