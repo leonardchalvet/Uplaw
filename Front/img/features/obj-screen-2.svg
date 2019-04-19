@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="196px" viewBox="0 0 195 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval-dash</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2a-Features" transform="translate(-1102.000000, -963.000000)" fill="#F2F2F2">
+            <g id="content-" transform="translate(-682.000000, 93.000000)">
+                <g id="section1" transform="translate(878.000000, 779.000000)">
+                    <g id="1" transform="translate(451.000000, 44.000000)">
+                        <g id="dashboard">
+                            <path d="M690.080895,178.426199 C690.116291,115.494683 639.095778,64.507303 576.123391,64.542699 C513.151003,64.5780951 462.073102,115.622863 462.037706,178.55438 C524.859434,178.519068 645.61469,178.451192 690.080895,178.426199 Z" id="Oval-dash" transform="translate(576.059310, 121.548530) scale(-1, 1) rotate(-45.000000) translate(-576.059310, -121.548530) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -25,6 +25,14 @@
 		"oAP": "/common-header.php",
 		"oF": 0
 		},
+	"/features.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/features.php",
+		"oF": 0
+		},
 	"/fonts/Nexa-Bold.otf": {
 		"cB": 0,
 		"ft": 8192,
@@ -61,6 +69,26 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common/common-shape-lines-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/common-shape-lines-black.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/common-shape-lines-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/common-shape-lines-white.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common/connect-icone.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -70,17 +98,6 @@
 		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
-		},
-	"/img/common/demo-cover.png": {
-		"ft": 32768,
-		"iS": 991680,
-		"oA": 0,
-		"oAP": "/img/common/demo-cover.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/img/common/logo.svg": {
 		"ft": 2097152,
@@ -101,6 +118,195 @@
 		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
+		},
+	"/img/features/demo-cover.jpg": {
+		"ft": 16384,
+		"iS": 1322281,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/demo-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/features/icn-ftr-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/features/icn-ftr-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/icn-ftr-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/features/icn-ftr-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/icn-ftr-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/features/icn-ftr-3.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/illu-cover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/features/illu-cover.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/obj-screen-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/features/obj-screen-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/obj-screen-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/features/obj-screen-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/obj-screen-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/features/obj-screen-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/obj-screen-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/features/obj-screen-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/obj-screen-5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/features/obj-screen-5.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/features/screen-audit.jpg": {
+		"ft": 16384,
+		"iS": 100469,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/screen-audit.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/features/screen-compta.jpg": {
+		"ft": 16384,
+		"iS": 116303,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/screen-compta.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/features/screen-dash.jpg": {
+		"ft": 16384,
+		"iS": 137084,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/screen-dash.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/features/screen-gestion.jpg": {
+		"ft": 16384,
+		"iS": 134113,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/screen-gestion.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/features/screen-recherche.jpg": {
+		"ft": 16384,
+		"iS": 121333,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/screen-recherche.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/features/screen-supervision.jpg": {
+		"ft": 16384,
+		"iS": 117527,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/screen-supervision.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/features/screen-timeline.jpg": {
+		"ft": 16384,
+		"iS": 123602,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/features/screen-timeline.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/home/demo-cover.jpg": {
+		"ft": 16384,
+		"iS": 1628128,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/home/demo-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/img/home/home-obj-desktop-1.svg": {
 		"ft": 2097152,
@@ -461,6 +667,49 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/script/animations/data.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/script/animations/data-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/script/animations/sectionCover-obj-desktop-1.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/script/animations/sectionCover-obj-desktop-1-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/script/animations/sectionCover-obj-desktop-2.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/script/animations/sectionCover-obj-desktop-2-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/script/animations/sectionCover-obj-desktop-3.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/script/animations/sectionCover-obj-desktop-3-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/script/js/bodymovin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/bodymovin-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/js/common.js": {
 		"bF": 0,
 		"ft": 64,
@@ -468,6 +717,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/script/minify/common-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/js/features.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/features-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -505,6 +765,39 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/minify/bodymovin-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/bodymovin-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/minify/common-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/common-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/minify/features-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/features-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/index-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -538,6 +831,16 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/style/css/features.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/features-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/home.css": {
 		"aP": 1,
 		"bl": 0,
@@ -558,6 +861,19 @@
 		"oA": 1,
 		"oAP": "/style/css/common.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/features.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/features.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
