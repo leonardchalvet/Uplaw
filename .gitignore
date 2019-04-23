@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 vendor/autoload.php
 vendor/composer/autoload_classmap.php
@@ -313,6 +314,8 @@ public/img/img-test/.DS_Store
 public/img/home/section-logos/.DS_Store
 public/img/home/.DS_Store
 =======
+=======
+>>>>>>> parent of 13b55d6... Merge branch 'Front'
 # Created by https://www.gitignore.io/api/vim,linux,macos,windows,composer,intellij,sublimetext,visualstudio,visualstudiocode
 
 ### Composer ###
@@ -799,4 +802,7 @@ __pycache__/
 
 
 # End of https://www.gitignore.io/api/vim,linux,macos,windows,composer,intellij,sublimetext,visualstudio,visualstudiocode
+<<<<<<< HEAD
+>>>>>>> parent of 13b55d6... Merge branch 'Front'
+=======
 >>>>>>> parent of 13b55d6... Merge branch 'Front'
