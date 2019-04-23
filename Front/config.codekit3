@@ -659,6 +659,66 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/services/icn-ftr-audit.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/icn-ftr-audit.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/services/icn-ftr-board.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/icn-ftr-board.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/services/icn-ftr-document.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/icn-ftr-document.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/services/icn-ftr-etude.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/icn-ftr-etude.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/services/icn-ftr-search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/icn-ftr-search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/services/illu-cover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/illu-cover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -765,6 +825,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/js/services.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/services-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/bodymovin-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -831,6 +902,25 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/minify/services-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/services-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/services.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/services.php",
+		"oF": 0
+		},
 	"/style/css/features.css": {
 		"aP": 1,
 		"bl": 0,
@@ -848,6 +938,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/services.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/services-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -913,6 +1013,19 @@
 		"oA": 0,
 		"oAP": "/style/css/home.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/services.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/services.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		}

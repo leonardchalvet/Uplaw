@@ -1,0 +1,117 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*====================================
+=            PAGE SERVICES           =
+====================================*/
+
+
+#section-cover{
+	position: relative;
+	padding-top: 90px;
+	.wrapper{
+		overflow: hidden;
+		@include styleGrid1;
+		padding-top: 80px;
+		padding-bottom: 55px;
+		background-color: $colorMain_7;
+	}
+	.container-text{
+		max-width: 650px;
+		margin: auto;
+		text-align: center;
+		h1{
+			@include styleH1;
+			color: $colorMain_1;
+		}
+		p{
+			@include styleParagraphBig;
+		}
+	}
+	.container-illu{
+		width: 640px;
+		height: 350px;
+		position: relative;
+		margin: 60px auto 0px auto;
+		.illu{
+			width: 60%;
+			position: absolute;
+			left: 50%;
+			bottom: 0px;
+			transform: translateX(-50%);
+			position: relative;
+			z-index: 1;
+		}
+		.obj-1{
+			position: absolute;
+			left: 0px;
+			top: 40%;
+			width: 100%;
+			opacity: 0.1;
+		}
+	}
+}
+
+#section-features{
+	margin-top: 95px;
+	position: relative;
+	.wrapper{
+		@include styleGrid4;
+	}
+	.container-text{
+		text-align: center;
+		position: relative;
+		h2{
+			@include styleH2;
+		}
+		p{
+			margin-top: 10px;
+			@include styleParagraphMedium;
+		}
+		a{
+			margin-top: 25px;
+			@include styleLink;
+		}
+	}
+	.container-el{
+		margin-top: 95px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		.el{
+			width: 26%;
+			margin-bottom: 80px;
+			.icn{
+				width: 65px;
+				img{
+					width: 100%;
+				}
+			}
+			h3{
+				margin-top: 30px;
+				@include styleH4;
+			}
+			p{
+				margin-top: 17px;
+				@include styleParagraphSmall;
+			}
+		}
+		&:after{
+			content: '';
+			width: 26%;
+		}
+	}
+	.obj-1{
+		position: absolute;
+		left: 90%;
+		width: 300px;
+		top: 60%;
+	}
+}
+
+/*========================================
+=            END PAGE SERVICES           =
+========================================*/
+
+@import 'footer.scss';
