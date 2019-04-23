@@ -33,14 +33,10 @@ $document = $WPGLOBAL['document']->data;
 				<div class="wrapper">
 					<div class="container-text">
 						<h1 class="wrapLine">
-							<span>
-								<?= RichText::asText($document->cover_title); ?>
-							</span>
+							<?= RichText::asText($document->cover_title); ?>
 						</h1>
 						<p class="wrapLine">
-							<span>
-								<?= RichText::asText($document->cover_text); ?>
-							</span>
+							<?= RichText::asText($document->cover_text); ?>
 						</p>
 						<a href="<?=$document->cover_cta_link->url; ?>" class="hover-left">
 							<span class="btn-text">
@@ -234,6 +230,8 @@ $document = $WPGLOBAL['document']->data;
 		</main>
 
 		<?php include('common-footer.php') ?>
+
+		<script type="text/javascript" src="/script/minify/common-min.js"></script>
 
 		<script type="text/javascript" src="/script/minify/index-min.js"></script>
 	</body>
