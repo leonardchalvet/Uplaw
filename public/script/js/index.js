@@ -1,71 +1,5 @@
 $(window).on('load', function() {
 
-	function animSectionHome(){
-
-		var wrapLineTransitionDuration = $('.wrapLine span').css('transition-duration');
-		var wrapLineTransitionDelay = $('.wrapLine span').css('transition-delay');
-
-		var countLineH1 = $('#section-home .container-text h1.wrapLine span').length;
-		var countLineP = $('#section-home .container-text p.wrapLine span').length;
-
-		var delayH1 = (wrapLineTransitionDelay.replace('s', '') * countLineH1) * 1000;
-		var delayP = (wrapLineTransitionDelay.replace('s', '') * countLineP) * 1000;
-
-		setTimeout(function() {
-			$('#section-home .container-text h1.wrapLine').addClass('anim');
-
-			setTimeout(function() {
-
-				$('#section-home .container-text p.wrapLine').addClass('anim');
-
-				setTimeout(function() {
-
-					$('#section-home .container-text a').addClass('anim');
-
-					var animation = bodymovin.loadAnimation({
-					  container: document.getElementById('obj-desktop-1'),
-					  renderer: 'svg',
-					  loop: false,
-					  autoplay: true,
-					  path: 'script/animations/sectionCover-obj-desktop-1.json'
-					})
-
-
-					setTimeout(function() {
-
-						var animation = bodymovin.loadAnimation({
-						  container: document.getElementById('obj-desktop-2'),
-						  renderer: 'svg',
-						  loop: false,
-						  autoplay: true,
-						  path: 'script/animations/sectionCover-obj-desktop-2.json'
-						})
-
-
-						setTimeout(function() {
-
-							var animation = bodymovin.loadAnimation({
-							  container: document.getElementById('obj-desktop-3'),
-							  renderer: 'svg',
-							  loop: false,
-							  autoplay: true,
-							  path: 'script/animations/sectionCover-obj-desktop-3.json'
-							})
-						
-						}, 750);
-
-					}, 750);
-
-				}, delayP);
-
-			}, delayH1);
-
-		}, 50);
-
-	}
-	animSectionHome();
-
-
 	if (window.matchMedia("(min-width: 700px)").matches) {
 
 		$('#section-features .obj-1').attr('data-parallax', '{"y": 60, "smoothness": 50}');
@@ -283,12 +217,3 @@ function sectionLogosCaroussel(Section, El, Delay){
     }, Delay);
 
 }
-
-
-
-
-
-
-
-
-

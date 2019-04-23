@@ -41,11 +41,11 @@ $document = $WPGLOBAL['document']->data;
 							</svg>
 						</a>
 					</div>
-					<img class="obj-desktop-1" src="<?= $document->cover_illu_1_desktop->url; ?>" alt="">
-					<img class="obj-desktop-2" src="<?= $document->cover_illu_2_desktop->url; ?>" alt="">
-					<img class="obj-desktop-3" src="<?= $document->cover_illu_3_desktop->url; ?>" alt="">
+					<div id="obj-desktop-1"></div>
+					<div id="obj-desktop-2"></div>
+					<div id="obj-desktop-3"></div>
 
-					<img class="obj-mobile-1" src="<?= $document->cover_illu_mobile->url; ?>" alt="">
+					<img class="obj-mobile-1" src="img/home/home-obj-mobile-1.svg" alt="">
 				</div>
 			</section>
 

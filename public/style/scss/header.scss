@@ -1,0 +1,76 @@
+#header-desktop{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	transition: all 0.25s ease;
+	.wrapper{
+		height: 90px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		@include styleGrid1;
+		.container-link{
+			position: relative;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			.logo{
+				height: 28px;
+				text-decoration: none;
+				margin-right: 75px;
+				img{
+					height: 100%;
+				}
+			}
+			ul{
+				list-style: none;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				li{
+					a{
+						text-decoration: none;
+						@include styleH5;
+					}
+					&:not(:last-child){
+						margin-right: 58px;
+					}
+				}
+			}
+		}
+		.container-action{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			.signin{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				img{
+					width: 13px;
+					margin-right: 13px;
+				}
+				span{
+					@include styleH5;
+				}
+			}
+			.sep{
+				margin: 0px 25px 0px 25px;
+				background-color: rgba(0, 0, 0, 0.3);
+				height: 3px;	
+				width: 3px;
+				border-radius: 3px;
+			}
+			.signup{
+				@include styleButtonBig;
+			}
+		}
+	}
+	&.scroll{
+		background-color: #FFF;
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
+	}
+}
