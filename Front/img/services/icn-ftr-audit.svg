@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="66px" viewBox="0 0 67 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>ED79D54F-8F3B-4023-A899-64C18C38A01B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M17.9471964,2.82762546e-15 L48.0528036,7.25088215e-16 C54.2934348,-4.21297134e-16 56.5564384,0.649779278 58.8379199,1.86992893 C61.1194014,3.09007857 62.9099214,4.88059859 64.1300711,7.16208008 C65.3502207,9.44356156 66,11.7065652 66,17.9471964 L66,48.0528036 C66,54.2934348 65.3502207,56.5564384 64.1300711,58.8379199 C62.9099214,61.1194014 61.1194014,62.9099214 58.8379199,64.1300711 C56.5564384,65.3502207 54.2934348,66 48.0528036,66 L17.9471964,66 C11.7065652,66 9.44356156,65.3502207 7.16208008,64.1300711 C4.88059859,62.9099214 3.09007857,61.1194014 1.86992893,58.8379199 C0.649779278,56.5564384 3.83357843e-15,54.2934348 3.06932154e-15,48.0528036 L4.83392144e-16,17.9471964 C-2.80864756e-16,11.7065652 0.649779278,9.44356156 1.86992893,7.16208008 C3.09007857,4.88059859 4.88059859,3.09007857 7.16208008,1.86992893 C9.44356156,0.649779278 11.7065652,3.97401081e-15 17.9471964,2.82762546e-15 Z" id="path-1"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5a-Services" transform="translate(-633.000000, -1117.000000)">
+            <g id="content-" transform="translate(0.000000, 87.000000)">
+                <g id="Section-1" transform="translate(271.000000, 779.000000)">
+                    <g id="2" transform="translate(310.500000, 251.000000)">
+                        <g id="audit" transform="translate(52.000000, 0.000000)">
+                            <g id="Icon-green" transform="translate(0.465174, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#30C554" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="audit" mask="url(#mask-2)">
+                                    <g transform="translate(18.534826, 17.000000)" id="1">
+                                        <g transform="translate(0.628874, 0.294626)">
+                                            <g id="check1" transform="translate(0.336300, 0.205374)">
+                                                <rect id="Rectangle-Copy-4" fill="#25304F" x="0.371125769" y="0.195527263" width="26" height="30" rx="4"></rect>
+                                                <polyline id="Path-12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" points="8.37112577 16.1955273 11.8581919 20.4052604 19.4696626 9.98579414"></polyline>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

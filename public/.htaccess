@@ -1,8 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [QSA,L]
-
-AuthName "Page d'administration protégée"
-AuthType Basic
-AuthUserFile "/home/agence-me/www/public/.htpasswd"
-Require valid-user

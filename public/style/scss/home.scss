@@ -12,6 +12,7 @@
 		@include styleGrid2;
 	}
 	.container-text{
+		position: relative;
 		margin-left: 50%;
 		width: 420px;
 		h1{
@@ -24,25 +25,30 @@
 		a{
 			margin-top: 38px;
 			@include styleButtonBig;
+
+			@include styleAnimation1;
 		}
 	}
-	.obj-desktop-1{
+	#obj-desktop-1{
 		position: absolute;
 		width: 350px;
+		height: 350px;
 		left: 0px;
 		top: 0px;
 	}
-	.obj-desktop-2{
+	#obj-desktop-2{
 		position: absolute;
 		width: 300px;
+		height: 300px;
 		top: 400px;
 		left: 100px;
 	}
-	.obj-desktop-3{
+	#obj-desktop-3{
 		position: absolute;
 		left: 50%;
 		bottom: 0px;
 		width: 320px;
+		height: 320px;
 	}
 	.obj-mobile-1{
 		display: none;
@@ -176,6 +182,7 @@
 		left: -250px;
 		bottom: 0px;
 		width: 640px;
+		opacity: 0.1;
 	}
 	.obj-2{
 		position: absolute;
@@ -393,50 +400,6 @@
 		.nav{
 			margin-top: 50px;
 			@include styleButtonNav;
-		}
-	}
-}
-
-#section-demo{
-	padding: 100px 0px 100px 0px;
-	position: relative;
-	.cover{
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		width: 100%;
-		height: 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-		&:after{
-			content: '';
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			width: 100%;
-			height: 100%;
-			background: linear-gradient(180deg, rgba(28,28,28,0) 0%, #1C1C1C 100%);
-		}
-	}
-	.wrapper{
-		position: relative;
-		z-index: 1;
-		margin: auto;
-		text-align: center;
-		width: 460px;
-		h2{
-			@include styleH2;
-			color: #FFF;
-			margin-bottom: 25px;
-		}
-		p{
-			@include styleParagraphMedium;
-			color: #FFF;
-			margin-bottom: 50px;
-		}
-		a{
-			@include styleButtonBig;
 		}
 	}
 }
