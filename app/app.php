@@ -22,16 +22,10 @@ require_once 'includes/http.php';
  *  --[ INSERT YOUR ROUTES HERE ]--
  */
 
-// Previews
-$app->get('/preview', function ($request, $response) use ($app, $prismic) {
-    $token = $request->getParam('token');
-    $url = $prismic->get_api()->previewSession($token, $prismic->linkResolver, '/');
-    return $response->withStatus(302)->withHeader('Location', $url);
-});
-
 // Index page
 $app->get('/', function ($request, $response) use ($app, $prismic) {
-    render($app, 'home');
+    header('Location: /en/'.$args['uid']);
+    exit;
 });
 
 $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prismic) {
