@@ -30,8 +30,12 @@ $document = $WPGLOBAL['document']->data;
 			<section id="section-home">
 				<div class="wrapper">
 					<div class="container-text">
-						<?= RichText::asHtml($document->cover_title); ?>
-						<?= RichText::asHtml($document->cover_text); ?>
+						<h1 class="wrapLine">
+							<?= RichText::asText($document->cover_title); ?>
+						</h1>
+						<p class="wrapLine">
+							<?= RichText::asText($document->cover_text); ?>
+						</p>
 						<a href="<?=$document->cover_cta_link->url; ?>" class="hover-left">
 							<span class="btn-text">
 								<?= RichText::asText($document->cover_cta_text); ?>
@@ -41,11 +45,13 @@ $document = $WPGLOBAL['document']->data;
 							</svg>
 						</a>
 					</div>
+
 					<div id="obj-desktop-1"></div>
 					<div id="obj-desktop-2"></div>
 					<div id="obj-desktop-3"></div>
 
-					<img class="obj-mobile-1" src="img/home/home-obj-mobile-1.svg" alt="">
+					<img class="obj-mobile-1" src="<?= $document->cover_illu_mobile->url; ?>" alt="">
+					
 				</div>
 			</section>
 
@@ -196,8 +202,8 @@ $document = $WPGLOBAL['document']->data;
 			}
 			?>
 
-			<section id="section-demo">
-				<div class="cover" style="background-image: url(/img/common/demo-cover.png);"></div>
+			<section id="cm-section-demo">
+				<div class="cover" style="background-image: url(img/home/demo-cover.png);"></div>
 				<div class="wrapper">
 					<div class="container-text">
 						<h2>Une question ?</h2>
@@ -209,7 +215,7 @@ $document = $WPGLOBAL['document']->data;
 								Demander une démo
 							</span>
 							<svg class="btn-arrow" viewBox="0 0 13 6">
-							   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+							   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
 							</svg>
 						</a>
 					</div>

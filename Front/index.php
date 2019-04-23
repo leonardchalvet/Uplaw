@@ -15,6 +15,8 @@
 
 		<script type="text/javascript" src="script/minify/jquery.parallax-scroll-min.js"></script>
 
+		<script type="text/javascript" src="script/minify/bodymovin-min.js"></script>
+
 	</head>
 	
 	<body>
@@ -26,10 +28,10 @@
 			<section id="section-home">
 				<div class="wrapper">
 					<div class="container-text">
-						<h1>
+						<h1 class="wrapLine">
 							Externalisez la gestion de votre corporate.
 						</h1>
-						<p>
+						<p class="wrapLine">
 							Uplaw est la solution idéale pour tous ceux qui ont besoin d'accéder de manière simple, fiable et rapide aux documents et aux données corporate, le tout certifié et garantie par un cabinet d’avocats.
 						</p>
 						<a href="#" class="hover-left">
@@ -41,9 +43,14 @@
 							</svg>
 						</a>
 					</div>
-					<img class="obj-desktop-1" src="img/home/home-obj-desktop-1.svg" alt="">
+
+					<div id="obj-desktop-1"></div>
+					<div id="obj-desktop-2"></div>
+					<div id="obj-desktop-3"></div>
+
+					<!--<img class="obj-desktop-1" src="img/home/home-obj-desktop-1.svg" alt=""> 
 					<img class="obj-desktop-2" src="img/home/home-obj-desktop-2.svg" alt="">
-					<img class="obj-desktop-3" src="img/home/home-obj-desktop-3.svg" alt="">
+					<img class="obj-desktop-3" src="img/home/home-obj-desktop-3.svg" alt="">-->
 
 					<img class="obj-mobile-1" src="img/home/home-obj-mobile-1.svg" alt="">
 				</div>
@@ -221,7 +228,7 @@
 						</div>
 					</div>
 
-					<img class="obj-1" src="img/home/shape-lines.svg" alt="">
+					<img class="obj-1" src="img/common/common-shape-lines-black.svg" alt="">
 					<img class="obj-2" src="img/common/common-shape-1.svg" alt="">
 				</div>
 			</section>
@@ -333,8 +340,8 @@
 				</div>
 			</section>
 
-			<section id="section-demo">
-				<div class="cover" style="background-image: url(img/common/demo-cover.png);"></div>
+			<section id="cm-section-demo">
+				<div class="cover" style="background-image: url(img/home/demo-cover.png);"></div>
 				<div class="wrapper">
 					<div class="container-text">
 						<h2>Une question ?</h2>
@@ -356,6 +363,8 @@
 		</main>
 
 		<?php include('common-footer.php') ?>
+
+		<script type="text/javascript" src="script/minify/common-min.js"></script>
 
 		<script type="text/javascript" src="script/minify/index-min.js"></script>
 	</body>
