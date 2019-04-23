@@ -19,6 +19,8 @@ $document = $WPGLOBAL['document']->data;
 
 		<script type="text/javascript" src="/script/minify/jquery.parallax-scroll-min.js"></script>
 
+		<script type="text/javascript" src="/script/minify/bodymovin-min.js"></script>
+
 	</head>
 	
 	<body>
@@ -31,10 +33,14 @@ $document = $WPGLOBAL['document']->data;
 				<div class="wrapper">
 					<div class="container-text">
 						<h1 class="wrapLine">
-							<?= RichText::asText($document->cover_title); ?>
+							<span>
+								<?= RichText::asText($document->cover_title); ?>
+							</span>
 						</h1>
 						<p class="wrapLine">
-							<?= RichText::asText($document->cover_text); ?>
+							<span>
+								<?= RichText::asText($document->cover_text); ?>
+							</span>
 						</p>
 						<a href="<?=$document->cover_cta_link->url; ?>" class="hover-left">
 							<span class="btn-text">
@@ -51,7 +57,7 @@ $document = $WPGLOBAL['document']->data;
 					<div id="obj-desktop-3"></div>
 
 					<img class="obj-mobile-1" src="<?= $document->cover_illu_mobile->url; ?>" alt="">
-					
+
 				</div>
 			</section>
 
@@ -202,25 +208,28 @@ $document = $WPGLOBAL['document']->data;
 			}
 			?>
 
-			<section id="cm-section-demo">
-				<div class="cover" style="background-image: url(img/home/demo-cover.png);"></div>
-				<div class="wrapper">
-					<div class="container-text">
-						<h2>Une question ?</h2>
-						<p>
-							Bénéficiez de l'assistance de nos experts Uplaw. Notre objectif étant de vous faciliter la vie, nous serons toujours présents pour vous aider si vous rencontrez la moindre difficulté dans l'utilisation de notre solution.
-						</p>
-						<a href="#" class="style-white hover-center">
-							<span class="btn-text">
-								Demander une démo
-							</span>
-							<svg class="btn-arrow" viewBox="0 0 13 6">
-							   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
-							</svg>
-						</a>
+			<?php //ICI SLICE COMMON ?>
+
+			<?php 
+				$sliceFooter = $document->body1[0]->primary; ?>
+
+				<section id="cm-section-demo">
+					<div class="cover" style="background-image: url(<?= $sliceFooter->slice_demo_background->url; ?>);"></div>
+					<div class="wrapper">
+						<div class="container-text">
+							<?= RichText::asHtml($sliceFooter->slice_demo_title); ?>
+							<?= RichText::asHtml($sliceFooter->slice_demo_text); ?>
+							<a href="<?=$sliceFooter->slice_demo_cta_link->url; ?>" class="style-white hover-center">
+								<span class="btn-text">
+									<?= RichText::asText($sliceFooter->slice_demo_cta_text); ?>
+								</span>
+								<svg class="btn-arrow" viewBox="0 0 13 6">
+								   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+								</svg>
+							</a>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 			
 		</main>
 

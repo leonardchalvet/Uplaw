@@ -24,7 +24,7 @@ require_once 'includes/http.php';
 
 // Index page
 $app->get('/', function ($request, $response) use ($app, $prismic) {
-    header('Location: /en/'.$args['uid']);
+    header('Location: /en/home');
     exit;
 });
 
@@ -39,18 +39,24 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     }
 
     //PART 3 - Call Header & Footer
+    $header = $api->getByUID('header', 'header', $options);
+    $footer = NULL;
     
     //PART 4 - Call current page
     $document = NULL;
-    $typeSelect = '';
-    $arrayTypes = ['home', 'solutions']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    $nType = 0;
+    $arrayTypes = ['home', 'fonctionalities', 'services']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    $arrayView = ['home', 'features', 'services'];
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid'], $options);
-        if($document != NULL) break;
+        $nType++;
+        if($document != NULL) {
+            break;
+        }
     }
 
     //PART 5 - Call good view
-    render($app, 'home', array('document' => $document));
+    render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header));
 });
 
 //ADD LANGUAGES FOR MORE POSSIBILITIES
