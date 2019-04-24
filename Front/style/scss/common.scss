@@ -585,11 +585,10 @@ main
 		display: block;
 	    @include styleAnimation1;
 	    @for $i from 1 to 10 {
-			&:nth-child(#{$i}) { transition-delay: $i * 0.035s; }
+			&:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
 		}
 	}
 	&.anim{
-
 		span{
 			transform: translateY(0%);
     		opacity: 1;

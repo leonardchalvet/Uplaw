@@ -13,11 +13,22 @@ main{
 	padding-top: 90px;
 	.wrapper{
 		@include styleGrid1;
+		position: relative;
 		padding-top: 80px;
 		padding-bottom: 55px;
-		background-color: $colorMain_1;
+		overflow: hidden;
+		&:before{
+			content:'';
+			background-color: $colorMain_1;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
 	}
 	.container-text{
+		position: relative;
 		max-width: 650px;
 		margin: auto;
 		h1{
@@ -45,6 +56,116 @@ main{
 		}
 	}
 }
+
+/* ANIM */
+#section-cover{
+	.wrapper{
+		&:before{
+			transform: translateY(-100%);
+			transition: all 500ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+		}
+		.container-illu{
+			.illu{
+				.container-el-anim-1{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0s;
+					transform: translateY(40px);
+					opacity: 0;
+				}
+				.container-el-anim-2{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.05s;
+					transform: translateY(50px);
+					opacity: 0;
+				}
+				.container-el-anim-3{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.1s;
+					transform: translateY(30px);
+					opacity: 0;
+				}
+				.el-anim-4{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.2s;
+					transform: translateY(20px);
+					opacity: 0;
+				}
+			}
+			.obj-1{
+				transition: all 1500ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+				opacity: 0;
+			}
+		}
+	}
+}
+
+#section-cover.anim{
+	.wrapper{
+		&:before{
+			transform: translateY(0%);
+		}
+		.container-illu{
+			.illu{
+
+				@keyframes float {
+					from {
+						transform: translateY(0px);
+					}
+					to {
+						transform: translateY(20px);
+					}
+				}
+
+				.container-el-anim-1{
+					transform: translateY(0px);
+					opacity: 1;
+
+					.el-anim-1{
+						animation-duration: 5s;
+						animation-delay: 1s;
+  						animation-name: float;
+  						animation-iteration-count: infinite;
+  						animation-direction: alternate;
+					}
+				}
+				.container-el-anim-2{
+					transform: translateY(0px);
+					opacity: 1;
+
+					.el-anim-2{
+						animation-duration: 3s;
+						animation-delay: 2s;
+  						animation-name: float;
+  						animation-iteration-count: infinite;
+  						animation-direction: alternate;
+					}
+				}
+				.container-el-anim-3{
+					transform: translateY(0px);
+					opacity: 1;
+
+					.el-anim-3{
+						animation-duration: 4s;
+						animation-delay: 0s;
+  						animation-name: float;
+  						animation-iteration-count: infinite;
+  						animation-direction: alternate;
+					}
+				}
+
+				.el-anim-4{
+					transform: translateY(0px);
+					opacity: 1;
+				}
+			}
+			.obj-1{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
 
 #section-demo{
 	padding-top: 95px;
