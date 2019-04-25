@@ -1,0 +1,172 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*====================================
+=            PAGE SOLUTIONS          =
+===================================*/
+main{
+	overflow: initial;
+}
+
+#section-cover {
+	position: relative;
+	padding-top: 90px;
+
+	.obj {
+		position: absolute;
+		z-index: 0;
+		width: 150px;
+		bottom: -100px;
+	}
+
+	.wrapper {
+		position: relative;
+		z-index: 1;
+		@include styleGrid1;
+		padding-top: 80px;
+		padding-bottom: 100px;
+		background-color: $colorMain_1;
+
+		.container-title {
+			@include styleGrid4;
+
+			display: flex;
+			justify-content: space-between;
+
+			.container-illu {
+				width: 420px;
+				height: 350px;
+				img {
+					height: 100%;
+				}
+			}
+			.container-text {
+				width: 425px;
+				.tag {
+					padding: 3px 20px;
+					width: fit-content;
+					border-radius: 2px;
+					background-color: #59C7DD;
+					span {
+						@include styleParagraphSmall;
+						color: #FFF;
+					}
+				}
+				h1 {
+					margin-top: 20px;
+					@include styleH1;
+					color: #FFF;
+				}
+			}
+		}
+
+		.container-cta {
+			@include styleGrid4;
+
+			display: flex;
+			justify-content: space-between;
+
+			.container-text {
+				margin-left: 45px;
+				width: 250px;
+				p {
+					margin-top: 60px;
+					@include styleParagraphMedium;
+					color: #FFF;
+				}
+				a {
+					margin-top: 50px;
+					@include styleButtonBig;
+				}
+			}
+			.container-illu {
+				margin-right: 45px;
+				width: 325px;
+				height: 280px;
+				img {
+					height: 100%;
+				}
+			}
+		}
+
+	}
+}
+
+#section-cta {
+	position: relative;
+	padding: 75px 0;
+	background-color: $colorMain_1;
+	.obj {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateY(-50%);
+		width: 200px;
+	}
+	.wrapper {
+		@include styleGrid2;
+		.container-el {
+			display: flex;
+			justify-content: space-between;
+			.el {
+				position: relative;
+				width: 500px;
+				height: 400px;
+
+				.bg {
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					width: 100%;
+					height: 100%;
+
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+
+				.gradient {
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: 0;
+
+					width: 100%;
+					height: 100%;
+
+					background: linear-gradient(180deg, rgba(28,28,28,0) 0%, #1C1C1C 100%);
+				}
+
+				a {
+					width: 100%;
+					@include styleButtonBig;
+
+					position: absolute;
+					z-index: 2;
+					bottom: 55px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					justify-content: center;
+				}
+			}
+		}
+		.container-cta {
+			margin-top: 40px;
+			
+			display: flex;
+			justify-content: center;
+			a {
+				@include styleButtonBig;
+			}
+		}
+	}
+}
+
+
+/*========================================
+=            END PAGE SOLUTIONS          =
+========================================*/
+
+@import 'footer.scss';

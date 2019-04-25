@@ -1,0 +1,1 @@
+$(window).on("load",function(){window.matchMedia("(min-width: 700px)").matches&&$("#section-cta .obj-1").attr("data-parallax",'{"y": 160, "smoothness": 40}')});
