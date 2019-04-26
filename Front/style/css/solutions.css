@@ -1,0 +1,944 @@
+@font-face {
+  font-family: Nexa-Bold;
+  src: url(../../fonts/Nexa-Bold.otf); }
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../../fonts/OpenSans-Regular.ttf); }
+
+body, html, * {
+  padding: 0px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, i {
+  font-weight: normal;
+  font-style: normal; }
+
+body.block {
+  overflow: hidden; }
+
+/* ------------------------------------------------------------- */
+/* ********************* CONTAINER GENERAL ********************* */
+/* ------------------------------------------------------------- */
+main {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+/* ----------------------------------------------------------------- */
+/* ********************* END CONTAINER GENERAL ********************* */
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ********************* VARIABLES ********************* */
+/* ----------------------------------------------------- */
+/*==============================
+=            COLORS            =
+==============================*/
+/*----------  COLORS  ----------*/
+/* NOIR */
+/* GRIS */
+/* BLEU */
+/* JAUNE */
+/* VIOLET */
+/* VERT */
+/* GRIS */
+/*=====  End of COLORS  ======*/
+/*=============================
+=            FONTS            =
+=============================*/
+/*=====  End of FONTS  ======*/
+/*=================================
+=            TEXT SIZE            =
+=================================*/
+/*----------  H1  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  H2  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  H3  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  H4  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  H5  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  H6  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  QUOTE  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  PARAGRAPH BIG  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  PARAGRAPH MEDIUM  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  PARAGRAPH SMALL  ----------*/
+/*----------  DESKTOP  ----------*/
+/*----------  PARAGRAPH TINY  ----------*/
+/*----------  DESKTOP  ----------*/
+/*=====  End of TEXT SIZE  ======*/
+/*============================
+=            GRID            =
+============================*/
+/*=====  End of GRID  ======*/
+/*===================================
+=            BREAK POINT            =
+===================================*/
+/*=====  End of BREAK POINT  ======*/
+/* --------------------------------------------------------- */
+/* ********************* END VARIABLES ********************* */
+/* --------------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ********************* MIXIN ********************* */
+/* ------------------------------------------------- */
+/*----------  FUNCTION  ----------*/
+/*
+	@mixin rgba-background($hexcolor, $opacity) {
+	  background-color: rgba($hexcolor, $opacity); 
+	}*/
+/*----------  HEADING  ----------*/
+/*----------  H1  ----------*/
+/*----------  H2  ----------*/
+/*----------  H3  ----------*/
+/*----------  H4  ----------*/
+/*----------  H5  ----------*/
+/*----------  H6  ----------*/
+/*----------  PARAGRAPH QUOTE  ----------*/
+/*----------  PARAGRAPH BIG  ----------*/
+/*----------  PARAGRAPH MEDIUM  ----------*/
+/*----------  PARAGRAPH SMALL  ----------*/
+/*----------  PARAGRAPH SMALL  ----------*/
+/*----------  BUTTON  ----------*/
+/*----------  COMMON  ----------*/
+/*----------  STYLE BIG  ----------*/
+/*----------  STYLE SMALL  ----------*/
+/*----------  NAV  ----------*/
+/*----------  LINK  ----------*/
+/*----------  GRID  ----------*/
+/*----------  COMMON  ----------*/
+/*----------  SIZE 1  ----------*/
+/*----------  SIZE 2  ----------*/
+/*----------  SIZE 3  ----------*/
+/*----------  SIZE 4  ----------*/
+/*----------  ANIM  ----------*/
+/* ----------------------------------------------------- */
+/* ********************* END MIXIN ********************* */
+/* ----------------------------------------------------- */
+/*======================================
+=            COMMON SECTION            =
+======================================*/
+#cm-section-demo {
+  padding: 100px 0px 100px 0px;
+  position: relative; }
+  #cm-section-demo .cover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    #cm-section-demo .cover:after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, #1C1C1C 100%); }
+  #cm-section-demo .wrapper {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    text-align: center;
+    width: 460px; }
+    #cm-section-demo .wrapper h2 {
+      font-family: Nexa-Bold;
+      color: #1C1C1C;
+      font-size: 40px;
+      line-height: 45px;
+      color: #FFF;
+      margin-bottom: 25px; }
+    #cm-section-demo .wrapper p {
+      font-family: OpenSans-Regular;
+      color: #606060;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFF;
+      margin-bottom: 50px; }
+    #cm-section-demo .wrapper a {
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      flex-flow: row wrap;
+      align-items: center;
+      position: relative;
+      padding: 20px 26px 20px 26px; }
+      #cm-section-demo .wrapper a .btn-arrow {
+        position: relative;
+        z-index: 1;
+        transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+      #cm-section-demo .wrapper a .btn-text {
+        position: relative;
+        z-index: 1;
+        transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+      #cm-section-demo .wrapper a.hover-left:hover:before {
+        transform: translateX(5%) scaleX(1.1); }
+      #cm-section-demo .wrapper a.hover-left:hover .btn-arrow {
+        transform: translateX(20px) scaleX(1.3); }
+      #cm-section-demo .wrapper a.hover-left:hover .btn-text {
+        transform: translateX(10px); }
+      #cm-section-demo .wrapper a.hover-center:hover:before {
+        transform: scaleX(1.1); }
+      #cm-section-demo .wrapper a.hover-center:hover .btn-arrow {
+        transform: translateX(10px) scaleX(1.3); }
+      #cm-section-demo .wrapper a:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: all 450ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+      #cm-section-demo .wrapper a:not(.style-transparent) .btn-arrow {
+        width: 11px; }
+      #cm-section-demo .wrapper a:not(.style-transparent) .btn-text {
+        font-family: Nexa-Bold;
+        color: #1C1C1C;
+        font-size: 16px;
+        line-height: initial;
+        color: #FFF; }
+      #cm-section-demo .wrapper a:not(.style-white):not(.style-transparent):before {
+        background-color: #000; }
+      #cm-section-demo .wrapper a:not(.style-white):not(.style-transparent) .btn-arrow {
+        fill: #FFF; }
+      #cm-section-demo .wrapper a.style-white:before {
+        background-color: #FFF; }
+      #cm-section-demo .wrapper a.style-white .btn-text {
+        color: #1C1C1C; }
+      #cm-section-demo .wrapper a.style-white .btn-arrow {
+        color: #1C1C1C; }
+      #cm-section-demo .wrapper a.style-transparent:before {
+        background-color: transparent; }
+      #cm-section-demo .wrapper a.style-transparent .btn-text {
+        font-family: Nexa-Bold;
+        color: #1C1C1C;
+        font-size: 26px;
+        line-height: 32px;
+        color: #FFF; }
+      #cm-section-demo .wrapper a.style-transparent .btn-arrow {
+        width: 17px;
+        fill: #FFF; }
+      #cm-section-demo .wrapper a .btn-arrow {
+        margin-left: 14px; }
+
+#cm-section-management {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative; }
+  #cm-section-management .wrapper {
+    margin-right: auto;
+    margin-left: auto; }
+    @media screen and (min-width: 700px) and (max-width: 1250px) {
+      #cm-section-management .wrapper {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px; } }
+    @media screen and (max-width: 700px) {
+      #cm-section-management .wrapper {
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px; } }
+    @media screen and (min-width: 1250px) {
+      #cm-section-management .wrapper {
+        width: 1100px; } }
+    #cm-section-management .wrapper h2 {
+      width: 520px;
+      font-family: Nexa-Bold;
+      color: #1C1C1C;
+      font-size: 40px;
+      line-height: 45px; }
+    #cm-section-management .wrapper .sep {
+      margin: 50px 0px 60px 0px;
+      height: 2px;
+      width: 100px;
+      background-color: #1C1C1C; }
+    #cm-section-management .wrapper .content {
+      display: flex;
+      justify-content: space-between; }
+      #cm-section-management .wrapper .content .container-photo {
+        width: 370px;
+        height: 650px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        box-shadow: 12px 12px 0 0 #A6B7C7; }
+      #cm-section-management .wrapper .content .container-text {
+        width: 525px; }
+        #cm-section-management .wrapper .content .container-text p {
+          font-family: OpenSans-Regular;
+          color: #606060;
+          font-size: 16px;
+          line-height: 26px; }
+        #cm-section-management .wrapper .content .container-text .container-el {
+          margin-top: 55px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; }
+          #cm-section-management .wrapper .content .container-text .container-el .el {
+            width: 220px; }
+            #cm-section-management .wrapper .content .container-text .container-el .el:first-child {
+              margin-bottom: 65px; }
+            #cm-section-management .wrapper .content .container-text .container-el .el h3 {
+              font-family: Nexa-Bold;
+              color: #1C1C1C;
+              font-size: 26px;
+              line-height: 32px; }
+            #cm-section-management .wrapper .content .container-text .container-el .el p {
+              font-family: OpenSans-Regular;
+              color: #606060;
+              font-size: 14px;
+              line-height: 24px; }
+        #cm-section-management .wrapper .content .container-text a {
+          margin-top: 95px;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-flex;
+          flex-flow: row wrap;
+          align-items: center;
+          position: relative;
+          padding: 17px 25px 17px 25px; }
+          #cm-section-management .wrapper .content .container-text a .btn-arrow {
+            position: relative;
+            z-index: 1;
+            transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #cm-section-management .wrapper .content .container-text a .btn-text {
+            position: relative;
+            z-index: 1;
+            transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #cm-section-management .wrapper .content .container-text a.hover-left:hover:before {
+            transform: translateX(5%) scaleX(1.1); }
+          #cm-section-management .wrapper .content .container-text a.hover-left:hover .btn-arrow {
+            transform: translateX(20px) scaleX(1.3); }
+          #cm-section-management .wrapper .content .container-text a.hover-left:hover .btn-text {
+            transform: translateX(10px); }
+          #cm-section-management .wrapper .content .container-text a.hover-center:hover:before {
+            transform: scaleX(1.1); }
+          #cm-section-management .wrapper .content .container-text a.hover-center:hover .btn-arrow {
+            transform: translateX(10px) scaleX(1.3); }
+          #cm-section-management .wrapper .content .container-text a:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            transition: all 450ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #cm-section-management .wrapper .content .container-text a:not(.style-transparent) .btn-arrow {
+            width: 11px; }
+          #cm-section-management .wrapper .content .container-text a:not(.style-transparent) .btn-text {
+            font-family: Nexa-Bold;
+            color: #1C1C1C;
+            font-size: 16px;
+            line-height: initial;
+            color: #FFF; }
+          #cm-section-management .wrapper .content .container-text a:not(.style-white):not(.style-transparent):before {
+            background-color: #000; }
+          #cm-section-management .wrapper .content .container-text a:not(.style-white):not(.style-transparent) .btn-arrow {
+            fill: #FFF; }
+          #cm-section-management .wrapper .content .container-text a.style-white:before {
+            background-color: #FFF; }
+          #cm-section-management .wrapper .content .container-text a.style-white .btn-text {
+            color: #1C1C1C; }
+          #cm-section-management .wrapper .content .container-text a.style-white .btn-arrow {
+            color: #1C1C1C; }
+          #cm-section-management .wrapper .content .container-text a.style-transparent:before {
+            background-color: transparent; }
+          #cm-section-management .wrapper .content .container-text a.style-transparent .btn-text {
+            font-family: Nexa-Bold;
+            color: #1C1C1C;
+            font-size: 26px;
+            line-height: 32px;
+            color: #FFF; }
+          #cm-section-management .wrapper .content .container-text a.style-transparent .btn-arrow {
+            width: 17px;
+            fill: #FFF; }
+          #cm-section-management .wrapper .content .container-text a .btn-arrow {
+            margin-left: 9px; }
+
+/*=====  End of COMMON SECTION  ======*/
+/*======================================
+=            WRAP LINE ANIM            =
+======================================*/
+.wrapLine span {
+  display: block;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: all 650ms cubic-bezier(0.705, 0.445, 0.345, 0.995); }
+  .wrapLine span.anim {
+    transform: translateY(0%);
+    opacity: 1; }
+  .wrapLine span:nth-child(1) {
+    transition-delay: 0.05s; }
+  .wrapLine span:nth-child(2) {
+    transition-delay: 0.1s; }
+  .wrapLine span:nth-child(3) {
+    transition-delay: 0.15s; }
+  .wrapLine span:nth-child(4) {
+    transition-delay: 0.2s; }
+  .wrapLine span:nth-child(5) {
+    transition-delay: 0.25s; }
+  .wrapLine span:nth-child(6) {
+    transition-delay: 0.3s; }
+  .wrapLine span:nth-child(7) {
+    transition-delay: 0.35s; }
+  .wrapLine span:nth-child(8) {
+    transition-delay: 0.4s; }
+  .wrapLine span:nth-child(9) {
+    transition-delay: 0.45s; }
+
+.wrapLine.anim span {
+  transform: translateY(0%);
+  opacity: 1; }
+
+/*=====  End of WRAP LINE ANIM  ======*/
+#header-desktop {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.25s ease; }
+  #header-desktop .wrapper {
+    height: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto; }
+    @media screen and (min-width: 700px) and (max-width: 1250px) {
+      #header-desktop .wrapper {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px; } }
+    @media screen and (max-width: 700px) {
+      #header-desktop .wrapper {
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px; } }
+    @media screen and (min-width: 1250px) {
+      #header-desktop .wrapper {
+        width: 1200px; } }
+    #header-desktop .wrapper .container-link {
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center; }
+      #header-desktop .wrapper .container-link .logo {
+        height: 28px;
+        text-decoration: none;
+        margin-right: 75px; }
+        #header-desktop .wrapper .container-link .logo img {
+          height: 100%; }
+      #header-desktop .wrapper .container-link ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center; }
+        #header-desktop .wrapper .container-link ul li a {
+          text-decoration: none;
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 16px;
+          line-height: initial; }
+        #header-desktop .wrapper .container-link ul li:not(:last-child) {
+          margin-right: 58px; }
+    #header-desktop .wrapper .container-action {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center; }
+      #header-desktop .wrapper .container-action .signin {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center; }
+        #header-desktop .wrapper .container-action .signin img {
+          width: 13px;
+          margin-right: 13px; }
+        #header-desktop .wrapper .container-action .signin span {
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 16px;
+          line-height: initial; }
+      #header-desktop .wrapper .container-action .sep {
+        margin: 0px 25px 0px 25px;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 3px;
+        width: 3px;
+        border-radius: 3px; }
+      #header-desktop .wrapper .container-action .signup {
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        position: relative;
+        padding: 20px 26px 20px 26px; }
+        #header-desktop .wrapper .container-action .signup .btn-arrow {
+          position: relative;
+          z-index: 1;
+          transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+        #header-desktop .wrapper .container-action .signup .btn-text {
+          position: relative;
+          z-index: 1;
+          transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+        #header-desktop .wrapper .container-action .signup.hover-left:hover:before {
+          transform: translateX(5%) scaleX(1.1); }
+        #header-desktop .wrapper .container-action .signup.hover-left:hover .btn-arrow {
+          transform: translateX(20px) scaleX(1.3); }
+        #header-desktop .wrapper .container-action .signup.hover-left:hover .btn-text {
+          transform: translateX(10px); }
+        #header-desktop .wrapper .container-action .signup.hover-center:hover:before {
+          transform: scaleX(1.1); }
+        #header-desktop .wrapper .container-action .signup.hover-center:hover .btn-arrow {
+          transform: translateX(10px) scaleX(1.3); }
+        #header-desktop .wrapper .container-action .signup:before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          transition: all 450ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+        #header-desktop .wrapper .container-action .signup:not(.style-transparent) .btn-arrow {
+          width: 11px; }
+        #header-desktop .wrapper .container-action .signup:not(.style-transparent) .btn-text {
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 16px;
+          line-height: initial;
+          color: #FFF; }
+        #header-desktop .wrapper .container-action .signup:not(.style-white):not(.style-transparent):before {
+          background-color: #000; }
+        #header-desktop .wrapper .container-action .signup:not(.style-white):not(.style-transparent) .btn-arrow {
+          fill: #FFF; }
+        #header-desktop .wrapper .container-action .signup.style-white:before {
+          background-color: #FFF; }
+        #header-desktop .wrapper .container-action .signup.style-white .btn-text {
+          color: #1C1C1C; }
+        #header-desktop .wrapper .container-action .signup.style-white .btn-arrow {
+          color: #1C1C1C; }
+        #header-desktop .wrapper .container-action .signup.style-transparent:before {
+          background-color: transparent; }
+        #header-desktop .wrapper .container-action .signup.style-transparent .btn-text {
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 26px;
+          line-height: 32px;
+          color: #FFF; }
+        #header-desktop .wrapper .container-action .signup.style-transparent .btn-arrow {
+          width: 17px;
+          fill: #FFF; }
+        #header-desktop .wrapper .container-action .signup .btn-arrow {
+          margin-left: 14px; }
+  #header-desktop.scroll {
+    background-color: #FFF;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); }
+
+/*====================================
+=            PAGE SOLUTIONS          =
+===================================*/
+main {
+  overflow: initial; }
+
+#section-cover {
+  position: relative;
+  padding-top: 90px; }
+  #section-cover .obj-1,
+  #section-cover .obj-2,
+  #section-cover .obj-3 {
+    position: absolute;
+    z-index: 0;
+    bottom: -150px; }
+  #section-cover .obj-1 {
+    left: 0;
+    width: 150px; }
+  #section-cover .obj-2 {
+    right: 0;
+    width: 315px; }
+  #section-cover .obj-3 {
+    right: 20%;
+    width: 150px; }
+  #section-cover .wrapper {
+    position: relative;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #1C1C1C; }
+    @media screen and (min-width: 700px) and (max-width: 1250px) {
+      #section-cover .wrapper {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px; } }
+    @media screen and (max-width: 700px) {
+      #section-cover .wrapper {
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px; } }
+    @media screen and (min-width: 1250px) {
+      #section-cover .wrapper {
+        width: 1200px; } }
+    #section-cover .wrapper .container-title {
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (min-width: 700px) and (max-width: 1250px) {
+        #section-cover .wrapper .container-title {
+          width: 100%;
+          padding-right: 50px;
+          padding-left: 50px; } }
+      @media screen and (max-width: 700px) {
+        #section-cover .wrapper .container-title {
+          width: 100%;
+          padding-right: 25px;
+          padding-left: 25px; } }
+      @media screen and (min-width: 1250px) {
+        #section-cover .wrapper .container-title {
+          width: 900px; } }
+      #section-cover .wrapper .container-title .container-illu {
+        width: 420px;
+        height: 350px; }
+        #section-cover .wrapper .container-title .container-illu img {
+          height: 100%; }
+      #section-cover .wrapper .container-title .container-text {
+        width: 425px; }
+        #section-cover .wrapper .container-title .container-text .tag {
+          padding: 3px 20px;
+          width: fit-content;
+          border-radius: 2px;
+          background-color: #59C7DD; }
+          #section-cover .wrapper .container-title .container-text .tag span {
+            font-family: OpenSans-Regular;
+            color: #606060;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFF; }
+        #section-cover .wrapper .container-title .container-text h1 {
+          margin-top: 20px;
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 50px;
+          line-height: 60px;
+          color: #FFF; }
+    #section-cover .wrapper .container-cta {
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (min-width: 700px) and (max-width: 1250px) {
+        #section-cover .wrapper .container-cta {
+          width: 100%;
+          padding-right: 50px;
+          padding-left: 50px; } }
+      @media screen and (max-width: 700px) {
+        #section-cover .wrapper .container-cta {
+          width: 100%;
+          padding-right: 25px;
+          padding-left: 25px; } }
+      @media screen and (min-width: 1250px) {
+        #section-cover .wrapper .container-cta {
+          width: 900px; } }
+      #section-cover .wrapper .container-cta .container-text {
+        margin-left: 45px;
+        width: 250px; }
+        #section-cover .wrapper .container-cta .container-text p {
+          margin-top: 60px;
+          font-family: OpenSans-Regular;
+          color: #606060;
+          font-size: 16px;
+          line-height: 26px;
+          color: #FFF; }
+        #section-cover .wrapper .container-cta .container-text a {
+          margin-top: 50px;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-flex;
+          flex-flow: row wrap;
+          align-items: center;
+          position: relative;
+          padding: 20px 26px 20px 26px; }
+          #section-cover .wrapper .container-cta .container-text a .btn-arrow {
+            position: relative;
+            z-index: 1;
+            transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #section-cover .wrapper .container-cta .container-text a .btn-text {
+            position: relative;
+            z-index: 1;
+            transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #section-cover .wrapper .container-cta .container-text a.hover-left:hover:before {
+            transform: translateX(5%) scaleX(1.1); }
+          #section-cover .wrapper .container-cta .container-text a.hover-left:hover .btn-arrow {
+            transform: translateX(20px) scaleX(1.3); }
+          #section-cover .wrapper .container-cta .container-text a.hover-left:hover .btn-text {
+            transform: translateX(10px); }
+          #section-cover .wrapper .container-cta .container-text a.hover-center:hover:before {
+            transform: scaleX(1.1); }
+          #section-cover .wrapper .container-cta .container-text a.hover-center:hover .btn-arrow {
+            transform: translateX(10px) scaleX(1.3); }
+          #section-cover .wrapper .container-cta .container-text a:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            transition: all 450ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #section-cover .wrapper .container-cta .container-text a:not(.style-transparent) .btn-arrow {
+            width: 11px; }
+          #section-cover .wrapper .container-cta .container-text a:not(.style-transparent) .btn-text {
+            font-family: Nexa-Bold;
+            color: #1C1C1C;
+            font-size: 16px;
+            line-height: initial;
+            color: #FFF; }
+          #section-cover .wrapper .container-cta .container-text a:not(.style-white):not(.style-transparent):before {
+            background-color: #000; }
+          #section-cover .wrapper .container-cta .container-text a:not(.style-white):not(.style-transparent) .btn-arrow {
+            fill: #FFF; }
+          #section-cover .wrapper .container-cta .container-text a.style-white:before {
+            background-color: #FFF; }
+          #section-cover .wrapper .container-cta .container-text a.style-white .btn-text {
+            color: #1C1C1C; }
+          #section-cover .wrapper .container-cta .container-text a.style-white .btn-arrow {
+            color: #1C1C1C; }
+          #section-cover .wrapper .container-cta .container-text a.style-transparent:before {
+            background-color: transparent; }
+          #section-cover .wrapper .container-cta .container-text a.style-transparent .btn-text {
+            font-family: Nexa-Bold;
+            color: #1C1C1C;
+            font-size: 26px;
+            line-height: 32px;
+            color: #FFF; }
+          #section-cover .wrapper .container-cta .container-text a.style-transparent .btn-arrow {
+            width: 17px;
+            fill: #FFF; }
+          #section-cover .wrapper .container-cta .container-text a .btn-arrow {
+            margin-left: 14px; }
+      #section-cover .wrapper .container-cta .container-illu {
+        margin-right: 45px;
+        width: 325px;
+        height: 280px; }
+        #section-cover .wrapper .container-cta .container-illu img {
+          height: 100%; }
+
+#section-cta {
+  position: relative;
+  padding: 75px 0;
+  background-color: #1C1C1C; }
+  #section-cta .obj {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px; }
+  #section-cta .wrapper {
+    margin-right: auto;
+    margin-left: auto; }
+    @media screen and (min-width: 700px) and (max-width: 1250px) {
+      #section-cta .wrapper {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px; } }
+    @media screen and (max-width: 700px) {
+      #section-cta .wrapper {
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px; } }
+    @media screen and (min-width: 1250px) {
+      #section-cta .wrapper {
+        width: 1100px; } }
+    #section-cta .wrapper .container-el {
+      display: flex;
+      justify-content: space-between; }
+      #section-cta .wrapper .container-el .el {
+        position: relative;
+        width: 500px;
+        height: 400px; }
+        #section-cta .wrapper .container-el .el .bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+        #section-cta .wrapper .container-el .el .gradient {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, #1C1C1C 100%); }
+        #section-cta .wrapper .container-el .el a {
+          width: 100%;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-flex;
+          flex-flow: row wrap;
+          align-items: center;
+          position: relative;
+          padding: 20px 26px 20px 26px;
+          position: absolute;
+          z-index: 2;
+          bottom: 55px;
+          left: 50%;
+          transform: translateX(-50%);
+          justify-content: center; }
+          #section-cta .wrapper .container-el .el a .btn-arrow {
+            position: relative;
+            z-index: 1;
+            transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #section-cta .wrapper .container-el .el a .btn-text {
+            position: relative;
+            z-index: 1;
+            transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #section-cta .wrapper .container-el .el a.hover-left:hover:before {
+            transform: translateX(5%) scaleX(1.1); }
+          #section-cta .wrapper .container-el .el a.hover-left:hover .btn-arrow {
+            transform: translateX(20px) scaleX(1.3); }
+          #section-cta .wrapper .container-el .el a.hover-left:hover .btn-text {
+            transform: translateX(10px); }
+          #section-cta .wrapper .container-el .el a.hover-center:hover:before {
+            transform: scaleX(1.1); }
+          #section-cta .wrapper .container-el .el a.hover-center:hover .btn-arrow {
+            transform: translateX(10px) scaleX(1.3); }
+          #section-cta .wrapper .container-el .el a:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            transition: all 450ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+          #section-cta .wrapper .container-el .el a:not(.style-transparent) .btn-arrow {
+            width: 11px; }
+          #section-cta .wrapper .container-el .el a:not(.style-transparent) .btn-text {
+            font-family: Nexa-Bold;
+            color: #1C1C1C;
+            font-size: 16px;
+            line-height: initial;
+            color: #FFF; }
+          #section-cta .wrapper .container-el .el a:not(.style-white):not(.style-transparent):before {
+            background-color: #000; }
+          #section-cta .wrapper .container-el .el a:not(.style-white):not(.style-transparent) .btn-arrow {
+            fill: #FFF; }
+          #section-cta .wrapper .container-el .el a.style-white:before {
+            background-color: #FFF; }
+          #section-cta .wrapper .container-el .el a.style-white .btn-text {
+            color: #1C1C1C; }
+          #section-cta .wrapper .container-el .el a.style-white .btn-arrow {
+            color: #1C1C1C; }
+          #section-cta .wrapper .container-el .el a.style-transparent:before {
+            background-color: transparent; }
+          #section-cta .wrapper .container-el .el a.style-transparent .btn-text {
+            font-family: Nexa-Bold;
+            color: #1C1C1C;
+            font-size: 26px;
+            line-height: 32px;
+            color: #FFF; }
+          #section-cta .wrapper .container-el .el a.style-transparent .btn-arrow {
+            width: 17px;
+            fill: #FFF; }
+          #section-cta .wrapper .container-el .el a .btn-arrow {
+            margin-left: 14px; }
+    #section-cta .wrapper .container-cta {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center; }
+      #section-cta .wrapper .container-cta a {
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        position: relative;
+        padding: 20px 26px 20px 26px; }
+        #section-cta .wrapper .container-cta a .btn-arrow {
+          position: relative;
+          z-index: 1;
+          transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+        #section-cta .wrapper .container-cta a .btn-text {
+          position: relative;
+          z-index: 1;
+          transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+        #section-cta .wrapper .container-cta a.hover-left:hover:before {
+          transform: translateX(5%) scaleX(1.1); }
+        #section-cta .wrapper .container-cta a.hover-left:hover .btn-arrow {
+          transform: translateX(20px) scaleX(1.3); }
+        #section-cta .wrapper .container-cta a.hover-left:hover .btn-text {
+          transform: translateX(10px); }
+        #section-cta .wrapper .container-cta a.hover-center:hover:before {
+          transform: scaleX(1.1); }
+        #section-cta .wrapper .container-cta a.hover-center:hover .btn-arrow {
+          transform: translateX(10px) scaleX(1.3); }
+        #section-cta .wrapper .container-cta a:before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          transition: all 450ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+        #section-cta .wrapper .container-cta a:not(.style-transparent) .btn-arrow {
+          width: 11px; }
+        #section-cta .wrapper .container-cta a:not(.style-transparent) .btn-text {
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 16px;
+          line-height: initial;
+          color: #FFF; }
+        #section-cta .wrapper .container-cta a:not(.style-white):not(.style-transparent):before {
+          background-color: #000; }
+        #section-cta .wrapper .container-cta a:not(.style-white):not(.style-transparent) .btn-arrow {
+          fill: #FFF; }
+        #section-cta .wrapper .container-cta a.style-white:before {
+          background-color: #FFF; }
+        #section-cta .wrapper .container-cta a.style-white .btn-text {
+          color: #1C1C1C; }
+        #section-cta .wrapper .container-cta a.style-white .btn-arrow {
+          color: #1C1C1C; }
+        #section-cta .wrapper .container-cta a.style-transparent:before {
+          background-color: transparent; }
+        #section-cta .wrapper .container-cta a.style-transparent .btn-text {
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 26px;
+          line-height: 32px;
+          color: #FFF; }
+        #section-cta .wrapper .container-cta a.style-transparent .btn-arrow {
+          width: 17px;
+          fill: #FFF; }
+        #section-cta .wrapper .container-cta a .btn-arrow {
+          margin-left: 14px; }
+
+/*========================================
+=            END PAGE SOLUTIONS          =
+========================================*/
