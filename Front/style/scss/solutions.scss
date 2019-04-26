@@ -12,11 +12,27 @@ main{
 	position: relative;
 	padding-top: 90px;
 
-	.obj {
+	.obj-1,
+	.obj-2,
+	.obj-3 {
 		position: absolute;
 		z-index: 0;
-		width: 150px;
 		bottom: -100px;
+	}
+
+	.obj-1 {
+		left: 0;
+		width: 150px;
+	}
+
+	.obj-2 {
+		right: 0;
+		width: 315px;
+	}
+
+	.obj-3 {
+		right: 20%;
+		width: 150px;
 	}
 
 	.wrapper {

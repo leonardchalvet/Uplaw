@@ -25,7 +25,9 @@
 
 			<section id="section-cover">
 
-				<img class="obj right" src="img/solutions/cover-obj-1.svg">
+				<img class="obj obj-1" src="img/solutions/cover-obj-1.svg">
+				<img class="obj obj-2" src="img/solutions/cover-obj-2.svg">
+				<img class="obj obj-3" src="img/solutions/cover-obj-3.svg">
 
 				<div class="wrapper">
 

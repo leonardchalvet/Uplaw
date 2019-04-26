@@ -564,11 +564,21 @@ main {
 #section-cover {
   position: relative;
   padding-top: 90px; }
-  #section-cover .obj {
+  #section-cover .obj-1,
+  #section-cover .obj-2,
+  #section-cover .obj-3 {
     position: absolute;
     z-index: 0;
-    width: 150px;
     bottom: -100px; }
+  #section-cover .obj-1 {
+    left: 0;
+    width: 150px; }
+  #section-cover .obj-2 {
+    right: 0;
+    width: 315px; }
+  #section-cover .obj-3 {
+    right: 20%;
+    width: 150px; }
   #section-cover .wrapper {
     position: relative;
     z-index: 1;
