@@ -16,10 +16,7 @@ $(window).on('load', function() {
 
 			setTimeout(function() {
 
-				
-
-				
-
+			
 			}, delayH1);
 
 		}, 50);
