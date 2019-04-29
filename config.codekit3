@@ -65,6 +65,130 @@
 		"oAP": "/Front/fonts/OpenSans-Regular.ttf",
 		"oF": 0
 		},
+	"/Front/img/about/cover-illu.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/cover-illu.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/origin-obj.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/origin-obj.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/photo-1.png": {
+		"ft": 32768,
+		"iS": 74345,
+		"oA": 0,
+		"oAP": "/Front/img/about/photo-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/Front/img/about/photo-2.png": {
+		"ft": 32768,
+		"iS": 331622,
+		"oA": 0,
+		"oAP": "/Front/img/about/photo-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/Front/img/about/photo-3.png": {
+		"ft": 32768,
+		"iS": 346181,
+		"oA": 0,
+		"oAP": "/Front/img/about/photo-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/Front/img/about/photo-4.jpg": {
+		"ft": 16384,
+		"iS": 72853,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Front/img/about/photo-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Front/img/about/press-logo-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/press-logo-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/press-logo-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/press-logo-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/press-logo-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/press-logo-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/press-logo-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/press-logo-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/press-obj.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/press-obj.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/team-obj.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/team-obj.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/Front/img/common/arrow-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
