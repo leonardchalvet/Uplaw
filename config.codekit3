@@ -57,6 +57,14 @@
 		"oAP": "/Front/fonts/Nexa-Bold.otf",
 		"oF": 0
 		},
+	"/Front/fonts/OpenSans-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Front/fonts/OpenSans-Bold.ttf",
+		"oF": 0
+		},
 	"/Front/fonts/OpenSans-Regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -75,11 +83,21 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/Front/img/about/origin-obj.svg": {
+	"/Front/img/about/origin-obj-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/Front/img/about/origin-obj.svg",
+		"oAP": "/Front/img/about/origin-obj-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/about/origin-obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/about/origin-obj-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

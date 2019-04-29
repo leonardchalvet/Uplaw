@@ -51,8 +51,9 @@
 			</section>
 
 			<section id="section-origin">
-				<img src="img/about/origin-obj.svg">
+				<img class="obj-1" src="img/about/origin-obj-1.svg">
 				<div class="wrapper">
+					<img class="obj-2" src="img/about/origin-obj-2.svg">
 					<div class="container-text">
 						<div class="left">
 							<h2>L'origine du projet.</h2>
@@ -74,8 +75,8 @@
 			</section>
 
 			<section id="section-team">
+				<img class="obj" src="img/about/team-obj.svg">
 				<div class="wrapper">
-					<img src="img/about/team-obj.svg">
 					<div class="container-text">
 						<h2>Les fondateurs</h2>
 						<div class="sep"></div>
@@ -138,7 +139,7 @@
 			</section>
 
 			<section id="section-press">
-				<img src="img/about/press-obj.svg">
+				<img class="obj" src="img/about/press-obj.svg">
 				<div class="wrapper">
 					<h2>
 						Ils parlents de nous dans la presse

@@ -6,6 +6,10 @@
   font-family: OpenSans-Regular;
   src: url(../../fonts/OpenSans-Regular.ttf); }
 
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../../fonts/OpenSans-Bold.ttf); }
+
 body, html, * {
   padding: 0px;
   margin: 0px;
