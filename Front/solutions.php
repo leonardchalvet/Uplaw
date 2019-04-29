@@ -78,8 +78,8 @@
 
 					<div class="content">
 						
-						<div class="container-photo"
-						     style="background-image: url(img/solutions/management-bg.jpg);">
+						<div class="container-photo">
+						     <div class="bg" style="background-image: url(img/solutions/management-bg.jpg);"></div>
 						</div>
 
 						<div class="container-text">

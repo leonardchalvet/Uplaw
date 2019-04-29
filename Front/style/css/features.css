@@ -275,12 +275,26 @@ main {
       display: flex;
       justify-content: space-between; }
       #cm-section-management .wrapper .content .container-photo {
+        position: relative;
         width: 370px;
-        height: 650px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        box-shadow: 12px 12px 0 0 #A6B7C7; }
+        height: 650px; }
+        #cm-section-management .wrapper .content .container-photo .bg {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+        #cm-section-management .wrapper .content .container-photo:before {
+          content: " ";
+          position: absolute;
+          z-index: 0;
+          top: 12px;
+          left: 12px;
+          width: 100%;
+          height: 100%;
+          background-color: #A6B7C7; }
       #cm-section-management .wrapper .content .container-text {
         width: 525px; }
         #cm-section-management .wrapper .content .container-text p {
