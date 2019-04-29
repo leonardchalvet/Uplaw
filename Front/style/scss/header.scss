@@ -31,12 +31,33 @@
 				flex-flow: row wrap;
 				align-items: center;
 				li{
+					position: relative;
+					padding-bottom: 7px;
+					transform: translateY(3.5px);
+					overflow: hidden;
 					a{
 						text-decoration: none;
 						@include styleH5;
 					}
 					&:not(:last-child){
 						margin-right: 58px;
+					}
+					&::before {
+						content: " ";
+						position: absolute;
+						bottom: .5px;
+						left: -25px;
+
+						width: 25px;
+						height: 2px;
+						background-color: $colorMain_1;
+
+						transition: all .25s ease;
+					}
+					&.select, &:hover {
+						&::before {
+							left: 0;
+						}
 					}
 				}
 			}
@@ -45,10 +66,20 @@
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
+			a {
+				cursor: pointer;
+			}
 			.signin{
+				position: relative;
+
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
+
+				@include styleLink;
+				padding-bottom: 9px;
+				transform: translateY(4.5px);
+
 				img{
 					width: 13px;
 					margin-right: 13px;

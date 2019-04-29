@@ -19,7 +19,10 @@
 	
 	<body>
 
-		<?php include('common-header.php') ?>
+		<?php 
+		$type = 'fonctionnalites';
+		include('common-header.php') 
+		?>
 
 		<main>
 

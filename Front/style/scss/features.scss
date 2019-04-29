@@ -178,7 +178,7 @@ main{
 		.container-text{
 			position: sticky;
 			top: 190px;
-			width: 445px;
+			width: 530px;
 			margin-right: 80px;
 			h2{
 				@include styleH2;
@@ -294,14 +294,14 @@ main{
 	.obj-1{
 		position: absolute;
 		right: 85%;
-		top: -200px;
+		top: -100px;
 		width: 640px;
 		opacity: 0.1;
 	}
 	.obj-2{
 		position: absolute;
 		right: 85%;
-		top: -50px;
+		top: 25px;
 		width: 300px;
 	}
 }

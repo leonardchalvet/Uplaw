@@ -7,16 +7,16 @@
 				<img src="img/common/logo.svg" alt="">
 			</a>
 			<ul>
-				<li>
+				<li <?php if($type == 'solutions'){ echo 'class="select"';}; ?>>
 					<a href="">Solutions</a>
 				</li>
-				<li>
+				<li <?php if($type == 'fonctionnalites'){ echo 'class="select"';}; ?>>
 					<a href="">Fonctionnalités</a>
 				</li>
-				<li>
+				<li <?php if($type == 'services'){ echo 'class="select"';}; ?>>
 					<a href="">Services</a>
 				</li>
-				<li>
+				<li <?php if($type == 'apropros'){ echo 'class="select"';}; ?>>
 					<a href="">À propos</a>
 				</li>
 			</ul>
@@ -24,7 +24,6 @@
 
 		<div class="container-action">
 			<a class="signin">
-
 				<img src="img/common/connect-icone.svg" alt="">
 				<span>
 					Connexion
