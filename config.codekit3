@@ -817,6 +817,46 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/Front/img/mentions/mentions-contact.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/mentions/mentions-contact.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/mentions/mentions-obj-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/mentions/mentions-obj-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/mentions/mentions-obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/mentions/mentions-obj-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/mentions/mentions-phone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/mentions/mentions-phone.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/Front/img/services/icn-ftr-audit.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1354,6 +1394,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/Front/style/css/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/Front/style/css/mentions.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/Front/style/css/mentions-min.css",
 		"oF": 0,
 		"oS": 3
 		},
