@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="22px" viewBox="0 0 30 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>GB@1,5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="29" height="20.952381" rx="1.95699992"></rect>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0a-etats-" transform="translate(-1219.000000, -2915.000000)">
+            <g id="Footer-dropdown-langues" transform="translate(0.000000, 2832.000000)">
+                <g id="dropdown-langues" transform="translate(1194.000000, 0.000000)">
+                    <g id="english" transform="translate(25.636478, 83.421700)">
+                        <g id="GB">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            <rect id="Mask-Copy" fill="#0A17A7" mask="url(#mask-2)" x="0" y="0" width="29" height="20.952381"></rect>
+                            <path d="M6.91208914,13.968254 L-3.55271368e-15,13.968254 L-3.55271368e-15,6.98412698 L6.91208914,6.98412698 L-2.87270921,0.308335898 L-1.32827167,-2.00770557 L11.047619,6.43588804 L11.047619,-1.3968254 L17.952381,-1.3968254 L17.952381,6.43588804 L30.3282717,-2.00770557 L31.8727092,0.308335898 L22.0879109,6.98412698 L29,6.98412698 L29,13.968254 L22.0879109,13.968254 L31.8727092,20.6440451 L30.3282717,22.9600865 L17.952381,14.5164929 L17.952381,22.3492063 L11.047619,22.3492063 L11.047619,14.5164929 L-1.32827167,22.9600865 L-2.87270921,20.6440451 L6.91208914,13.968254 Z" id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            <path d="M19.3346819,6.63372706 L32.452381,-2.0952381" id="Line" stroke="#DB1F35" stroke-width="1.30466661" stroke-linecap="round" mask="url(#mask-2)"></path>
+                            <path d="M20.7275187,22.3670247 L32.4868542,14.3497721" id="Line-Copy-2" stroke="#DB1F35" stroke-width="1.30466661" stroke-linecap="round" mask="url(#mask-2)" transform="translate(26.607186, 18.358398) scale(1, -1) translate(-26.607186, -18.358398) "></path>
+                            <path d="M8.29144578,6.61096385 L-3.97453671,-1.75055029" id="Line-Copy" stroke="#DB1F35" stroke-width="1.30466661" stroke-linecap="round" mask="url(#mask-2)"></path>
+                            <path d="M9.62182617,23.3728686 L-3.97453671,14.2527514" id="Line-Copy-3" stroke="#DB1F35" stroke-width="1.30466661" stroke-linecap="round" mask="url(#mask-2)" transform="translate(2.823645, 18.812810) scale(1, -1) translate(-2.823645, -18.812810) "></path>
+                            <polygon id="Rectangle-2-Copy-3" fill="#E6273E" mask="url(#mask-2)" points="0 12.5714286 12.4285714 12.5714286 12.4285714 20.952381 16.5714286 20.952381 16.5714286 12.5714286 29 12.5714286 29 8.38095238 16.5714286 8.38095238 16.5714286 0 12.4285714 0 12.4285714 8.38095238 0 8.38095238"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

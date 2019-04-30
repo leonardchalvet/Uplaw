@@ -1239,3 +1239,140 @@ main {
 /*====================================
 =            END PAGE HOME           =
 =====================================*/
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 50px 0;
+  background-color: #1C1C1C; }
+  footer .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    @media screen and (min-width: 700px) and (max-width: 1250px) {
+      footer .wrapper {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px; } }
+    @media screen and (max-width: 700px) {
+      footer .wrapper {
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px; } }
+    @media screen and (min-width: 1250px) {
+      footer .wrapper {
+        width: 1200px; } }
+    footer .wrapper .container-text {
+      width: 300px; }
+      footer .wrapper .container-text .logo img {
+        width: 160px;
+        height: 40px; }
+      footer .wrapper .container-text p {
+        margin-top: 22px;
+        font-family: OpenSans-Regular;
+        color: #606060;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFF;
+        opacity: .8; }
+      footer .wrapper .container-text .rights {
+        margin-top: 8px;
+        font-family: OpenSans-Regular;
+        color: #FFF;
+        font-size: 11px;
+        line-height: initial;
+        color: #FFF; }
+    footer .wrapper .container-links {
+      margin-top: 20px;
+      width: 115px; }
+      footer .wrapper .container-links h5 {
+        font-family: Nexa-Bold;
+        color: #1C1C1C;
+        font-size: 14px;
+        line-height: initial;
+        color: #FFF; }
+      footer .wrapper .container-links ul {
+        margin-top: 25px; }
+        footer .wrapper .container-links ul li {
+          list-style: none; }
+          footer .wrapper .container-links ul li a {
+            font-family: OpenSans-Regular;
+            color: #606060;
+            font-size: 14px;
+            line-height: 24px;
+            text-decoration: none;
+            transition: all .25s ease; }
+            footer .wrapper .container-links ul li a:hover {
+              color: #FFF; }
+    footer .wrapper .container-sn {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 85px; }
+      footer .wrapper .container-sn .sn {
+        transition: all .25s ease; }
+        footer .wrapper .container-sn .sn img {
+          width: 15px;
+          height: 15px; }
+        footer .wrapper .container-sn .sn:hover {
+          opacity: .8; }
+    footer .wrapper .container-lg {
+      position: relative;
+      margin-top: 17px; }
+      footer .wrapper .container-lg.block .lg img:last-child {
+        transform: rotate(180deg); }
+      footer .wrapper .container-lg.block .dropdown {
+        display: block; }
+      footer .wrapper .container-lg.show .dropdown {
+        opacity: 1; }
+      footer .wrapper .container-lg .lg {
+        cursor: pointer;
+        display: flex;
+        align-items: center; }
+        footer .wrapper .container-lg .lg img:first-child {
+          width: 30px;
+          height: 22px;
+          margin-right: 10px; }
+        footer .wrapper .container-lg .lg span {
+          font-family: OpenSans-Regular;
+          color: #606060;
+          font-size: 14px;
+          line-height: 24px;
+          margin-right: 10px; }
+        footer .wrapper .container-lg .lg img:last-child {
+          width: 8px;
+          height: 5px;
+          transition: all .25s ease; }
+      footer .wrapper .container-lg > .lg span {
+        color: #FFF; }
+      footer .wrapper .container-lg .dropdown {
+        position: absolute;
+        bottom: calc(100% + 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        border-radius: 5px;
+        background-color: #FFF;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+        transition: all .5s ease;
+        display: none;
+        opacity: 0; }
+        footer .wrapper .container-lg .dropdown .lg {
+          position: relative;
+          padding: 25px;
+          text-decoration: none;
+          transition: all .25s ease; }
+          footer .wrapper .container-lg .dropdown .lg:not(:last-child):before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #D8D8D8; }
+          footer .wrapper .container-lg .dropdown .lg:hover {
+            opacity: .8; }
+          footer .wrapper .container-lg .dropdown .lg span {
+            color: #1C1C1C; }

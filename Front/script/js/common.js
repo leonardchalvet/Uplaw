@@ -145,6 +145,27 @@ $(window).on('load', function() {
 	/*=====  End of WRAP LINE  ======*/
 
 
+	/*===================================
+	=            	FOOTER              =
+	====================================*/
+
+	$('footer .wrapper .container-lg>.lg').click(function(){
+		let pointer = $('footer .wrapper .container-lg');
+		if(!pointer.hasClass('block')) {
+			pointer.addClass('block');
+			setTimeout(function(){
+				pointer.addClass('show');
+			}, 50);
+		}
+		else {
+			pointer.removeClass('show');
+			setTimeout(function(){
+				pointer.removeClass('block');
+			}, 100);	
+		}
+	})
+
+	/*========  End of FOOTER  =========*/
 })
 
 
