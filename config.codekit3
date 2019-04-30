@@ -1051,6 +1051,14 @@
 		"oAP": "/Front/index.php",
 		"oF": 0
 		},
+	"/Front/mentions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Front/mentions.php",
+		"oF": 0
+		},
 	"/Front/script/animations/data.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -1160,6 +1168,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/Front/script/js/mentions.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/Front/script/minify/mentions-min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
 	"/Front/script/js/services.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1255,6 +1274,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/Front/script/minify/jquery.parallax-scroll-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/Front/script/minify/mentions-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/Front/script/minify/mentions-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1421,6 +1451,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/Front/style/css/home.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Front/style/scss/mentions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/Front/style/css/mentions.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
