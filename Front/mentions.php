@@ -20,7 +20,6 @@
 	<body>
 
 		<?php 
-		$type = 'apropos';
 		include('common-header.php') 
 		?>
 

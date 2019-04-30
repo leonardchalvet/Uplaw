@@ -16,7 +16,7 @@
 				<li <?php if($type == 'services'){ echo 'class="select"';}; ?>>
 					<a href="">Services</a>
 				</li>
-				<li <?php if($type == 'apropros'){ echo 'class="select"';}; ?>>
+				<li <?php if($type == 'apropos'){ echo 'class="select"';}; ?>>
 					<a href="">À propos</a>
 				</li>
 			</ul>

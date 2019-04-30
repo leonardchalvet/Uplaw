@@ -20,7 +20,7 @@
 	<body>
 
 		<?php 
-		$type = 'fonctionnalites';
+		$type = 'apropos';
 		include('common-header.php') 
 		?>
 
