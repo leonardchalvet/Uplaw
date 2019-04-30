@@ -146,6 +146,29 @@ $(window).on('load', function() {
 
 
 	/*===================================
+	=            	HEADER              =
+	====================================*/
+
+	$('#header-desktop .wrapper .container-link ul li:first-child').click(function(){
+		let pointer = $('#header-desktop .wrapper .container-link ul');
+		if(!pointer.hasClass('block')) {
+			pointer.addClass('block');
+			setTimeout(function(){
+				pointer.addClass('show');
+			}, 50);
+		}
+		else {
+			pointer.removeClass('show');
+			setTimeout(function(){
+				pointer.removeClass('block');
+			}, 100);
+		}
+	})
+
+	/*========  End of HEADER  =========*/
+
+
+	/*===================================
 	=            	FOOTER              =
 	====================================*/
 

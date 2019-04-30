@@ -8,17 +8,25 @@
 			</a>
 			<ul>
 				<li <?php if($type == 'solutions'){ echo 'class="select"';}; ?>>
-					<a href="">Solutions</a>
+					<a>Solutions</a>
+					<img src="img/common/arrow-down.svg">
 				</li>
 				<li <?php if($type == 'fonctionnalites'){ echo 'class="select"';}; ?>>
-					<a href="">Fonctionnalités</a>
+					<a href="#">Fonctionnalités</a>
 				</li>
 				<li <?php if($type == 'services'){ echo 'class="select"';}; ?>>
-					<a href="">Services</a>
+					<a href="#">Services</a>
 				</li>
 				<li <?php if($type == 'apropos'){ echo 'class="select"';}; ?>>
-					<a href="">À propos</a>
+					<a href="#">À propos</a>
 				</li>
+
+				<div class="dropdown">
+					<a href="#">Solutions fonds</a>
+					<a href="#">Solutions entreprises</a>
+					<a href="#">Solutions professionnels</a>
+				</div>
+
 			</ul>
 		</div>
 
