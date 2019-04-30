@@ -88,44 +88,44 @@
 						<div class="el">
 							<div class="container-photo">
 								<div class="bg" style="background-image: url(img/img-test/user-2.jpg);"></div>
-								<div class="name">
-									Sophie Dupont
-								</div>
-								<div class="job">
-									Juriste
-								</div>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								</p>
 							</div>
+							<div class="name">
+								Sophie Dupont
+							</div>
+							<div class="job">
+								Juriste
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							</p>
 						</div>
 						<div class="el">
 							<div class="container-photo">
 								<div class="bg" style="background-image: url(img/img-test/user-2.jpg);"></div>
-								<div class="name">
-									Sophie Dupont
-								</div>
-								<div class="job">
-									Juriste
-								</div>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								</p>
 							</div>
+							<div class="name">
+								Sophie Dupont
+							</div>
+							<div class="job">
+								Juriste
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							</p>
 						</div>
 						<div class="el">
 							<div class="container-photo">
 								<div class="bg" style="background-image: url(img/img-test/user-2.jpg);"></div>
-								<div class="name">
-									Sophie Dupont
-								</div>
-								<div class="job">
-									Juriste
-								</div>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								</p>
 							</div>
+							<div class="name">
+								Sophie Dupont
+							</div>
+							<div class="job">
+								Juriste
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							</p>
 						</div>
 					</div>
 				</div>

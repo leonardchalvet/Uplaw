@@ -123,6 +123,7 @@ main{
 
 		.container-text {
 			position: sticky;
+			top: 150px;
 			width: 260px;
 			h2 {
 				@include styleH2;
@@ -141,8 +142,64 @@ main{
 		}
 
 		.container-el {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
 			width: 600px;
-			height: 800px;
+			.el {
+				width: 260px;
+				&:first-child {
+					margin-bottom: 100px;
+				}
+				&:nth-child(2) {
+					transform: translateY(350px);
+				}
+				.container-photo {
+					position: relative;
+					width: 100%;
+					height: 420px;
+
+					.bg {
+						position: relative;
+						z-index: 1;
+						width: 100%;
+						height: 100%;
+
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center center;	
+					}
+
+					&:before {
+						content: " ";
+						position: absolute;
+						z-index: 0;
+						top: 12px;
+						left: 12px;
+
+						width: 100%;
+						height: 100%;
+
+						background-color: #A6B7C7;
+					}
+				}
+				.name, .job, p {
+					padding-left: 20px;
+				}
+				.name {
+					margin-top: 25px;
+					@include styleH4;
+				}
+				.job {
+					margin-top: 2px;
+					@include styleParagraphMedium;
+				}
+				p {
+					margin-top: 22px;
+					@include styleParagraphSmall;
+				}
+			}
 		}
 	}
 }
