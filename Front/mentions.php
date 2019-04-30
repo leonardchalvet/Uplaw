@@ -63,11 +63,11 @@
 							UPLAW, société d'exercice libéral à responsiabilité limitée au capital de 1.000 euros, dont le siège social est situé au 151, boulevard Haussmann - 75008 Paris.
 						</p>
 						<div class="container-links">
-							<a href="">
+							<a href="mailto:test@test.test">
 								<img src="img/mentions/mentions-contact.svg">
 								<span>contact@up.law</span>
 							</a>
-							<a href="">
+							<a href="tel:+33500000000">
 								<img src="img/mentions/mentions-phone.svg">
 								<span>contact@up.law</span>
 							</a>
@@ -78,10 +78,10 @@
 							RCS Lille Métropole 424 761 419 00045
 							Code APE 2620Z
 							N° TVA : FR 22 424 761 419
-
+							<br><br>
 							Siège social : 
 							2 rue Kellermann – 59100 Roubaix – France
-
+							<br><br>
 							UPLAW est un cabinet d’avocats inscrit auprès de l’Ordre des Avocats du Barreau de Paris sous le numéro de toque B863.
 						</p>
 					</aside>

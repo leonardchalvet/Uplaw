@@ -628,6 +628,98 @@ main {
 /*====================================
 =            PAGE MENTIONS           =
 =====================================*/
+main {
+  overflow: initial; }
+
+#section-mentions {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px; }
+  #section-mentions .obj-1 {
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 160px;
+    height: 315px; }
+  #section-mentions .obj-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 580px; }
+  #section-mentions .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto; }
+    @media screen and (min-width: 700px) and (max-width: 1250px) {
+      #section-mentions .wrapper {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px; } }
+    @media screen and (max-width: 700px) {
+      #section-mentions .wrapper {
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px; } }
+    @media screen and (min-width: 1250px) {
+      #section-mentions .wrapper {
+        width: 1000px; } }
+    #section-mentions .wrapper .container-text {
+      width: 520px; }
+      #section-mentions .wrapper .container-text h1 {
+        font-family: Nexa-Bold;
+        color: #1C1C1C;
+        font-size: 50px;
+        line-height: 60px;
+        width: 230px; }
+      #section-mentions .wrapper .container-text .container-el {
+        margin-top: 100px; }
+        #section-mentions .wrapper .container-text .container-el .el h2 {
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 26px;
+          line-height: 32px; }
+        #section-mentions .wrapper .container-text .container-el .el p {
+          margin-top: 25px;
+          font-family: OpenSans-Regular;
+          color: #606060;
+          font-size: 16px;
+          line-height: 26px; }
+        #section-mentions .wrapper .container-text .container-el .sep {
+          margin: 100px 0px 100px 0px;
+          height: 2px;
+          width: 100px;
+          background-color: #1C1C1C; }
+    #section-mentions .wrapper aside {
+      position: sticky;
+      top: 150px;
+      width: 350px; }
+      #section-mentions .wrapper aside h2 {
+        font-family: Nexa-Bold;
+        color: #1C1C1C;
+        font-size: 26px;
+        line-height: 32px; }
+      #section-mentions .wrapper aside p {
+        margin-top: 25px;
+        font-family: OpenSans-Regular;
+        color: #606060;
+        font-size: 16px;
+        line-height: 26px; }
+      #section-mentions .wrapper aside .container-links {
+        margin: 25px 0; }
+        #section-mentions .wrapper aside .container-links a {
+          color: #1C1C1C;
+          display: flex;
+          align-items: center;
+          text-decoration: none; }
+          #section-mentions .wrapper aside .container-links a img {
+            width: 15px;
+            margin-right: 25px; }
+          #section-mentions .wrapper aside .container-links a span {
+            font-family: OpenSans-Bold; }
+
 /*========================================
 =            END PAGE MENTIONS           =
 =========================================*/
