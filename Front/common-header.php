@@ -46,6 +46,24 @@
 				   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
 				</svg>
 			</a>
+
+			<div class="lg-sign-up">
+				<img class="cross" src="img/common/cross.svg">
+				<h3>Connextez-vous à votre espace</h3>
+				<p>
+					Entrez vos identifiants ci-dessous afin d'accéder à votre espace personnel
+				</p>
+				<form>
+					<div class="sep"></div>
+					<div class="sep"></div>
+					<div class="sep"></div>
+				</form>
+			</div>
+
+			<div class="lg-contact">
+				
+			</div>
+
 		</div>
 
 	</div>

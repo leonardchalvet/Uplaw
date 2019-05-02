@@ -329,7 +329,7 @@
 			</section>
 
 			<section id="cm-section-demo">
-				<div class="cover" style="background-image: url(img/home/demo-cover.png);"></div>
+				<div class="cover" style="background-image: url(img/home/demo-cover.jpg);"></div>
 				<div class="wrapper">
 					<div class="container-text">
 						<h2>Une question ?</h2>

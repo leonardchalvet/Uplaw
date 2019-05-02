@@ -165,6 +165,13 @@ $(window).on('load', function() {
 		}
 	})
 
+	$('body').on('click', function(event) { 
+	    if (!$(event.target).closest('#header-desktop .wrapper .container-link ul.show .dropdown').length) {
+	    	if($('#header-desktop .wrapper .container-link ul').hasClass('show'))
+	    		$('#header-desktop .wrapper .container-link ul li:first-child').click();
+	    }
+	})
+
 	/*========  End of HEADER  =========*/
 
 
@@ -186,6 +193,13 @@ $(window).on('load', function() {
 				pointer.removeClass('block');
 			}, 100);	
 		}
+	})
+
+	$('body').on('click', function(event) { 
+	    if (!$(event.target).closest('footer .wrapper .container-lg.show .dropdown').length) {
+	    	if($('footer .wrapper .container-lg').hasClass('show'))
+	    		$('footer .wrapper .container-lg >.lg').click();
+	    }
 	})
 
 	/*========  End of FOOTER  =========*/
