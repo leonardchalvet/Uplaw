@@ -1047,6 +1047,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/Front/img/signin/obj-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/signin/obj-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/signin/obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/signin/obj-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/Front/img/solutions/cover-illu-1-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1489,6 +1509,14 @@
 		"oAP": "/Front/services.php",
 		"oF": 0
 		},
+	"/Front/signin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Front/signin.php",
+		"oF": 0
+		},
 	"/Front/solutions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1544,6 +1572,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/Front/style/css/services-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/Front/style/css/signin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/Front/style/css/signin-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1657,6 +1695,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/Front/style/css/services.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Front/style/scss/signin.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/Front/style/css/signin.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
