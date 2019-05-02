@@ -227,6 +227,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/Front/img/common/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/common/check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/Front/img/common/common-shape-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -302,6 +312,36 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/Front/img/common/quote.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/common/red-cross.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/common/red-cross.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/contact/obj-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/contact/obj-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Front/img/contact/obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Front/img/contact/obj-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

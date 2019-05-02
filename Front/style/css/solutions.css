@@ -28,8 +28,22 @@ h1, h2, h3, h4, h5, h6, i {
   font-weight: normal;
   font-style: normal; }
 
+body:after {
+  content: " ";
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(0);
+  transition: all .30s ease; }
+
 body.block {
   overflow: hidden; }
+  body.block:after {
+    transform: scale(1); }
 
 /* ------------------------------------------------------------- */
 /* ********************* CONTAINER GENERAL ********************* */
@@ -812,6 +826,197 @@ main {
   #header-desktop.scroll {
     background-color: #FFF;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); }
+
+.container-lg {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  transition: all .25s ease;
+  display: none;
+  opacity: 0; }
+  .container-lg.block {
+    display: block; }
+  .container-lg.show {
+    opacity: 1; }
+
+.lg-contact {
+  position: absolute;
+  top: 150;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  margin-bottom: 100px;
+  padding: 125px 110px 75px 110px;
+  background-color: #FFF; }
+  .lg-contact .cross {
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: all .25s ease; }
+    .lg-contact .cross:hover {
+      opacity: .8; }
+  .lg-contact .obj-1, .lg-contact .obj-2 {
+    position: absolute; }
+  .lg-contact .obj-1 {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 245px;
+    height: 245px; }
+  .lg-contact .obj-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 350px;
+    opacity: .5; }
+  .lg-contact .container-text {
+    padding-left: 65px;
+    padding-right: 200px; }
+    .lg-contact .container-text h2 {
+      font-family: Nexa-Bold;
+      color: #1C1C1C;
+      font-size: 50px;
+      line-height: 60px; }
+    .lg-contact .container-text p {
+      margin-top: 10px;
+      font-family: OpenSans-Regular;
+      color: #606060;
+      font-size: 18px;
+      line-height: 28px; }
+  .lg-contact form {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column; }
+    .lg-contact form .row {
+      display: flex;
+      justify-content: space-between; }
+      .lg-contact form .row:not(:first-child) {
+        margin-top: 30px; }
+      .lg-contact form .row .input {
+        position: relative;
+        padding-top: 25px;
+        width: 45%; }
+        .lg-contact form .row .input label {
+          font-family: Nexa-Bold;
+          color: #1C1C1C;
+          font-size: 16px;
+          line-height: initial;
+          width: 100%; }
+        .lg-contact form .row .input input {
+          border: none;
+          margin-top: 10px;
+          outline: none;
+          font-family: OpenSans-Regular;
+          color: #606060;
+          font-size: 14px;
+          line-height: 24px;
+          width: 100%; }
+        .lg-contact form .row .input span {
+          display: none;
+          font-family: OpenSans-Regular;
+          color: #FFF;
+          font-size: 11px;
+          line-height: initial;
+          color: #EB5A5A;
+          width: 100%; }
+        .lg-contact form .row .input .cross, .lg-contact form .row .input .check {
+          display: none;
+          position: absolute;
+          top: 50px;
+          right: 0;
+          width: 16px;
+          height: 16px; }
+        .lg-contact form .row .input:before {
+          content: " ";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #F2F2F2; }
+        .lg-contact form .row .input:focus:before {
+          background-color: #F2F2F2; }
+        .lg-contact form .row .input.good .check {
+          display: block; }
+        .lg-contact form .row .input.bad .cross {
+          display: block; }
+        .lg-contact form .row .input.bad span {
+          display: block; }
+    .lg-contact form button {
+      margin: 50px 0 0 auto;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      flex-flow: row wrap;
+      align-items: center;
+      position: relative;
+      padding: 17px 25px 17px 25px; }
+      .lg-contact form button .btn-arrow {
+        position: relative;
+        z-index: 1;
+        transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+      .lg-contact form button .btn-text {
+        position: relative;
+        z-index: 1;
+        transition: all 650ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+      .lg-contact form button.hover-left:hover:before {
+        transform: translateX(5%) scaleX(1.1); }
+      .lg-contact form button.hover-left:hover .btn-arrow {
+        transform: translateX(20px) scaleX(1.3); }
+      .lg-contact form button.hover-left:hover .btn-text {
+        transform: translateX(10px); }
+      .lg-contact form button.hover-center:hover:before {
+        transform: scaleX(1.1); }
+      .lg-contact form button.hover-center:hover .btn-arrow {
+        transform: translateX(10px) scaleX(1.3); }
+      .lg-contact form button:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: all 450ms cubic-bezier(0.805, 0.05, 0.23, 0.94); }
+      .lg-contact form button:not(.style-transparent) .btn-arrow {
+        width: 11px; }
+      .lg-contact form button:not(.style-transparent) .btn-text {
+        font-family: Nexa-Bold;
+        color: #1C1C1C;
+        font-size: 16px;
+        line-height: initial;
+        color: #FFF; }
+      .lg-contact form button:not(.style-white):not(.style-transparent):before {
+        background-color: #000; }
+      .lg-contact form button:not(.style-white):not(.style-transparent) .btn-arrow {
+        fill: #FFF; }
+      .lg-contact form button.style-white:before {
+        background-color: #FFF; }
+      .lg-contact form button.style-white .btn-text {
+        color: #1C1C1C; }
+      .lg-contact form button.style-white .btn-arrow {
+        color: #1C1C1C; }
+      .lg-contact form button.style-transparent:before {
+        background-color: transparent; }
+      .lg-contact form button.style-transparent .btn-text {
+        font-family: Nexa-Bold;
+        color: #1C1C1C;
+        font-size: 26px;
+        line-height: 32px;
+        color: #FFF; }
+      .lg-contact form button.style-transparent .btn-arrow {
+        width: 17px;
+        fill: #FFF; }
+      .lg-contact form button .btn-arrow {
+        margin-left: 9px; }
 
 /*====================================
 =            PAGE SOLUTIONS          =

@@ -204,6 +204,32 @@ $(window).on('load', function() {
 	    }
 	})
 
+	/***************/
+
+	$('#header-desktop .wrapper .container-action .signup').click(function () {
+		let pointer = $('.container-lg');
+		$('body').addClass('block');
+		pointer.addClass('block');
+		setTimeout(function(){
+			pointer.addClass('show');
+		}, 50);
+	})
+
+	$('.lg-contact .cross').click(function (){
+		let pointer = $('.container-lg');
+		$('body').removeClass('block');
+		pointer.removeClass('show');
+		setTimeout(function(){
+			pointer.removeClass('block');
+		}, 100);
+	})
+	$('body').on('click', function(event) { 
+	    if (!$(event.target).closest('.lg-contact').length) {
+	    	if($('.container-lg').hasClass('show'))
+	    		$('.lg-contact .cross').click();
+	    }
+	})
+
 	/*========  End of HEADER  =========*/
 
 

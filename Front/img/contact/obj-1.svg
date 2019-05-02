@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="213px" height="285px" viewBox="0 0 213 285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Oval-contact</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="298">
+        <g id="6a-Contact-Lightbox" transform="translate(-955.000000, -195.000000)" stroke="#1C1C1C" stroke-width="60">
+            <g id="Lightbox" transform="translate(272.000000, 129.000000)">
+                <g id="Lightbox-Background">
+                    <path d="M836,320.368957 C903.378739,320.368957 958,265.747697 958,198.368957 C958,130.990218 903.378739,76.3689572 836,76.3689572 C768.621261,76.3689572 714,130.990218 714,198.368957 C714,265.747697 768.621261,320.368957 836,320.368957 Z" id="Oval-contact" transform="translate(836.000000, 198.368957) rotate(70.000000) translate(-836.000000, -198.368957) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
