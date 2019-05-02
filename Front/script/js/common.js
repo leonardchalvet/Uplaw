@@ -149,26 +149,58 @@ $(window).on('load', function() {
 	=            	HEADER              =
 	====================================*/
 
-	$('#header-desktop .wrapper .container-link ul li:first-child').click(function(){
+	$('#header-desktop .wrapper .container-link ul li:first-child').mouseenter(function(){
 		let pointer = $('#header-desktop .wrapper .container-link ul');
-		if(!pointer.hasClass('block')) {
-			pointer.addClass('block');
-			setTimeout(function(){
-				pointer.addClass('show');
-			}, 50);
-		}
-		else {
-			pointer.removeClass('show');
-			setTimeout(function(){
-				pointer.removeClass('block');
-			}, 100);
-		}
+		pointer.addClass('block');
+		setTimeout(function(){
+			pointer.addClass('show');
+		}, 50);
 	})
 
+	$('#header-desktop .wrapper .container-link ul .dropdown').mouseleave(function(){
+		closeDropdownLinkHeader();
+	})
+	$('#header-desktop .wrapper .container-link .logo').mouseenter(function(){
+		closeDropdownLinkHeader();
+	})
+	$('#header-desktop .wrapper .container-link ul li:not(:first-child)').mouseenter(function(){
+		closeDropdownLinkHeader();
+	})
+	$('#header-desktop .wrapper .container-action').mouseenter(function(){
+		closeDropdownLinkHeader();
+	})
+
+	function closeDropdownLinkHeader() {
+		let pointer = $('#header-desktop .wrapper .container-link ul');
+		pointer.removeClass('show');
+		setTimeout(function(){
+			pointer.removeClass('block');
+		}, 100);
+	}
+
+
+	/****************/
+
+
+	$('#header-desktop .wrapper .container-action .signin').click(function(){
+		let pointer = $('#header-desktop .wrapper .container-action .lg-log-in');
+		pointer.addClass('block');
+		setTimeout(function(){
+			pointer.addClass('show');
+		}, 50);
+	})
+
+	$('#header-desktop .wrapper .container-action .lg-log-in .cross').click(function(){
+		let pointer = $('#header-desktop .wrapper .container-action .lg-log-in');
+		pointer.removeClass('show');
+		setTimeout(function(){
+			pointer.removeClass('block');
+		}, 100);
+	})
 	$('body').on('click', function(event) { 
-	    if (!$(event.target).closest('#header-desktop .wrapper .container-link ul.show .dropdown').length) {
-	    	if($('#header-desktop .wrapper .container-link ul').hasClass('show'))
-	    		$('#header-desktop .wrapper .container-link ul li:first-child').click();
+	    if (!$(event.target).closest('#header-desktop .wrapper .container-action .lg-log-in').length) {
+	    	if($('#header-desktop .wrapper .container-action .lg-log-in').hasClass('show'))
+	    		$('#header-desktop .wrapper .container-action .lg-log-in .cross').click();
 	    }
 	})
 

@@ -3,7 +3,7 @@
 	<div class="wrapper">
 		
 		<div class="container-link">
-			<a href="" class="logo">
+			<a href="index.php" class="logo">
 				<img src="img/common/logo.svg" alt="">
 			</a>
 			<ul>
@@ -12,19 +12,19 @@
 					<img src="img/common/arrow-down.svg">
 				</li>
 				<li <?php if($type == 'fonctionnalites'){ echo 'class="select"';}; ?>>
-					<a href="#">Fonctionnalités</a>
+					<a href="features.php">Fonctionnalités</a>
 				</li>
 				<li <?php if($type == 'services'){ echo 'class="select"';}; ?>>
-					<a href="#">Services</a>
+					<a href="services.php">Services</a>
 				</li>
 				<li <?php if($type == 'apropos'){ echo 'class="select"';}; ?>>
-					<a href="#">À propos</a>
+					<a href="about.php">À propos</a>
 				</li>
 
 				<div class="dropdown">
-					<a href="#">Solutions fonds</a>
-					<a href="#">Solutions entreprises</a>
-					<a href="#">Solutions professionnels</a>
+					<a href="solutions.php">Solutions fonds</a>
+					<a href="solutions.php">Solutions entreprises</a>
+					<a href="solutions.php">Solutions professionnels</a>
 				</div>
 
 			</ul>
@@ -47,16 +47,33 @@
 				</svg>
 			</a>
 
-			<div class="lg-sign-up">
+			<div class="lg-log-in">
 				<img class="cross" src="img/common/cross.svg">
 				<h3>Connextez-vous à votre espace</h3>
 				<p>
 					Entrez vos identifiants ci-dessous afin d'accéder à votre espace personnel
 				</p>
-				<form>
+				<form method="post" action="#">
 					<div class="sep"></div>
+					<div class="input">
+						<label>Adresse e-mail*</label>
+						<input type="email" name="mail" placeholder="Votre adresse e-mail">
+					</div>
 					<div class="sep"></div>
+					<div class="input">
+						<label>Mot de passe*</label>
+						<input type="password" name="password" placeholder="********">
+					</div>
 					<div class="sep"></div>
+					<a href="#">Mot de passe oublié ?</a>
+					<button class="hover-center">
+						<span class="btn-text">
+							Connexion
+						</span>
+						<svg class="btn-arrow" viewBox="0 0 13 6">
+						   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
+						</svg>
+					</button>
 				</form>
 			</div>
 

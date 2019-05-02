@@ -127,6 +127,7 @@
 			}
 		}
 		.container-action{
+			position: relative;
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
@@ -152,7 +153,7 @@
 					@include styleH5;
 				}
 			}
-			.sep{
+			>.sep{
 				margin: 0px 25px 0px 25px;
 				background-color: rgba(0, 0, 0, 0.3);
 				height: 3px;	
@@ -161,6 +162,98 @@
 			}
 			.signup{
 				@include styleButtonBig;
+			}
+			.lg-log-in {
+				position: absolute;
+				top: calc(100% + 40px);
+				left: 60px;
+				transform: translateX(-50%);
+				
+				padding: 32px;
+				width: 375px;
+
+				background-color: #FFF;
+				box-shadow: 0 2px 50px 0 rgba(89,93,93,0.35);
+
+				transition: all .5s ease;
+
+				display: none;
+				opacity: 0;
+
+				&.block {
+					display: block;
+				}
+				&.show {
+					opacity: 1;
+				}
+
+				&:before {
+					content: " ";
+					position: absolute;
+					top: -15px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 14.5px 16px 14.5px;
+					border-color: transparent transparent #ffffff transparent;
+				}
+				.cross {
+					cursor: pointer;
+					position: absolute;
+					top: 24px;
+					right: 24px;
+					transition: all .25s ease;
+					&:hover {
+						opacity: .8;
+					}
+				}
+				h3 {
+					@include styleH4;
+					width: 200px;
+				}
+				p {
+					margin-top: 16px;
+					@include styleParagraphMedium;
+				}
+				form {
+					display: flex;
+					flex-direction: column;
+					.sep {
+						margin: 40px 0 25px 0;
+						width: 100%;
+						height: 1px;
+						background-color: $colorMain_7;
+					}
+					.input {
+						label {
+							@include styleH5;
+							width: 100%;
+						}
+						input {
+							margin-top: 10px;
+							width: 100%;
+							@include styleParagraphSmall;
+							border: none;
+							outline: none;
+						}
+					}
+				}
+				a {
+					text-decoration: none;
+					@include styleParagraphMedium;
+				}
+				button {
+					margin: 35px 0 0 auto;
+					outline: none;
+					border: none;
+					@include styleButtonSmall;
+				}
+			}
+			.lg-contact {
+
 			}
 		}
 	}

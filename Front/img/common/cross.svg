@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>X</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="8b-Log-In-Lightbox" transform="translate(-1239.000000, -136.000000)" stroke="#000000">
+            <g id="Lightbox" transform="translate(909.000000, 94.000000)">
+                <g id="Interface-Essential-/-Remove/Add-/-remove" transform="translate(327.000000, 39.000000)">
+                    <g id="Group">
+                        <g id="remove" stroke-width="1.5">
+                            <path d="M4.5,19.5 L19.5,4.5" id="Shape"></path>
+                            <path d="M4.5,4.5 L19.5,19.5" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
