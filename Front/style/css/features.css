@@ -1496,36 +1496,36 @@ footer {
           height: 15px; }
         footer .wrapper .container-sn .sn:hover {
           opacity: .8; }
-    footer .wrapper .container-lg {
+    footer .wrapper .container-lang {
       position: relative;
       margin-top: 17px; }
-      footer .wrapper .container-lg.block .lg img:last-child {
+      footer .wrapper .container-lang.block .lg img:last-child {
         transform: rotate(180deg); }
-      footer .wrapper .container-lg.block .dropdown {
+      footer .wrapper .container-lang.block .dropdown {
         display: block; }
-      footer .wrapper .container-lg.show .dropdown {
+      footer .wrapper .container-lang.show .dropdown {
         opacity: 1; }
-      footer .wrapper .container-lg .lg {
+      footer .wrapper .container-lang .lg {
         cursor: pointer;
         display: flex;
         align-items: center; }
-        footer .wrapper .container-lg .lg img:first-child {
+        footer .wrapper .container-lang .lg img:first-child {
           width: 30px;
           height: 22px;
           margin-right: 10px; }
-        footer .wrapper .container-lg .lg span {
+        footer .wrapper .container-lang .lg span {
           font-family: OpenSans-Regular;
           color: #606060;
           font-size: 14px;
           line-height: 24px;
           margin-right: 10px; }
-        footer .wrapper .container-lg .lg img:last-child {
+        footer .wrapper .container-lang .lg img:last-child {
           width: 8px;
           height: 5px;
           transition: all .25s ease; }
-      footer .wrapper .container-lg > .lg span {
+      footer .wrapper .container-lang > .lg span {
         color: #FFF; }
-      footer .wrapper .container-lg .dropdown {
+      footer .wrapper .container-lang .dropdown {
         position: absolute;
         bottom: calc(100% + 20px);
         left: 50%;
@@ -1537,12 +1537,12 @@ footer {
         transition: all .5s ease;
         display: none;
         opacity: 0; }
-        footer .wrapper .container-lg .dropdown .lg {
+        footer .wrapper .container-lang .dropdown .lg {
           position: relative;
           padding: 25px;
           text-decoration: none;
           transition: all .25s ease; }
-          footer .wrapper .container-lg .dropdown .lg:not(:last-child):before {
+          footer .wrapper .container-lang .dropdown .lg:not(:last-child):before {
             content: " ";
             position: absolute;
             left: 0;
@@ -1550,7 +1550,7 @@ footer {
             width: 100%;
             height: 1px;
             background-color: #D8D8D8; }
-          footer .wrapper .container-lg .dropdown .lg:hover {
+          footer .wrapper .container-lang .dropdown .lg:hover {
             opacity: .8; }
-          footer .wrapper .container-lg .dropdown .lg span {
+          footer .wrapper .container-lang .dropdown .lg span {
             color: #1C1C1C; }

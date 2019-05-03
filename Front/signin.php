@@ -79,11 +79,11 @@
 							<img class="cross" src="img/common/red-cross.svg">
 							<img class="check" src="img/common/check.svg">
 						</div>
-						<div class="checkbox">
+						<label class="checkbox">
 							<input type="checkbox" checked="checked">
-							<div class="text">J'ai lu et j'accepte les <div class="line">Conditions générales</div></div>
 							<span class="checkmark"></span>
-						</div>
+							<div class="text">J'ai lu et j'accepte les <a href="mentions.php">Conditions générales</a></div>
+						</label>
 						<button class="hover-center">
 							<span class="btn-text">
 								Inscription

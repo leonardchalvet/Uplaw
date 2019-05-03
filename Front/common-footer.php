@@ -37,7 +37,7 @@
 				<img src="img/footer/in.svg">
 			</a>
 		</div>
-		<div class="container-lg">
+		<div class="container-lang">
 			<div class="lg">
 				<img src="img/footer/fr.svg">
 				<span>French</span>

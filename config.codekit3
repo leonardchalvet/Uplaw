@@ -1380,6 +1380,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/Front/script/js/signin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/Front/script/minify/signin-min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
 	"/Front/script/js/solutions.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1486,6 +1497,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/Front/script/minify/services-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/Front/script/minify/signin-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/Front/script/minify/signin-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

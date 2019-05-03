@@ -129,12 +129,25 @@
 			}
 
 			.checkbox {
+				position: relative;
+				padding-left: 35px;
 				margin-top: 50px;
+				input {
+					position: absolute;
+					opacity: 0;
+					width: 0;
+					height: 0;
+					&:checked ~ .checkmark {
+						background-color: #C6C6C6;
+					}
+				}
 				.text {
 					@include styleH5;
-					.line {
+					a {
+						text-decoration: none;
 						position: relative;
 						display: inline-block;
+						color: $colorMain_1;
 						&:before {
 							content: " ";
 							position: absolute;
@@ -147,8 +160,16 @@
 						}
 					}
 				}
-				span {
-
+				.checkmark {
+					cursor: pointer;
+					position: absolute;
+					top: -2px;
+					left: 0;
+					height: 17px;
+					width: 17px;
+					border-radius: 5px;
+					border: 1px solid #C6C6C6;
+					background-color: $colorMain_7;
 				}
 			}
 
