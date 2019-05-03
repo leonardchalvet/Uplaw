@@ -1191,10 +1191,10 @@ main {
       #section-logos .wrapper .container-el .el {
         position: relative;
         width: calc(100% / 5);
-        height: 40px; }
+        height: 60px; }
         #section-logos .wrapper .container-el .el img {
-          max-width: 120px;
-          max-height: 50px;
+          max-width: 150px;
+          max-height: 60px;
           position: absolute;
           top: 50%;
           left: 50%;

@@ -70,79 +70,79 @@
 					</div>
 					<div class="container-el">
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 					</div>
 				</div>
