@@ -103,37 +103,37 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/Front/img/about/photo-1.png": {
-		"ft": 32768,
-		"iS": 74345,
+	"/Front/img/about/photo-1.jpg": {
+		"ft": 16384,
+		"iS": 5308016,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/Front/img/about/photo-1.png",
+		"oAP": "/Front/img/about/photo-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
-	"/Front/img/about/photo-2.png": {
-		"ft": 32768,
-		"iS": 331622,
+	"/Front/img/about/photo-2.jpg": {
+		"ft": 16384,
+		"iS": 5447704,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/Front/img/about/photo-2.png",
+		"oAP": "/Front/img/about/photo-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
-	"/Front/img/about/photo-3.png": {
-		"ft": 32768,
-		"iS": 346181,
+	"/Front/img/about/photo-3.jpg": {
+		"ft": 16384,
+		"iS": 5662532,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/Front/img/about/photo-3.png",
+		"oAP": "/Front/img/about/photo-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
 	"/Front/img/about/photo-4.jpg": {
@@ -144,7 +144,18 @@
 		"oAP": "/Front/img/about/photo-4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/Front/img/about/photo-5.jpg": {
+		"ft": 16384,
+		"iS": 4183455,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Front/img/about/photo-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/Front/img/about/press-logo-1.svg": {
@@ -355,7 +366,7 @@
 		"oAP": "/Front/img/features/demo-cover.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/Front/img/features/icn-ftr-1.svg": {
@@ -593,7 +604,7 @@
 		"oAP": "/Front/img/home/demo-cover.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/Front/img/home/home-obj-desktop-1.svg": {
@@ -847,6 +858,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/Front/img/home/section-quotes/photo-1.jpg": {
+		"ft": 16384,
+		"iS": 127985,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Front/img/home/section-quotes/photo-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/Front/img/home/shape-lines.svg": {
@@ -1175,7 +1197,7 @@
 		"oAP": "/Front/img/solutions/cta-photo-1-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/Front/img/solutions/cta-photo-1.jpg": {
@@ -1200,6 +1222,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/Front/img/solutions/management-bg-2.jpg": {
+		"ft": 16384,
+		"iS": 61525,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Front/img/solutions/management-bg-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/Front/img/solutions/management-bg-2.png": {
 		"ft": 32768,
 		"iS": 332253,
@@ -1219,7 +1252,7 @@
 		"oAP": "/Front/img/solutions/management-bg-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/Front/img/solutions/management-bg.jpg": {
@@ -1230,7 +1263,7 @@
 		"oAP": "/Front/img/solutions/management-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/Front/index.php": {

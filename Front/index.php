@@ -276,9 +276,9 @@
 			<section id="section-quotes">
 				<div class="wrapper">
 					<div class="container-pp">
-						<div style="background-image: url(img/img-test/user-1.jpg);" class="pp pp-1"></div>
-						<div style="background-image: url(img/img-test/user-2.jpg);" class="pp pp-2"></div>
-						<div style="background-image: url(img/img-test/user-3.jpg);" class="pp pp-3"></div>
+						<div style="background-image: url(img/home/section-quotes/photo-1.jpg);" class="pp pp-1"></div>
+						<div style="background-image: url(img/home/section-quotes/photo-1.jpg);" class="pp pp-2"></div>
+						<div style="background-image: url(img/home/section-quotes/photo-1.jpg);" class="pp pp-3"></div>
 					</div>
 					<div class="container-text">
 						<div class="container-quotes">

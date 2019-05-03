@@ -132,10 +132,13 @@
 			</section>
 
 			<section id="section-photos">
-				<div class="photo" style="background-image: url('img/about/photo-1.png')"></div>
-				<div class="photo" style="background-image: url('img/about/photo-2.png')"></div>
-				<div class="photo" style="background-image: url('img/about/photo-3.png')"></div>
-				<div class="photo" style="background-image: url('img/about/photo-4.jpg')"></div>
+				<div class="container-photo">	
+					<div class="photo" style="background-image: url('img/about/photo-1.jpg')"></div>
+					<div class="photo" style="background-image: url('img/about/photo-2.jpg')"></div>
+					<div class="photo" style="background-image: url('img/about/photo-3.jpg')"></div>
+					<div class="photo" style="background-image: url('img/about/photo-4.jpg')"></div>
+					<div class="photo" style="background-image: url('img/about/photo-5.jpg')"></div>
+				</div>
 			</section>
 
 			<section id="section-press">
