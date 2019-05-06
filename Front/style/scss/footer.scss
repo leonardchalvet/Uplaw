@@ -153,3 +153,34 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: $breakPoint_tablet) {
+	footer .wrapper {
+		flex-wrap: wrap;
+	}
+	footer .wrapper .container-text {
+		width: 100%;
+	}
+	footer .wrapper .container-text .rights {
+		position: absolute;
+		bottom: 120px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	footer .wrapper .container-links {
+		margin-top: 50px;
+		width: 50%;
+	}
+	footer .wrapper .container-sn {
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	footer .wrapper .container-lang {
+		margin-top: 100px;
+		width: 100%;
+	}
+	footer .wrapper .container-lang .lg {
+		justify-content: center;
+	}
+}

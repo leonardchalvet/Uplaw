@@ -51,10 +51,6 @@
 					<div id="obj-desktop-2"></div>
 					<div id="obj-desktop-3"></div>
 
-					<!--<img class="obj-desktop-1" src="img/home/home-obj-desktop-1.svg" alt=""> 
-					<img class="obj-desktop-2" src="img/home/home-obj-desktop-2.svg" alt="">
-					<img class="obj-desktop-3" src="img/home/home-obj-desktop-3.svg" alt="">-->
-
 					<img class="obj-mobile-1" src="img/home/home-obj-mobile-1.svg" alt="">
 				</div>
 			</section>
@@ -244,30 +240,36 @@
 					<div class="container-el">
 						<div class="el">
 							<img src="img/home/illu-pres-1.svg" alt="">
-							<h4>
-								Confidentialité
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
+							<div class="column">
+								<h4>
+									Confidentialité
+								</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+							</div>
 						</div>
 						<div class="el">
 							<img src="img/home/illu-pres-2.svg" alt="">
-							<h4>
-								Expertise
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
+							<div class="column">
+								<h4>
+									Expertise
+								</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+							</div>
 						</div>
 						<div class="el">
 							<img src="img/home/illu-pres-3.svg" alt="">
-							<h4>
-								Sécurité
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
+							<div class="column">
+								<h4>
+									Sécurité
+								</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>

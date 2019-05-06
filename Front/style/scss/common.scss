@@ -109,24 +109,36 @@ main
 		/*----------  DESKTOP  ----------*/
 		$h1_textsize_desktop: 50px;
 		$h1_lineheight_desktop: 60px;
+		/*----------  MOBILE  ----------*/
+		$h1_textsize_mobile: 35px;
+		$h1_lineheight_mobile: 40px;
 
 
 	/*----------  H2  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h2_textsize_desktop: 40px;
 		$h2_lineheight_desktop: 45px;
+		/*----------  MOBILE  ----------*/
+		$h2_textsize_mobile: 30px;
+		$h2_lineheight_mobile: 45px;
 
 
 	/*----------  H3  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h3_textsize_desktop: 38px;
 		$h3_lineheight_desktop: 45px;
+		/*----------  MOBILE  ----------*/
+		$h3_textsize_mobile: 26px;
+		$h3_lineheight_mobile: 35px;
 
 
 	/*----------  H4  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h4_textsize_desktop: 26px;
 		$h4_lineheight_desktop: 32px;
+		/*----------  MOBILE  ----------*/
+		$h4_textsize_mobile: 22px;
+		$h4_lineheight_mobile: 28px;
 
 
 	/*----------  H5  ----------*/
@@ -222,6 +234,10 @@ main
 
 		  	font-size: $h1_textsize_desktop;
 			line-height: $h1_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h1_textsize_mobile;
+				line-height: $h1_lineheight_mobile;
+			}
 		}
 
 		/*----------  H2  ----------*/
@@ -230,6 +246,10 @@ main
 		  	color: $colorMain_1;
 			font-size: $h2_textsize_desktop;
 			line-height: $h2_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h2_textsize_mobile;
+				line-height: $h2_lineheight_mobile;
+			}
 		}
 
 		/*----------  H3  ----------*/
@@ -238,6 +258,10 @@ main
 		  	color: $colorMain_1;
 			font-size: $h3_textsize_desktop;
 			line-height: $h3_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h3_textsize_mobile;
+				line-height: $h3_lineheight_mobile;
+			}
 		}
 
 		/*----------  H4  ----------*/
@@ -246,6 +270,10 @@ main
 		  	color: $colorMain_1;
 			font-size: $h4_textsize_desktop;
 			line-height: $h4_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h4_textsize_mobile;
+				line-height: $h4_lineheight_mobile;
+			}
 		}
 
 		/*----------  H5  ----------*/
@@ -615,6 +643,13 @@ main
 		a{
 			@include styleButtonBig;
 		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	#cm-section-demo .wrapper {
+		padding: 0 25px;
+		width: 100%;
 	}
 }
 

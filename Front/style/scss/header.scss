@@ -417,3 +417,9 @@
 	}
 
 }
+
+@media screen and (max-width: $breakPoint_tablet) {
+	#header-desktop {
+		display: none;
+	}
+}

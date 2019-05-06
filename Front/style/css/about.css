@@ -80,12 +80,16 @@ main {
 =================================*/
 /*----------  H1  ----------*/
 /*----------  DESKTOP  ----------*/
+/*----------  MOBILE  ----------*/
 /*----------  H2  ----------*/
 /*----------  DESKTOP  ----------*/
+/*----------  MOBILE  ----------*/
 /*----------  H3  ----------*/
 /*----------  DESKTOP  ----------*/
+/*----------  MOBILE  ----------*/
 /*----------  H4  ----------*/
 /*----------  DESKTOP  ----------*/
+/*----------  MOBILE  ----------*/
 /*----------  H5  ----------*/
 /*----------  DESKTOP  ----------*/
 /*----------  H6  ----------*/
@@ -184,6 +188,10 @@ main {
       line-height: 45px;
       color: #FFF;
       margin-bottom: 25px; }
+      @media screen and (max-width: 700px) {
+        #cm-section-demo .wrapper h2 {
+          font-size: 30px;
+          line-height: 45px; } }
     #cm-section-demo .wrapper p {
       font-family: OpenSans-Regular;
       color: #606060;
@@ -252,11 +260,20 @@ main {
         font-size: 26px;
         line-height: 32px;
         color: #FFF; }
+        @media screen and (max-width: 700px) {
+          #cm-section-demo .wrapper a.style-transparent .btn-text {
+            font-size: 22px;
+            line-height: 28px; } }
       #cm-section-demo .wrapper a.style-transparent .btn-arrow {
         width: 17px;
         fill: #FFF; }
       #cm-section-demo .wrapper a .btn-arrow {
         margin-left: 14px; }
+
+@media screen and (max-width: 700px) {
+  #cm-section-demo .wrapper {
+    padding: 0 25px;
+    width: 100%; } }
 
 #cm-section-management {
   padding-top: 150px;
@@ -284,6 +301,10 @@ main {
       color: #1C1C1C;
       font-size: 40px;
       line-height: 45px; }
+      @media screen and (max-width: 700px) {
+        #cm-section-management .wrapper h2 {
+          font-size: 30px;
+          line-height: 45px; } }
     #cm-section-management .wrapper .sep {
       margin: 50px 0px 50px 0px;
       height: 2px;
@@ -334,6 +355,10 @@ main {
               color: #1C1C1C;
               font-size: 26px;
               line-height: 32px; }
+              @media screen and (max-width: 700px) {
+                #cm-section-management .wrapper .content .container-text .container-el .el h3 {
+                  font-size: 22px;
+                  line-height: 28px; } }
             #cm-section-management .wrapper .content .container-text .container-el .el p {
               font-family: OpenSans-Regular;
               color: #606060;
@@ -401,6 +426,10 @@ main {
             font-size: 26px;
             line-height: 32px;
             color: #FFF; }
+            @media screen and (max-width: 700px) {
+              #cm-section-management .wrapper .content .container-text a.style-transparent .btn-text {
+                font-size: 22px;
+                line-height: 28px; } }
           #cm-section-management .wrapper .content .container-text a.style-transparent .btn-arrow {
             width: 17px;
             fill: #FFF; }
@@ -673,6 +702,10 @@ main {
           font-size: 26px;
           line-height: 32px;
           color: #FFF; }
+          @media screen and (max-width: 700px) {
+            #header-desktop .wrapper .container-action .signup.style-transparent .btn-text {
+              font-size: 22px;
+              line-height: 28px; } }
         #header-desktop .wrapper .container-action .signup.style-transparent .btn-arrow {
           width: 17px;
           fill: #FFF; }
@@ -719,6 +752,10 @@ main {
           font-size: 26px;
           line-height: 32px;
           width: 200px; }
+          @media screen and (max-width: 700px) {
+            #header-desktop .wrapper .container-action .lg-log-in h3 {
+              font-size: 22px;
+              line-height: 28px; } }
         #header-desktop .wrapper .container-action .lg-log-in p {
           margin-top: 16px;
           font-family: OpenSans-Regular;
@@ -818,6 +855,10 @@ main {
             font-size: 26px;
             line-height: 32px;
             color: #FFF; }
+            @media screen and (max-width: 700px) {
+              #header-desktop .wrapper .container-action .lg-log-in button.style-transparent .btn-text {
+                font-size: 22px;
+                line-height: 28px; } }
           #header-desktop .wrapper .container-action .lg-log-in button.style-transparent .btn-arrow {
             width: 17px;
             fill: #FFF; }
@@ -883,6 +924,10 @@ main {
       color: #1C1C1C;
       font-size: 50px;
       line-height: 60px; }
+      @media screen and (max-width: 700px) {
+        .lg-contact .container-text h2 {
+          font-size: 35px;
+          line-height: 40px; } }
     .lg-contact .container-text p {
       margin-top: 10px;
       font-family: OpenSans-Regular;
@@ -1012,11 +1057,19 @@ main {
         font-size: 26px;
         line-height: 32px;
         color: #FFF; }
+        @media screen and (max-width: 700px) {
+          .lg-contact form button.style-transparent .btn-text {
+            font-size: 22px;
+            line-height: 28px; } }
       .lg-contact form button.style-transparent .btn-arrow {
         width: 17px;
         fill: #FFF; }
       .lg-contact form button .btn-arrow {
         margin-left: 9px; }
+
+@media screen and (max-width: 1250px) {
+  #header-desktop {
+    display: none; } }
 
 /*=================================
 =            PAGE ABOUT           =
@@ -1057,6 +1110,10 @@ main {
         color: #1C1C1C;
         font-size: 50px;
         line-height: 60px; }
+        @media screen and (max-width: 700px) {
+          #section-cover .wrapper .container-text h1 {
+            font-size: 35px;
+            line-height: 40px; } }
       #section-cover .wrapper .container-text p {
         margin-top: 18px;
         padding-right: 55px;
@@ -1126,6 +1183,10 @@ main {
           font-size: 26px;
           line-height: 32px;
           color: #FFF; }
+          @media screen and (max-width: 700px) {
+            #section-cover .wrapper .container-text a.style-transparent .btn-text {
+              font-size: 22px;
+              line-height: 28px; } }
         #section-cover .wrapper .container-text a.style-transparent .btn-arrow {
           width: 17px;
           fill: #FFF; }
@@ -1179,12 +1240,20 @@ main {
         font-size: 38px;
         line-height: 45px;
         color: #FFF; }
+        @media screen and (max-width: 700px) {
+          #section-origin .wrapper .container-text h2 {
+            font-size: 26px;
+            line-height: 35px; } }
       #section-origin .wrapper .container-text h3 {
         font-family: Nexa-Bold;
         color: #1C1C1C;
         font-size: 26px;
         line-height: 32px;
         color: #FFF; }
+        @media screen and (max-width: 700px) {
+          #section-origin .wrapper .container-text h3 {
+            font-size: 22px;
+            line-height: 28px; } }
       #section-origin .wrapper .container-text .sep {
         margin: 38px 0px 38px 0px;
         height: 2px;
@@ -1241,6 +1310,10 @@ main {
         font-size: 40px;
         line-height: 45px;
         text-align: right; }
+        @media screen and (max-width: 700px) {
+          #section-team .wrapper .container-text h2 {
+            font-size: 30px;
+            line-height: 45px; } }
       #section-team .wrapper .container-text .sep {
         margin: 42px 0px 42px auto;
         height: 2px;
@@ -1292,6 +1365,10 @@ main {
           color: #1C1C1C;
           font-size: 26px;
           line-height: 32px; }
+          @media screen and (max-width: 700px) {
+            #section-team .wrapper .container-el .el .name {
+              font-size: 22px;
+              line-height: 28px; } }
         #section-team .wrapper .container-el .el .job {
           margin-top: 2px;
           font-family: OpenSans-Regular;
@@ -1369,6 +1446,10 @@ main {
       text-align: right;
       width: 375px;
       color: #FFF; }
+      @media screen and (max-width: 700px) {
+        #section-press .wrapper h2 {
+          font-size: 26px;
+          line-height: 35px; } }
     #section-press .wrapper .container-logos {
       display: flex;
       align-items: center;
@@ -1521,3 +1602,26 @@ footer {
             opacity: .8; }
           footer .wrapper .container-lang .dropdown .lg span {
             color: #1C1C1C; }
+
+@media screen and (max-width: 1250px) {
+  footer .wrapper {
+    flex-wrap: wrap; }
+  footer .wrapper .container-text {
+    width: 100%; }
+  footer .wrapper .container-text .rights {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%); }
+  footer .wrapper .container-links {
+    margin-top: 50px;
+    width: 50%; }
+  footer .wrapper .container-sn {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; }
+  footer .wrapper .container-lang {
+    margin-top: 100px;
+    width: 100%; }
+  footer .wrapper .container-lang .lg {
+    justify-content: center; } }
