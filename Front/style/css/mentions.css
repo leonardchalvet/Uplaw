@@ -437,7 +437,7 @@ main {
           #cm-section-management .wrapper .content .container-text a .btn-arrow {
             margin-left: 9px; }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 700px) and (max-width: 1250px) {
   #cm-section-management .wrapper .content .container-photo {
     margin-right: 50px; }
   #cm-section-management .wrapper .content .container-text {
@@ -460,6 +460,8 @@ main {
     flex-direction: column; }
   #cm-section-management .wrapper .content .container-text .container-el .el {
     width: 100%; }
+  #cm-section-management .wrapper .content .container-text .container-el .el:not(:last-child) {
+    margin-bottom: 40px; }
   #cm-section-management .wrapper .content .container-text a {
     margin-top: 60px; } }
 
@@ -989,6 +991,16 @@ main {
           font-size: 14px;
           line-height: 24px;
           width: 100%; }
+          .lg-contact form .row .input input:focus ~ .sep {
+            background-color: #1C1C1C; }
+        .lg-contact form .row .input .sep {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #F2F2F2;
+          transition: all .25s ease; }
         .lg-contact form .row .input span {
           display: none;
           font-family: OpenSans-Regular;
@@ -1004,16 +1016,6 @@ main {
           right: 0;
           width: 16px;
           height: 16px; }
-        .lg-contact form .row .input:before {
-          content: " ";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background-color: #F2F2F2; }
-        .lg-contact form .row .input:focus:before {
-          background-color: #F2F2F2; }
         .lg-contact form .row .input.good .check {
           display: block; }
         .lg-contact form .row .input.bad .cross {
@@ -1410,14 +1412,26 @@ main {
       #section-mentions .wrapper .container-text .container-el {
         margin-top: 100px; }
         #section-mentions .wrapper .container-text .container-el .el h2 {
+          position: relative;
+          display: inline-block;
           font-family: Nexa-Bold;
           color: #1C1C1C;
           font-size: 26px;
-          line-height: 32px; }
+          line-height: 32px;
+          width: 100%; }
           @media screen and (max-width: 700px) {
             #section-mentions .wrapper .container-text .container-el .el h2 {
               font-size: 22px;
               line-height: 28px; } }
+          #section-mentions .wrapper .container-text .container-el .el h2 img {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 25px;
+            width: 10px;
+            height: 5px;
+            transition: all .25s ease; }
         #section-mentions .wrapper .container-text .container-el .el p {
           margin-top: 25px;
           font-family: OpenSans-Regular;
@@ -1460,6 +1474,43 @@ main {
             margin-right: 25px; }
           #section-mentions .wrapper aside .container-links a span {
             font-family: OpenSans-Bold; }
+
+@media screen and (max-width: 700px) {
+  #section-mentions {
+    padding-top: 100px; }
+  #section-mentions .obj-1,
+  #section-mentions .obj-2 {
+    display: none; }
+  #section-mentions .wrapper {
+    flex-direction: column; }
+  #section-mentions .wrapper .container-text {
+    width: 100%; }
+  #section-mentions .wrapper .container-text .container-el {
+    margin-top: 70px; }
+  #section-mentions .wrapper .container-text .container-el .el p {
+    display: none; }
+  #section-mentions .wrapper .container-text .container-el .el h2 img {
+    display: block; }
+  #section-mentions .wrapper .container-text .container-el .el.active h2 img {
+    transform: rotate(180deg); }
+  #section-mentions .wrapper .container-text .container-el .el.active p {
+    display: block; }
+  #section-mentions .wrapper .container-text .container-el .sep {
+    margin: 50px 0;
+    width: 100%; }
+  #section-mentions .wrapper aside {
+    position: relative;
+    top: 0;
+    margin-top: 100px;
+    width: 100%; }
+    #section-mentions .wrapper aside:before {
+      content: " ";
+      position: absolute;
+      top: -50px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #1C1C1C; } }
 
 /*========================================
 =            END PAGE MENTIONS           =

@@ -364,6 +364,18 @@
 					outline: none;
 					@include styleParagraphSmall;
 					width: 100%;
+					&:focus ~ .sep {
+						background-color: $colorMain_1;
+					}
+				}
+				.sep {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background-color: $colorMain_7;
+					transition: all .25s ease;
 				}
 				span {
 					display: none;
@@ -378,20 +390,6 @@
 					right: 0;
 					width: 16px;
 					height: 16px;
-				}
-				&:before {
-					content: " ";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 1px;
-					background-color: $colorMain_7;
-				}
-				&:focus {
-					&:before {
-						background-color: $colorMain_7;
-					}
 				}
 				&.good {
 					.check {

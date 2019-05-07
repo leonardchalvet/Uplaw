@@ -180,7 +180,7 @@ main{
 	}
 }
 
-@media screen and (max-width: $breakPoint_tablet) {
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
 
 	#section-cover {
 		padding-top: 60px;
@@ -223,12 +223,19 @@ main{
 
 @media screen and (max-width: $breakPoint_mobile) {
 
+	#section-cover {
+		padding-top: 60px;
+	}
 	#section-cover .obj {
 		display: none;
 	}
 	#section-cover .wrapper {
 		flex-direction: column;
 		padding-bottom: 0;
+	}
+	#section-cover .wrapper .container-title {
+		padding: 0;
+		justify-content: space-around;
 	}
 	#section-cover .wrapper .container-title .container-illu {
 		display: none;
@@ -237,6 +244,7 @@ main{
 		width: 100%;
 	}
 	#section-cover .wrapper .container-cta {
+		padding: 0;
 		flex-direction: column;
 	}
 	#section-cover .wrapper .container-cta .container-text {
@@ -246,7 +254,7 @@ main{
 	#section-cover .wrapper .container-cta .container-illu {
 		margin-top: 40px;
 		margin-right: 0;
-		width: 200px;
+		width: 215px;
     	height: 200px;
 	}
 
@@ -260,6 +268,10 @@ main{
 		&:last-child {
 			margin-top: 40px;
 		}
+	}
+	#section-cta .wrapper .container-el .el a {
+		bottom: 15px;
+		padding: 20px 10px 20px 10px;
 	}
 }
 

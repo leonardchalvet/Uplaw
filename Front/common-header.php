@@ -161,6 +161,7 @@
 				<div class="input">
 					<label>Prénom</label>
 					<input type="text" name="firstname" placeholder="Votre prénom">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre prénom</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">
@@ -168,6 +169,7 @@
 				<div class="input">
 					<label>Nom</label>
 					<input type="text" name="lastname" placeholder="Votre nom">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre nom</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">
@@ -177,6 +179,7 @@
 				<div class="input">
 					<label>E-mail professionnel</label>
 					<input type="email" name="firstname" placeholder="Votre e-mail">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre email</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">
@@ -184,6 +187,7 @@
 				<div class="input">
 					<label>Numéro de téléphone</label>
 					<input type="tel" name="lastname" placeholder="00 00 00 00 00">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre téléphone</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">

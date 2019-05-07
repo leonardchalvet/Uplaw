@@ -437,7 +437,7 @@ main {
           #cm-section-management .wrapper .content .container-text a .btn-arrow {
             margin-left: 9px; }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 700px) and (max-width: 1250px) {
   #cm-section-management .wrapper .content .container-photo {
     margin-right: 50px; }
   #cm-section-management .wrapper .content .container-text {
@@ -460,6 +460,8 @@ main {
     flex-direction: column; }
   #cm-section-management .wrapper .content .container-text .container-el .el {
     width: 100%; }
+  #cm-section-management .wrapper .content .container-text .container-el .el:not(:last-child) {
+    margin-bottom: 40px; }
   #cm-section-management .wrapper .content .container-text a {
     margin-top: 60px; } }
 
@@ -989,6 +991,16 @@ main {
           font-size: 14px;
           line-height: 24px;
           width: 100%; }
+          .lg-contact form .row .input input:focus ~ .sep {
+            background-color: #1C1C1C; }
+        .lg-contact form .row .input .sep {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #F2F2F2;
+          transition: all .25s ease; }
         .lg-contact form .row .input span {
           display: none;
           font-family: OpenSans-Regular;
@@ -1004,16 +1016,6 @@ main {
           right: 0;
           width: 16px;
           height: 16px; }
-        .lg-contact form .row .input:before {
-          content: " ";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background-color: #F2F2F2; }
-        .lg-contact form .row .input:focus:before {
-          background-color: #F2F2F2; }
         .lg-contact form .row .input.good .check {
           display: block; }
         .lg-contact form .row .input.bad .cross {
@@ -1754,7 +1756,7 @@ main {
         #section-cta .wrapper .container-cta a .btn-arrow {
           margin-left: 14px; }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 700px) and (max-width: 1250px) {
   #section-cover {
     padding-top: 60px; }
   #section-cover .wrapper .container-title {
@@ -1783,16 +1785,22 @@ main {
     padding: 20px 10px 20px 10px; } }
 
 @media screen and (max-width: 700px) {
+  #section-cover {
+    padding-top: 60px; }
   #section-cover .obj {
     display: none; }
   #section-cover .wrapper {
     flex-direction: column;
     padding-bottom: 0; }
+  #section-cover .wrapper .container-title {
+    padding: 0;
+    justify-content: space-around; }
   #section-cover .wrapper .container-title .container-illu {
     display: none; }
   #section-cover .wrapper .container-title .container-text {
     width: 100%; }
   #section-cover .wrapper .container-cta {
+    padding: 0;
     flex-direction: column; }
   #section-cover .wrapper .container-cta .container-text {
     margin-left: 0;
@@ -1800,7 +1808,7 @@ main {
   #section-cover .wrapper .container-cta .container-illu {
     margin-top: 40px;
     margin-right: 0;
-    width: 200px;
+    width: 215px;
     height: 200px; }
   #section-cta .wrapper .container-el {
     align-items: center;
@@ -1809,7 +1817,10 @@ main {
     width: 320px;
     height: 250px; }
     #section-cta .wrapper .container-el .el:last-child {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+  #section-cta .wrapper .container-el .el a {
+    bottom: 15px;
+    padding: 20px 10px 20px 10px; } }
 
 /*========================================
 =            END PAGE SOLUTIONS          =

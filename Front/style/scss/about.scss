@@ -286,6 +286,129 @@ main{
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
+
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	main {
+		overflow-x: hidden;
+	}
+	#section-cover {
+		padding-top: 90px;
+	}
+	#section-cover .wrapper {
+		position: relative;
+		flex-direction: column;
+	}
+	#section-cover .wrapper .container-text {
+		width: 100%;
+	}
+	#section-cover .wrapper .container-text a {
+		margin-top: 300px;
+	}
+	#section-cover .wrapper .container-illu {
+		position: absolute;
+		bottom: 90px;
+		left: 25px;
+		width: 256px;
+	}
+
+	#section-origin .obj-1 {
+		right: -200px;
+		bottom: -50px;
+	}
+	#section-origin .wrapper .container-text {
+		margin: 0;
+		flex-direction: column;
+	}
+	#section-origin .wrapper .container-text .left, 
+	#section-origin .wrapper .container-text .right {
+		width: 100%;
+	}
+
+	#section-team .obj {
+		display: none;
+	}
+	#section-team .wrapper {
+		flex-direction: column;
+	}
+	#section-team .wrapper .container-text h2,
+	#section-team .wrapper .container-text p {
+		text-align: left;
+	}
+	#section-team .wrapper .container-text .sep {
+		margin-left: 0;
+	}
+	#section-team .wrapper .container-el {
+		margin-top: 50px;
+		flex-direction: column;
+		width: 100%;
+	}
+	#section-team .wrapper .container-el .el {
+		width: 100%;
+	}
+	#section-team .wrapper .container-el .el .container-photo {
+		width: 260px;
+	}
+	#section-team .wrapper .container-el .el:nth-child(2) {
+		transform: none;
+	}
+	#section-team .wrapper .container-el .el:first-child,
+	#section-team .wrapper .container-el .el:nth-child(2) {
+		margin-bottom: 60px;
+	}
+
+	#section-photos {
+		height: 255px;
+	}
+	#section-photos .container-photo {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		width: 100%;
+		transform: none;
+	}
+	#section-photos .photo {
+		width: 330px;
+	}
+	#section-photos .photo:first-child {
+		margin-left: 15px;
+	}
+	#section-photos .photo:last-child {
+		margin-right: 15px;
+	}
+
+	#section-press {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	#section-press .obj {
+		display: none;
+	}
+	#section-press .wrapper {
+		flex-direction: column;
+	}
+	#section-press .wrapper h2 {
+		width: 100%;
+		margin-left: 0;
+		text-align: left;
+	}
+	#section-press .wrapper .container-logos {
+		margin-top: 50px;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	#section-press .wrapper .container-logos .logo {
+		width: 50%;
+		&:first-child, &:nth-child(2) {
+			margin-bottom: 50px;
+		}
+	}
+	#section-press .wrapper .container-logos .logo img {
+		max-width: 120px;
+	}
+}
+
 
 /*=====================================
 =            END PAGE ABOUT           =

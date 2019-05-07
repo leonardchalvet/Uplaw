@@ -743,7 +743,7 @@ main
 	}
 }
 
-@media screen and (max-width: $breakPoint_tablet) {
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
 	#cm-section-management .wrapper .content .container-photo {
 		margin-right: 50px;
 	}
@@ -776,6 +776,9 @@ main
 	}
 	#cm-section-management .wrapper .content .container-text .container-el .el {
 		width: 100%;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el .el:not(:last-child) {
+		margin-bottom: 40px;
 	}
 	#cm-section-management .wrapper .content .container-text a {
 		margin-top: 60px;

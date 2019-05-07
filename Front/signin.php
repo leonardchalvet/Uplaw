@@ -44,6 +44,7 @@
 							<div class="input">
 								<label>Nom*</label>
 								<input type="text" name="lastname" placeholder="Votre nom">
+								<div class="sep"></div>
 								<span>Veuillez vérifier votre nom</span>
 								<img class="cross" src="img/common/red-cross.svg">
 								<img class="check" src="img/common/check.svg">
@@ -51,6 +52,7 @@
 							<div class="input">
 								<label>Prénom*</label>
 								<input type="text" name="firstname" placeholder="Votre prénom">
+								<div class="sep"></div>
 								<span>Veuillez vérifier votre prénom</span>
 								<img class="cross" src="img/common/red-cross.svg">
 								<img class="check" src="img/common/check.svg">
@@ -60,6 +62,7 @@
 							<div class="input">
 								<label>Adresse e-mail*</label>
 								<input type="email" name="firstname" placeholder="Votre e-mail">
+								<div class="sep"></div>
 								<span>Veuillez vérifier votre email</span>
 								<img class="cross" src="img/common/red-cross.svg">
 								<img class="check" src="img/common/check.svg">
@@ -67,6 +70,7 @@
 							<div class="input">
 								<label>Mot de passe*</label>
 								<input type="password" name="lastname" placeholder="********">
+								<div class="sep"></div>
 								<span>Veuillez vérifier votre mot de passe</span>
 								<img class="cross" src="img/common/red-cross.svg">
 								<img class="check" src="img/common/check.svg">
@@ -75,12 +79,13 @@
 						<div class="input">
 							<label>Société*</label>
 							<input type="password" name="lastname" placeholder="Votre société">
+							<div class="sep"></div>
 							<span>Veuillez vérifier votre société</span>
 							<img class="cross" src="img/common/red-cross.svg">
 							<img class="check" src="img/common/check.svg">
 						</div>
 						<label class="checkbox">
-							<input type="checkbox" checked="checked">
+							<input type="checkbox">
 							<span class="checkmark"></span>
 							<div class="text">J'ai lu et j'accepte les <a href="mentions.php">Conditions générales</a></div>
 						</label>

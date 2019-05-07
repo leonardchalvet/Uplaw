@@ -221,6 +221,7 @@ $(window).on('load', function() {
 	$('#header-desktop .wrapper .container-action .signup').click(function () {
 		let pointer = $('.container-lg');
 		$('body').addClass('block');
+		$('body').addClass('lightbox');
 		pointer.addClass('block');
 		setTimeout(function(){
 			pointer.addClass('show');
@@ -230,12 +231,13 @@ $(window).on('load', function() {
 	$('.lg-contact .cross').click(function (){
 		let pointer = $('.container-lg');
 		$('body').removeClass('block');
+		$('body').removeClass('lightbox');
 		pointer.removeClass('show');
 		setTimeout(function(){
 			pointer.removeClass('block');
 		}, 100);
 	})
-	$('body').on('click', function(event) { 
+	$('body').on('click', function(event) {
 	    if (!$(event.target).closest('.container-lg .lg-contact').length) {
 	    	console.log(event.target);
 	    	if($('.container-lg').hasClass('show'))
