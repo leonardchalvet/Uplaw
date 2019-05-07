@@ -86,6 +86,61 @@
 
 <header id="header-mobile">
 	
+	<div class="container-nav">
+		<div class="wrapper">
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<a href="index.php" class="logo">
+				<img src="img/common/logo.svg" alt="">
+			</a>
+			<div class="cta-log-in">
+				<span>
+					Connexion
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-menu">
+		<div class="wrapper">
+
+			<ul class="container-link">
+				<li>
+					<a>Solutions</a>
+					<img src="img/common/arrow-down.svg">
+				</li>
+				<div class="dropdown">
+					<a href="solutions.php">Solutions fonds</a>
+					<a href="solutions.php">Solutions entreprises</a>
+					<a href="solutions.php">Solutions professionnels</a>
+				</div>
+				<li><a href="features.php">Fonctionnalités</a></li>
+				<li><a href="services.php">Services</a></li>
+				<li><a href="about.php">À propos</a></li>
+			</ul>
+
+			<div class="container-action">
+				<a class="signup hover-left">
+					<span class="btn-text">
+						Contact
+					</span>
+					<svg class="btn-arrow" viewBox="0 0 13 6">
+					   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
+					</svg>
+				</a>
+				<a class="signin">
+					<img src="img/common/connect-icone.svg" alt="">
+					<span>
+						Connexion
+					</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
 </header>
 
 <div class="container-lg">

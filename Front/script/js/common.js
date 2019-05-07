@@ -6,10 +6,22 @@ $(window).on('load', function() {
 
 	    if ( $window.scrollTop() >= 1 ) {
 	        $('#header-desktop').addClass('scroll');
+	        $('#header-mobile').addClass('scroll');
 	    } else {
 	    	$('#header-desktop').removeClass('scroll');
+	    	$('#header-mobile').removeClass('scroll');
 	    };
 	});
+
+	if (window.matchMedia("(min-width: 1000px)").matches) {
+		$('#header-mobile .container-nav .wrapper .burger').click(function (){
+			$('#header-mobile').toggleClass('active');
+			$('body').toggleClass('block');
+		})
+		$('#header-mobile .container-menu .wrapper .container-link li:first-child a').click(function (){
+			$('#header-mobile .container-menu .wrapper .container-link .dropdown').toggleClass('active');
+		})
+	}
 
 	/*=================================
 	=            WRAP LINE            =

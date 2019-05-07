@@ -48,6 +48,8 @@ body {
 body.block
 {
 	overflow:hidden;
+}
+body.lightbox {
 	&:after {
 		transform: scale(1);
 	}
@@ -676,11 +678,11 @@ main
 
 			display: flex;
 			justify-content: space-between;
+			align-items: flex-start;
 
 			.container-photo {
 				position: relative;
 				width: 370px;
-				height: 650px;
 
 				.bg {
 					position: relative;
@@ -739,6 +741,46 @@ main
 			}
 		}
 	}
+}
+
+@media screen and (max-width: $breakPoint_tablet) {
+	#cm-section-management .wrapper .content .container-photo {
+		margin-right: 50px;
+	}
+	#cm-section-management .wrapper .content .container-text {
+		width: auto;
+		flex: 1;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el .el:not(:last-child) {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#cm-section-management {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#cm-section-management .wrapper h2 {
+		width: 100%;
+	}
+	#cm-section-management .wrapper .content .container-photo {
+		display: none;
+	}
+	#cm-section-management .wrapper .content .container-text {
+		width: 100%;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el {
+		flex-direction: column;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el .el {
+		width: 100%;
+	}
+	#cm-section-management .wrapper .content .container-text a {
+		margin-top: 60px;
+	}
+
 }
 
 /*=====  End of COMMON SECTION  ======*/
