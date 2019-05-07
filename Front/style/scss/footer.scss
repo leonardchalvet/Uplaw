@@ -161,26 +161,42 @@ footer {
 	footer .wrapper .container-text {
 		width: 100%;
 	}
-	footer .wrapper .container-text .rights {
-		position: absolute;
-		bottom: 120px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
 	footer .wrapper .container-links {
 		margin-top: 50px;
 		width: 50%;
 	}
 	footer .wrapper .container-sn {
 		margin-top: 50px;
+	}
+	footer .wrapper .container-lang {
+		margin-top: 50px;
+		width: 100%;
+	}
+	footer .wrapper .container-lang .dropdown {
+		left: 0;
+		transform: none;
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	footer .wrapper .container-text .rights {
+		position: absolute;
+		bottom: 120px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	footer .wrapper .container-sn {
 		margin-left: auto;
 		margin-right: auto;
 	}
 	footer .wrapper .container-lang {
 		margin-top: 100px;
-		width: 100%;
 	}
 	footer .wrapper .container-lang .lg {
 		justify-content: center;
+	}
+	footer .wrapper .container-lang .dropdown {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
