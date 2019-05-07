@@ -418,8 +418,209 @@
 
 }
 
+#header-mobile {
+	display: none;
+	top: -1px;
+	left: 0px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	transition: all 0.25s ease;
+	background-color: #FFF;
+	.container-nav {
+		position: relative;
+	    z-index: 2;
+	    background-color: #FFF;
+		.wrapper {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			width: 100%;
+			height: 60px;
+			padding: 15px 25px;
+
+			background-color: #FFF;
+
+			.burger{
+				width: 15px;
+				height: 9px;
+				position: relative;
+				.line{
+					position: absolute;
+					left: 0px;
+					width: 100%;
+					height: 2px;
+					border-radius: 4px;
+					transition: all 0.25s ease;
+					background-color: #000;
+					&:nth-child(1){
+						top: 0px;
+					}
+					&:nth-child(2){
+						bottom: 0px;
+					}
+				}
+			}
+			.logo {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100px;
+				height: 35px;
+				img {
+					width: 100px;
+					height: 35px;
+				}
+			}
+			.cta-log-in {
+				position: relative;
+
+				span{
+					@include styleH6;
+				}
+			}
+		}
+	}
+	.container-menu {
+		position: absolute;
+		z-index: 1;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 58px);
+		background-color: #FFF;
+
+		transform: translateY(calc(-100% - 60px));
+		transition: all .5s ease;
+
+		.wrapper {
+			padding: 115px 25px 75px 25px;
+			overflow-y: scroll;
+			height: 100%;
+			.container-link {
+				li {
+					&:first-child {
+						display: flex;
+						align-items: center;
+						img {
+							margin-left: 15px;
+							width: 10px;
+							height: 5px;
+						}
+					}
+					list-style: none;
+					a {
+						text-decoration: none;
+						@include styleH4;
+					}
+					&:not(:last-child) {
+						margin-bottom: 50px;
+					}
+				}
+				.dropdown {
+					display: none;
+					width: calc(100% + 50px);
+					transform: translateX(-25px) translateY(-30px);
+
+					&.active {
+						display: block;
+					}
+
+					a {
+						display: inline-block;
+						padding: 25px 17px 25px 42px;
+
+						width: 100%;
+
+						text-decoration: none;
+						@include styleH4;
+
+						transition: all .25s ease;
+
+						&.active {
+							color: #FFF;
+							background-color: $colorMain_1;
+						}
+
+
+							color: #FFF;
+							background-color: $colorMain_1;
+					}
+				}
+			}
+			.container-action{
+				margin-top: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 300px;
+				a {
+					cursor: pointer;
+				}
+				.signin{
+					position: relative;
+
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+
+					@include styleLink;
+					padding-bottom: 9px;
+					transform: translateY(4.5px);
+
+					img{
+						width: 13px;
+						margin-right: 13px;
+					}
+					span{
+						@include styleH5;
+					}
+				}
+				>.sep{
+					margin: 0px 25px 0px 25px;
+					background-color: rgba(0, 0, 0, 0.3);
+					height: 3px;	
+					width: 3px;
+					border-radius: 3px;
+				}
+				.signup{
+					@include styleButtonBig;
+				}
+			}
+		}
+	}
+
+	&.active {
+		.container-nav .wrapper {
+			.burger {
+				.line {
+					&:first-child {
+						transform: rotate(45deg) translateY(2px) translateX(0);
+					}
+					&:last-child {
+						transform: rotate(-45deg)  translateY(-5px) translateX(3px);
+					}
+				}
+			}
+		}
+		.container-menu {
+			transform: translateY(0);
+		}
+	}
+
+	&.scroll {
+		box-shadow: 0 2px 24px 0 rgba(123,126,128,0.29);
+	}
+}
+
 @media screen and (max-width: $breakPoint_tablet) {
 	#header-desktop {
 		display: none;
+	}
+	#header-mobile {
+		display: block;
 	}
 }
