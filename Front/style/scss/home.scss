@@ -404,8 +404,11 @@
 	}
 }
 
-@media screen and (max-width: $breakPoint_tablet) {
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
 	
+	#section-home {
+		padding-top: 100px;
+	}
 	#section-home #obj-desktop-1 {
 		left: 25px;
 		width: 300px;
@@ -460,6 +463,7 @@
 		align-items: flex-start;
 	}
 	#section-pres .container-el {
+		flex: auto;
 		margin-top: 50px;
 	}
 
@@ -473,6 +477,9 @@
 
 @media screen and (max-width: $breakPoint_mobile) {
 
+	#section-home {
+		padding-top: 100px;
+	}
 	#section-home .wrapper {
 		padding-bottom: 0;
 	}
