@@ -1,5 +1,21 @@
 $(window).on('load', function() {
 
+	$window = $(window);
+	function animScroll() {
+		var windowHeight = $window.height() / 1.5;
+	    $('#section-demo .el').each(function() {
+	        if ($window.scrollTop() >= $(this).offset().top - windowHeight) {
+	            if (!$(this).hasClass('reach')) {
+	                $(this).addClass('reach');
+	            }
+	        }
+	    });
+	};
+	$window.scroll(function() {
+	    animScroll();
+	});
+		
+
 	function animSectionHome(){
 
 		var wrapLineTransitionDuration = $('.wrapLine span').css('transition-duration');
@@ -24,6 +40,8 @@ $(window).on('load', function() {
 	}
 	animSectionHome();
 
+	$('#section-demo .wrapper .container-text').css('top', ($window.height()/2) - ($('#section-demo .wrapper .container-text').height()/2));
+
 
 	if (window.matchMedia("(min-width: 700px)").matches) {
 
@@ -33,26 +51,5 @@ $(window).on('load', function() {
 	};
 
 
+
 })
-
-
-$(document).ready(function() {
-
-	var stickyElement = $('#section-demo .wrapper .container-text');
-	var stickyElementPosition = stickyElement.offset().top;
-	var headerHeight = $('#header-desktop').height();
-	var sectionElementPadding = parseInt($('#section-demo').css('padding-top'));
-
-	var positionSticky = stickyElementPosition +headerHeight + sectionElementPadding;
-
-
-	  $(window).scroll(function() {
-	    var windowTop = $(window).scrollTop();
-	   if (windowTop > positionSticky) {
-	   		stickyElement.addClass('sticky');
-	   } else {
-	   		stickyElement.removeClass('sticky');
-	   }
-	  });
-
-});

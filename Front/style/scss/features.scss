@@ -166,7 +166,6 @@ main{
 }
 
 
-
 #section-demo{
 	padding-top: 195px;
 	position: relative;
@@ -177,8 +176,7 @@ main{
 		align-items: flex-start;
 		.container-text{
 			position: sticky;
-			top: 190px;
-			width: 530px;
+			width: 445px;
 			margin-right: 80px;
 			h2{
 				@include styleH2;
@@ -202,7 +200,7 @@ main{
 			flex: 1;
 			.el{
 				&:not(:last-child){
-					margin-bottom: 120px;
+					margin-bottom: 50vh;
 				}
 				position: relative;
 				width: 100%;
@@ -211,21 +209,62 @@ main{
 					z-index: 1;
 					width: 100%;
 					margin-bottom: 40px;
+
+					opacity: 0;
+					transform: translateY(30px);
+					transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
 				}
 				.obj-1{
 					width: 240px;
 					position: absolute;
 					top: -100px;
 					right: -100px;
+
+					opacity: 0;
+					transform: translateY(30px);
+					transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
 				}
 				.container-infos{
 					position: relative;
 					h3{
 						@include styleH4;
+
+						opacity: 0;
+						transform: translateY(30px);
+						transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
 					}
 					p{
 						margin-top: 10px;
 						@include styleParagraphSmall
+
+						opacity: 0;
+						transform: translateY(30px);
+						transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					}
+				}
+
+				&.reach{
+					.screen{
+						transition-delay: 0s;
+						opacity: 1;
+						transform: translateY(0px);
+					}
+					.obj-1{
+						transition-delay: 0.1s;
+						opacity: 1;
+						transform: translateY(0px);
+					}
+					.container-infos{
+						h3{
+							transition-delay: 0.2s;
+							opacity: 1;
+							transform: translateY(0px);
+						}
+						p{
+							transition-delay: 0.3s;
+							opacity: 1;
+							transform: translateY(0px);
+						}
 					}
 				}
 			}

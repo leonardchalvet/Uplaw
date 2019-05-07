@@ -95,11 +95,11 @@
 					opacity: 0;
 				}
 				.el-anim-5{
-					transition: all 1500ms cubic-bezier(0.000, 0.975, 0.545, 1.000);
+					transition: all 1750ms cubic-bezier(0.000, 0.975, 0.545, 1.000);
 					transition-delay: 0.5s;
 					opacity: 0;
 					transform-origin: 50% 50%;
-					transform: rotate(40deg);
+					transform: rotate(50deg);
 				}
 				.el-anim-6{
 					transition: all 1500ms cubic-bezier(0.000, 0.975, 0.545, 1.000);
@@ -128,7 +128,7 @@
 						transform: translateY(0px);
 					}
 					to {
-						transform: translateY(20px);
+						transform: translateY(30px);
 					}
 				}
 
@@ -140,6 +140,7 @@
 						animation-duration: 5s;
 						animation-delay: 1s;
   						animation-name: float;
+  						animation-timing-function: ease;
   						animation-iteration-count: infinite;
   						animation-direction: alternate;
 					}
@@ -149,9 +150,10 @@
 					opacity: 1;
 
 					.el-anim-2{
-						animation-duration: 3s;
+						animation-duration: 2s;
 						animation-delay: 2s;
   						animation-name: float;
+  						animation-timing-function: ease;
   						animation-iteration-count: infinite;
   						animation-direction: alternate;
 					}
@@ -164,6 +166,7 @@
 						animation-duration: 4s;
 						animation-delay: 0s;
   						animation-name: float;
+  						animation-timing-function: ease;
   						animation-iteration-count: infinite;
   						animation-direction: alternate;
 					}
@@ -177,6 +180,7 @@
 						animation-duration: 4s;
 						animation-delay: 1.5s;
   						animation-name: float;
+  						animation-timing-function: ease;
   						animation-iteration-count: infinite;
   						animation-direction: alternate;
 					}
