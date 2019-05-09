@@ -70,6 +70,18 @@
 					outline: none;
 					@include styleParagraphSmall;
 					width: 100%;
+					&:focus ~ .sep {
+						background-color: $colorMain_1;
+					}
+				}
+				.sep {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background-color: $colorMain_7;
+					transition: all .25s ease;
 				}
 				span {
 					display: none;
@@ -180,6 +192,42 @@
 				@include styleButtonSmall;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	#section-form {
+		padding-top: 90px;
+		padding-bottom: 70px;
+	}
+	#section-form .obj-1,
+	#section-form .obj-2 {
+		display: none;
+	}
+	#section-form .wrapper .container-text h1 {
+		width: 100%;
+	}
+	#section-form .wrapper .container-text p {
+		width: 100%;
+	}
+	#section-form .wrapper form {
+		width: 100%;
+		margin-top: 70px;
+	}
+	#section-form .wrapper form .row {
+		flex-direction: column;
+	}
+	#section-form .wrapper form .row .input {
+		width: 100%;
+		&:first-child {
+			margin-bottom: 30px;
+		}
+	}
+	#section-form .wrapper form .checkbox .text a {
+		margin-top: 5px;
+	}
+	#section-form .wrapper form button {
+		margin: 40px auto 0 0;
 	}
 }
 

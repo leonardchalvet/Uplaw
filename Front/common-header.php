@@ -31,14 +31,14 @@
 		</div>
 
 		<div class="container-action">
-			<a class="signin">
+			<a class="login">
 				<img src="img/common/connect-icone.svg" alt="">
 				<span>
 					Connexion
 				</span>
 			</a>
 			<div class="sep"></div>
-			<a class="signup hover-left">
+			<a class="contact hover-left">
 				<span class="btn-text">
 					Contact
 				</span>
@@ -54,17 +54,16 @@
 					Entrez vos identifiants ci-dessous afin d'accéder à votre espace personnel
 				</p>
 				<form method="post" action="#">
-					<div class="sep"></div>
 					<div class="input">
 						<label>Adresse e-mail*</label>
 						<input type="email" name="mail" placeholder="Votre adresse e-mail">
+						<div class="sep"></div>
 					</div>
-					<div class="sep"></div>
 					<div class="input">
 						<label>Mot de passe*</label>
 						<input type="password" name="password" placeholder="********">
+						<div class="sep"></div>
 					</div>
-					<div class="sep"></div>
 					<a href="#">Mot de passe oublié ?</a>
 					<button class="hover-center">
 						<span class="btn-text">
@@ -86,6 +85,93 @@
 
 <header id="header-mobile">
 	
+	<div class="container-nav">
+		<div class="wrapper">
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<a href="index.php" class="logo">
+				<img src="img/common/logo.svg" alt="">
+			</a>
+			<div class="cta-log-in">
+				<span>
+					Connexion
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-menu">
+		<div class="wrapper">
+
+			<ul class="container-link">
+				<li>
+					<a>Solutions</a>
+					<img src="img/common/arrow-down.svg">
+				</li>
+				<div class="dropdown">
+					<a href="solutions.php">Solutions fonds</a>
+					<a href="solutions.php">Solutions entreprises</a>
+					<a href="solutions.php">Solutions professionnels</a>
+				</div>
+				<li><a href="features.php">Fonctionnalités</a></li>
+				<li><a href="services.php">Services</a></li>
+				<li><a href="about.php">À propos</a></li>
+			</ul>
+
+			<div class="container-action">
+				<a class="contact hover-left">
+					<span class="btn-text">
+						Contact
+					</span>
+					<svg class="btn-arrow" viewBox="0 0 13 6">
+					   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
+					</svg>
+				</a>
+				<a class="login">
+					<img src="img/common/connect-icone.svg" alt="">
+					<span>
+						Connexion
+					</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="lg-log-in">
+		<img class="cross" src="img/common/cross.svg">
+		<h3>Connextez-vous à votre espace</h3>
+		<p>
+			Entrez vos identifiants ci-dessous afin d'accéder à votre espace personnel
+		</p>
+		<form method="post" action="#">
+			<div class="sep"></div>
+			<div class="input">
+				<label>Adresse e-mail*</label>
+				<input type="email" name="mail" placeholder="Votre adresse e-mail">
+				<div class="sep"></div>
+			</div>
+			<div class="sep"></div>
+			<div class="input">
+				<label>Mot de passe*</label>
+				<input type="password" name="password" placeholder="********">
+				<div class="sep"></div>
+			</div>
+			<div class="sep"></div>
+			<a href="#">Mot de passe oublié ?</a>
+			<button class="hover-center">
+				<span class="btn-text">
+					Connexion
+				</span>
+				<svg class="btn-arrow" viewBox="0 0 13 6">
+				   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
+				</svg>
+			</button>
+		</form>
+	</div>
+
 </header>
 
 <div class="container-lg">
@@ -106,6 +192,7 @@
 				<div class="input">
 					<label>Prénom</label>
 					<input type="text" name="firstname" placeholder="Votre prénom">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre prénom</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">
@@ -113,6 +200,7 @@
 				<div class="input">
 					<label>Nom</label>
 					<input type="text" name="lastname" placeholder="Votre nom">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre nom</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">
@@ -122,6 +210,7 @@
 				<div class="input">
 					<label>E-mail professionnel</label>
 					<input type="email" name="firstname" placeholder="Votre e-mail">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre email</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">
@@ -129,6 +218,7 @@
 				<div class="input">
 					<label>Numéro de téléphone</label>
 					<input type="tel" name="lastname" placeholder="00 00 00 00 00">
+					<div class="sep"></div>
 					<span>Veuillez vérifier votre téléphone</span>
 					<img class="cross" src="img/common/red-cross.svg">
 					<img class="check" src="img/common/check.svg">

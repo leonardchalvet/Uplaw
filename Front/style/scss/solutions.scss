@@ -180,6 +180,100 @@ main{
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
+
+	#section-cover {
+		padding-top: 60px;
+	}
+	#section-cover .wrapper .container-title {
+		padding: 0;
+		justify-content: space-around;
+	}
+	#section-cover .wrapper .container-title .container-illu {
+		width: 400px;
+		height: 340px;
+	}
+	#section-cover .wrapper .container-title .container-text {
+		width: 350px;
+	}
+	#section-cover .wrapper .container-cta {
+		margin-top: 50px;
+		padding: 0;
+		justify-content: space-around;
+	}
+	#section-cover .wrapper .container-cta .container-illu {
+		margin-right: 0;
+	}
+	#section-cover .wrapper .container-title .container-illu img {
+		padding-top: 8%;
+	}
+
+	#section-cta .wrapper .container-el {
+		justify-content: space-around;
+	}
+	#section-cta .wrapper .container-el .el {
+		width: 315px;
+    	height: 250px;
+	}
+	#section-cta .wrapper .container-el .el a {
+		bottom: 15px;
+		padding: 20px 10px 20px 10px;
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-cover {
+		padding-top: 60px;
+	}
+	#section-cover .obj {
+		display: none;
+	}
+	#section-cover .wrapper {
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+	#section-cover .wrapper .container-title {
+		padding: 0;
+		justify-content: space-around;
+	}
+	#section-cover .wrapper .container-title .container-illu {
+		display: none;
+	}
+	#section-cover .wrapper .container-title .container-text {
+		width: 100%;
+	}
+	#section-cover .wrapper .container-cta {
+		padding: 0;
+		flex-direction: column;
+	}
+	#section-cover .wrapper .container-cta .container-text {
+		margin-left: 0;
+		width: 100%;
+	}
+	#section-cover .wrapper .container-cta .container-illu {
+		margin-top: 40px;
+		margin-right: 0;
+		width: 215px;
+    	height: 200px;
+	}
+
+	#section-cta .wrapper .container-el {
+		align-items: center;
+		flex-direction: column;
+	}
+	#section-cta .wrapper .container-el .el {
+		width: 320px;
+		height: 250px;
+		&:last-child {
+			margin-top: 40px;
+		}
+	}
+	#section-cta .wrapper .container-el .el a {
+		bottom: 15px;
+		padding: 20px 10px 20px 10px;
+	}
+}
 
 /*========================================
 =            END PAGE SOLUTIONS          =

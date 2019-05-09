@@ -48,7 +48,20 @@ main{
 				margin-top: 100px;
 				.el {
 					h2 {
+						position: relative;
+						display: inline-block;
 						@include styleH4;
+						width: 100%;
+						img {
+							display: none;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							right: 25px;
+							width: 10px;
+							height: 5px;
+							transition: all .25s ease;
+						}
 					}
 					p {
 						margin-top: 25px;
@@ -90,6 +103,61 @@ main{
 					}
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	#section-mentions {
+		padding-top: 100px;
+	}
+	#section-mentions .obj-1,
+	#section-mentions .obj-2 {
+		display: none;
+	}
+	#section-mentions .wrapper {
+		flex-direction: column;
+	}
+	#section-mentions .wrapper .container-text {
+		width: 100%;
+	}
+	#section-mentions .wrapper .container-text .container-el {
+		margin-top: 70px;
+	}
+	#section-mentions .wrapper .container-text .container-el .el {
+		p {
+			display: none;
+		}
+		h2 img {
+			display: block;
+		}
+		&.active {
+			h2 img {
+				transform: rotate(180deg);
+			}
+			p {
+				display: block;
+			}
+		}
+	}
+	#section-mentions .wrapper .container-text .container-el .sep {
+		margin: 50px 0;
+		width: 100%;
+	}
+	#section-mentions .wrapper aside {
+		position: relative;
+		top: 0;
+		margin-top: 100px;
+		width: 100%;
+		&:before {
+			content: " ";
+			position: absolute;
+			top:  -50px;
+			left: 0;
+
+			height: 2px;
+			width: 100%;
+			background-color: $colorMain_1;
 		}
 	}
 }

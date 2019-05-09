@@ -260,6 +260,36 @@
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
+	#section-cover {
+		padding-top: 60px;
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-cover {
+		padding-top: 60px;
+	}
+	#section-cover .container-illu {
+		width: 320px;
+		height: 165px;
+	}
+
+	#section-features .obj-1 {
+		display: none;
+	}
+	#section-features .wrapper {
+		flex-direction: column;
+	}
+	#section-features .container-el {
+		flex-direction: column;
+	}
+	#section-features .container-el .el {
+		width: 100%;
+	}
+}
+
 /*========================================
 =            END PAGE SERVICES           =
 ========================================*/
