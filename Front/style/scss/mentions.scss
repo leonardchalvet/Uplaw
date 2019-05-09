@@ -1,0 +1,169 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*====================================
+=            PAGE MENTIONS           =
+=====================================*/
+main{
+	overflow: initial;
+}
+
+#section-mentions {
+	position: relative;
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	.obj-1 {
+		position: absolute;
+		bottom: 300px;
+		right: 0;
+		transform: translateY(-50%);
+
+		width: 160px;
+		height: 315px;
+	}
+	.obj-2 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		width: 580px;
+	}
+
+	.wrapper {
+		
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		@include styleGrid3;
+
+		.container-text {
+			width: 520px;
+			h1 {
+				@include styleH1;
+				width: 230px;
+			}
+			.container-el {
+				margin-top: 100px;
+				.el {
+					h2 {
+						position: relative;
+						display: inline-block;
+						@include styleH4;
+						width: 100%;
+						img {
+							display: none;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							right: 25px;
+							width: 10px;
+							height: 5px;
+							transition: all .25s ease;
+						}
+					}
+					p {
+						margin-top: 25px;
+						@include styleParagraphMedium;
+					}
+				}
+				.sep {
+					margin: 100px 0px 100px 0px;
+					height: 2px;
+					width: 100px;
+					background-color: $colorMain_1;
+				}
+			}
+		}
+		aside {
+			position: sticky;
+			top: 150px;
+			width: 350px;
+			h2 {
+				@include styleH4;
+			}
+			p {
+				margin-top: 25px;
+				@include styleParagraphMedium;
+			}
+			.container-links {
+				margin: 25px 0;
+				a {
+					color: $colorMain_1;
+					display: flex;
+					align-items: center;
+					text-decoration: none;
+					img {
+						width: 15px;
+						margin-right: 25px;
+					}
+					span {
+						font-family: $font_Bold_2;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	#section-mentions {
+		padding-top: 100px;
+	}
+	#section-mentions .obj-1,
+	#section-mentions .obj-2 {
+		display: none;
+	}
+	#section-mentions .wrapper {
+		flex-direction: column;
+	}
+	#section-mentions .wrapper .container-text {
+		width: 100%;
+	}
+	#section-mentions .wrapper .container-text .container-el {
+		margin-top: 70px;
+	}
+	#section-mentions .wrapper .container-text .container-el .el {
+		p {
+			display: none;
+		}
+		h2 img {
+			display: block;
+		}
+		&.active {
+			h2 img {
+				transform: rotate(180deg);
+			}
+			p {
+				display: block;
+			}
+		}
+	}
+	#section-mentions .wrapper .container-text .container-el .sep {
+		margin: 50px 0;
+		width: 100%;
+	}
+	#section-mentions .wrapper aside {
+		position: relative;
+		top: 0;
+		margin-top: 100px;
+		width: 100%;
+		&:before {
+			content: " ";
+			position: absolute;
+			top:  -50px;
+			left: 0;
+
+			height: 2px;
+			width: 100%;
+			background-color: $colorMain_1;
+		}
+	}
+}
+
+/*========================================
+=            END PAGE MENTIONS           =
+=========================================*/
+
+@import 'footer.scss';

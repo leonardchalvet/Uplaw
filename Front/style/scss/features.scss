@@ -13,11 +13,22 @@ main{
 	padding-top: 90px;
 	.wrapper{
 		@include styleGrid1;
+		position: relative;
 		padding-top: 80px;
 		padding-bottom: 55px;
-		background-color: $colorMain_1;
+		overflow: hidden;
+		&:before{
+			content:'';
+			background-color: $colorMain_1;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
 	}
 	.container-text{
+		position: relative;
 		max-width: 650px;
 		margin: auto;
 		h1{
@@ -46,8 +57,117 @@ main{
 	}
 }
 
+/* ANIM */
+#section-cover{
+	.wrapper{
+		&:before{
+			transform: translateY(-100%);
+			transition: all 500ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+		}
+		.container-illu{
+			.illu{
+				.container-el-anim-1{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0s;
+					transform: translateY(40px);
+					opacity: 0;
+				}
+				.container-el-anim-2{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.05s;
+					transform: translateY(50px);
+					opacity: 0;
+				}
+				.container-el-anim-3{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.1s;
+					transform: translateY(30px);
+					opacity: 0;
+				}
+				.el-anim-4{
+					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.2s;
+					transform: translateY(20px);
+					opacity: 0;
+				}
+			}
+			.obj-1{
+				transition: all 1500ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+				opacity: 0;
+			}
+		}
+	}
+}
+
+#section-cover.anim{
+	.wrapper{
+		&:before{
+			transform: translateY(0%);
+		}
+		.container-illu{
+			.illu{
+
+				@keyframes float {
+					from {
+						transform: translateY(0px);
+					}
+					to {
+						transform: translateY(20px);
+					}
+				}
+
+				.container-el-anim-1{
+					transform: translateY(0px);
+					opacity: 1;
+
+					.el-anim-1{
+						animation-duration: 5s;
+						animation-delay: 1s;
+  						animation-name: float;
+  						animation-iteration-count: infinite;
+  						animation-direction: alternate;
+					}
+				}
+				.container-el-anim-2{
+					transform: translateY(0px);
+					opacity: 1;
+
+					.el-anim-2{
+						animation-duration: 3s;
+						animation-delay: 2s;
+  						animation-name: float;
+  						animation-iteration-count: infinite;
+  						animation-direction: alternate;
+					}
+				}
+				.container-el-anim-3{
+					transform: translateY(0px);
+					opacity: 1;
+
+					.el-anim-3{
+						animation-duration: 4s;
+						animation-delay: 0s;
+  						animation-name: float;
+  						animation-iteration-count: infinite;
+  						animation-direction: alternate;
+					}
+				}
+
+				.el-anim-4{
+					transform: translateY(0px);
+					opacity: 1;
+				}
+			}
+			.obj-1{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
 #section-demo{
-	padding-top: 95px;
+	padding-top: 195px;
 	position: relative;
 	.wrapper{
 		@include styleGrid2;
@@ -56,9 +176,8 @@ main{
 		align-items: flex-start;
 		.container-text{
 			position: sticky;
-			top: 190px;
 			width: 445px;
-			margin-right: 30px;
+			margin-right: 80px;
 			h2{
 				@include styleH2;
 			}
@@ -78,11 +197,10 @@ main{
 			}
 		}
 		.container-el{
-			padding-top: 140px;
 			flex: 1;
 			.el{
 				&:not(:last-child){
-					margin-bottom: 120px;
+					margin-bottom: 50vh;
 				}
 				position: relative;
 				width: 100%;
@@ -91,21 +209,62 @@ main{
 					z-index: 1;
 					width: 100%;
 					margin-bottom: 40px;
+
+					opacity: 0;
+					transform: translateY(30px);
+					transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
 				}
 				.obj-1{
 					width: 240px;
 					position: absolute;
 					top: -100px;
 					right: -100px;
+
+					opacity: 0;
+					transform: translateY(30px);
+					transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
 				}
 				.container-infos{
 					position: relative;
 					h3{
 						@include styleH4;
+
+						opacity: 0;
+						transform: translateY(30px);
+						transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
 					}
 					p{
 						margin-top: 10px;
 						@include styleParagraphSmall
+
+						opacity: 0;
+						transform: translateY(30px);
+						transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					}
+				}
+
+				&.reach{
+					.screen{
+						transition-delay: 0s;
+						opacity: 1;
+						transform: translateY(0px);
+					}
+					.obj-1{
+						transition-delay: 0.1s;
+						opacity: 1;
+						transform: translateY(0px);
+					}
+					.container-infos{
+						h3{
+							transition-delay: 0.2s;
+							opacity: 1;
+							transform: translateY(0px);
+						}
+						p{
+							transition-delay: 0.3s;
+							opacity: 1;
+							transform: translateY(0px);
+						}
 					}
 				}
 			}
@@ -174,14 +333,14 @@ main{
 	.obj-1{
 		position: absolute;
 		right: 85%;
-		top: -200px;
+		top: -100px;
 		width: 640px;
 		opacity: 0.1;
 	}
 	.obj-2{
 		position: absolute;
 		right: 85%;
-		top: -50px;
+		top: 25px;
 		width: 300px;
 	}
 }

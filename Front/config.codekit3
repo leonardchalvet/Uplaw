@@ -719,6 +719,161 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/solutions/cover-illu-1-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-illu-1-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-illu-1-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-illu-1-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-illu-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-illu-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-illu-2-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-illu-2-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-illu-2-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-illu-2-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-illu-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-illu-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-obj-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-obj-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-obj-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cover-obj-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cover-obj-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cta-obj.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/solutions/cta-obj.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/solutions/cta-photo-1-2.jpg": {
+		"ft": 16384,
+		"iS": 123034,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/solutions/cta-photo-1-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/solutions/cta-photo-1.jpg": {
+		"ft": 16384,
+		"iS": 195836,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/solutions/cta-photo-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/solutions/cta-photo-2.jpg": {
+		"ft": 16384,
+		"iS": 54306,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/solutions/cta-photo-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/solutions/management-bg-2.png": {
+		"ft": 32768,
+		"iS": 332253,
+		"oA": 0,
+		"oAP": "/img/solutions/management-bg-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/solutions/management-bg.jpg": {
+		"ft": 16384,
+		"iS": 120010,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/solutions/management-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -836,6 +991,28 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/js/solutions-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/solutions-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/js/solutions.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/solutions-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/bodymovin-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -913,12 +1090,31 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/minify/solutions-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/solutions-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/services.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/services.php",
+		"oF": 0
+		},
+	"/solutions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/solutions.php",
 		"oF": 0
 		},
 	"/style/css/features.css": {
@@ -948,6 +1144,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/services-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/solutions.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/solutions-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1025,6 +1231,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/services.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/solutions.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/solutions.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

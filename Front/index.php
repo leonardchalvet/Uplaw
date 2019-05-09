@@ -21,7 +21,10 @@
 	
 	<body>
 
-		<?php include('common-header.php') ?>
+		<?php 
+		$type = 'home';
+		include('common-header.php') 
+		?>
 
 		<main>
 
@@ -48,10 +51,6 @@
 					<div id="obj-desktop-2"></div>
 					<div id="obj-desktop-3"></div>
 
-					<!--<img class="obj-desktop-1" src="img/home/home-obj-desktop-1.svg" alt=""> 
-					<img class="obj-desktop-2" src="img/home/home-obj-desktop-2.svg" alt="">
-					<img class="obj-desktop-3" src="img/home/home-obj-desktop-3.svg" alt="">-->
-
 					<img class="obj-mobile-1" src="img/home/home-obj-mobile-1.svg" alt="">
 				</div>
 			</section>
@@ -67,94 +66,79 @@
 					</div>
 					<div class="container-el">
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
-						</div>
-						<div class="el">
-							<img src="img/home/section-logos/agrico@2x.png" alt="">
-							<img src="img/home/section-logos/bio@2x.png" alt="">
-							<img src="img/home/section-logos/BonneGueule@2x.png" alt="">
-							<img src="img/home/section-logos/care@2x.png" alt="">
-							<img src="img/home/section-logos/everoad@2x.png" alt="">
-							<img src="img/home/section-logos/finance@2x.png" alt="">
-							<img src="img/home/section-logos/inops@2x.png" alt="">
-							<img src="img/home/section-logos/lavoir@2x.png" alt="">
-							<img src="img/home/section-logos/mobile@2x.png" alt="">
-							<img src="img/home/section-logos/payfit@2x.png" alt="">
-							<img src="img/home/section-logos/phantom@2x.png" alt="">
-							<img src="img/home/section-logos/plugwine@2x.png" alt="">
-							<img src="img/home/section-logos/prestashop@2x.png" alt="">
+							<img src="img/home/section-logos/agrico.png" alt="">
+							<img src="img/home/section-logos/bio.png" alt="">
+							<img src="img/home/section-logos/BonneGueule.png" alt="">
+							<img src="img/home/section-logos/care.png" alt="">
+							<img src="img/home/section-logos/everoad.png" alt="">
+							<img src="img/home/section-logos/finance.png" alt="">
+							<img src="img/home/section-logos/inops.png" alt="">
+							<img src="img/home/section-logos/lavoir.png" alt="">
+							<img src="img/home/section-logos/mobile.png" alt="">
+							<img src="img/home/section-logos/payfit.png" alt="">
+							<img src="img/home/section-logos/phantom.png" alt="">
+							<img src="img/home/section-logos/plugwine.png" alt="">
+							<img src="img/home/section-logos/prestashop.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -256,30 +240,36 @@
 					<div class="container-el">
 						<div class="el">
 							<img src="img/home/illu-pres-1.svg" alt="">
-							<h4>
-								Confidentialité
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
+							<div class="column">
+								<h4>
+									Confidentialité
+								</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+							</div>
 						</div>
 						<div class="el">
 							<img src="img/home/illu-pres-2.svg" alt="">
-							<h4>
-								Expertise
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
+							<div class="column">
+								<h4>
+									Expertise
+								</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+							</div>
 						</div>
 						<div class="el">
 							<img src="img/home/illu-pres-3.svg" alt="">
-							<h4>
-								Sécurité
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
+							<div class="column">
+								<h4>
+									Sécurité
+								</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -288,9 +278,9 @@
 			<section id="section-quotes">
 				<div class="wrapper">
 					<div class="container-pp">
-						<div style="background-image: url(img/img-test/user-1.jpg);" class="pp pp-1"></div>
-						<div style="background-image: url(img/img-test/user-2.jpg);" class="pp pp-2"></div>
-						<div style="background-image: url(img/img-test/user-3.jpg);" class="pp pp-3"></div>
+						<div style="background-image: url(img/home/section-quotes/photo-1.jpg);" class="pp pp-1"></div>
+						<div style="background-image: url(img/home/section-quotes/photo-1.jpg);" class="pp pp-2"></div>
+						<div style="background-image: url(img/home/section-quotes/photo-1.jpg);" class="pp pp-3"></div>
 					</div>
 					<div class="container-text">
 						<div class="container-quotes">
@@ -341,7 +331,7 @@
 			</section>
 
 			<section id="cm-section-demo">
-				<div class="cover" style="background-image: url(img/home/demo-cover.png);"></div>
+				<div class="cover" style="background-image: url(img/home/demo-cover.jpg);"></div>
 				<div class="wrapper">
 					<div class="container-text">
 						<h2>Une question ?</h2>

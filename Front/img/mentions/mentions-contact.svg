@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="11px" viewBox="0 0 13 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>contact-icone</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="7a-Mentions-Légales" transform="translate(-951.000000, -522.000000)" stroke="#000000" stroke-width="1.5">
+            <g id="Content" transform="translate(270.000000, 141.000000)">
+                <g id="Infos" transform="translate(681.000000, 191.000000)">
+                    <g id="contact-icone" transform="translate(0.000000, 191.000000)">
+                        <g id="email-action-unread">
+                            <rect id="Rectangle-path" x="0.8125" y="0.572916667" width="11.375" height="8.125" rx="1.5"></rect>
+                            <path d="M12.1875,2.16940694 L7.70257932,5.29330633 C7.04774085,5.749496 6.13588415,5.749496 5.48104568,5.29330633 L0.996125,2.16940694" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
