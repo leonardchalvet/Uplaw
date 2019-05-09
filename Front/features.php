@@ -159,6 +159,7 @@
 						</a>
 					</div>
 					<div class="container-el">
+						
 						<div class="el">
 							<img class="screen" src="img/features/screen-dash.jpg" alt="">
 							<img class="obj-1" src="img/features/obj-screen-2.svg" alt="">
@@ -249,7 +250,6 @@
 								</p>
 							</div>
 						</div>
-
 
 					</div>
 				</div>

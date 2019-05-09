@@ -199,11 +199,11 @@ main{
 		.container-el{
 			flex: 1;
 			.el{
+				position: relative;
+				width: 100%;
 				&:not(:last-child){
 					margin-bottom: 50vh;
 				}
-				position: relative;
-				width: 100%;
 				.screen{
 					position: relative;
 					z-index: 1;
