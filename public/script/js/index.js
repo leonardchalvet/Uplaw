@@ -27,7 +27,7 @@ $(window).on('load', function() {
 					  renderer: 'svg',
 					  loop: false,
 					  autoplay: true,
-					  path: '/script/animations/sectionCover-obj-desktop-1.json'
+					  path: 'script/animations/sectionCover-obj-desktop-1.json'
 					})
 
 
@@ -38,7 +38,7 @@ $(window).on('load', function() {
 						  renderer: 'svg',
 						  loop: false,
 						  autoplay: true,
-						  path: '/script/animations/sectionCover-obj-desktop-2.json'
+						  path: 'script/animations/sectionCover-obj-desktop-2.json'
 						})
 
 
@@ -49,7 +49,7 @@ $(window).on('load', function() {
 							  renderer: 'svg',
 							  loop: false,
 							  autoplay: true,
-							  path: '/script/animations/sectionCover-obj-desktop-3.json'
+							  path: 'script/animations/sectionCover-obj-desktop-3.json'
 							})
 						
 						}, 750);

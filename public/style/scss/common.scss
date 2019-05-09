@@ -6,6 +6,10 @@
 	font-family:OpenSans-Regular;
 	src:url(../../fonts/OpenSans-Regular.ttf);
 }
+@font-face {
+	font-family:OpenSans-Bold;
+	src:url(../../fonts/OpenSans-Bold.ttf);
+}
 body, html, *
 {
 	padding: 0px;
@@ -26,9 +30,29 @@ h1, h2, h3, h4, h5, h6, i
 	font-weight: normal;
 	font-style: normal;
 }
+body {
+	&:after {
+		content: " ";
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, .2);
+
+		transform: scale(0);
+		transition: all .30s ease;
+	}
+}
 body.block
 {
 	overflow:hidden;
+}
+body.lightbox {
+	&:after {
+		transform: scale(1);
+	}
 }
 
 /* ------------------------------------------------------------- */
@@ -74,6 +98,7 @@ main
 
 	$font_Bold_1: Nexa-Bold;
 	$font_Regular_1: OpenSans-Regular;
+	$font_Bold_2: OpenSans-Bold;
 
 /*=====  End of FONTS  ======*/
 
@@ -86,24 +111,36 @@ main
 		/*----------  DESKTOP  ----------*/
 		$h1_textsize_desktop: 50px;
 		$h1_lineheight_desktop: 60px;
+		/*----------  MOBILE  ----------*/
+		$h1_textsize_mobile: 35px;
+		$h1_lineheight_mobile: 40px;
 
 
 	/*----------  H2  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h2_textsize_desktop: 40px;
 		$h2_lineheight_desktop: 45px;
+		/*----------  MOBILE  ----------*/
+		$h2_textsize_mobile: 30px;
+		$h2_lineheight_mobile: 45px;
 
 
 	/*----------  H3  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h3_textsize_desktop: 38px;
 		$h3_lineheight_desktop: 45px;
+		/*----------  MOBILE  ----------*/
+		$h3_textsize_mobile: 26px;
+		$h3_lineheight_mobile: 35px;
 
 
 	/*----------  H4  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h4_textsize_desktop: 26px;
 		$h4_lineheight_desktop: 32px;
+		/*----------  MOBILE  ----------*/
+		$h4_textsize_mobile: 22px;
+		$h4_lineheight_mobile: 28px;
 
 
 	/*----------  H5  ----------*/
@@ -199,6 +236,10 @@ main
 
 		  	font-size: $h1_textsize_desktop;
 			line-height: $h1_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h1_textsize_mobile;
+				line-height: $h1_lineheight_mobile;
+			}
 		}
 
 		/*----------  H2  ----------*/
@@ -207,6 +248,10 @@ main
 		  	color: $colorMain_1;
 			font-size: $h2_textsize_desktop;
 			line-height: $h2_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h2_textsize_mobile;
+				line-height: $h2_lineheight_mobile;
+			}
 		}
 
 		/*----------  H3  ----------*/
@@ -215,6 +260,10 @@ main
 		  	color: $colorMain_1;
 			font-size: $h3_textsize_desktop;
 			line-height: $h3_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h3_textsize_mobile;
+				line-height: $h3_lineheight_mobile;
+			}
 		}
 
 		/*----------  H4  ----------*/
@@ -223,6 +272,10 @@ main
 		  	color: $colorMain_1;
 			font-size: $h4_textsize_desktop;
 			line-height: $h4_lineheight_desktop;
+			@media screen and (max-width: $breakPoint_mobile) {
+				font-size: $h4_textsize_mobile;
+				line-height: $h4_lineheight_mobile;
+			}
 		}
 
 		/*----------  H5  ----------*/
@@ -242,7 +295,7 @@ main
 		}
 
 
-		/*----------  PARAGRAPH BIG  ----------*/
+		/*----------  PARAGRAPH QUOTE  ----------*/
 		@mixin styleQuote{
 			font-family: $font_Bold_1;
 		  	color: $colorMain_1;
@@ -274,6 +327,14 @@ main
 			line-height: $paragraphSmall_lineheight_desktop;
 		}
 
+		/*----------  PARAGRAPH SMALL  ----------*/
+		@mixin styleParagraphTiny{
+			font-family: $font_Regular_1;
+		  	color: #FFF;
+			font-size: $paragraphTiny_textsize_desktop;
+			line-height: $paragraphTiny_lineheight_desktop;
+		}
+
 
 		/*----------  BUTTON  ----------*/
 
@@ -297,16 +358,18 @@ main
 			  		transition: all 450ms cubic-bezier(0.805, 0.050, 0.230, 0.940);
 			  	}
 			  	
-				.btn-arrow{
-					width: 11px;
+			  	&:not(.style-transparent){
+					.btn-arrow{
+						width: 11px;
+					}
+
+					.btn-text{
+						@include styleH5;
+						color: #FFF;
+				  	}
 				}
 
-				.btn-text{
-					@include styleH5;
-					color: #FFF;
-			  	}
-
-			  	&:not(.style-white){
+			  	&:not(.style-white):not(.style-transparent){
 			  		&:before{
 			  			background-color: #000;
 			  		}
@@ -325,7 +388,19 @@ main
 			  			color: $colorMain_1;
 			  		}
 			  	}
-				
+			  	&.style-transparent {
+			  		&:before{
+			  			background-color: transparent;
+			  		}
+					.btn-text{
+						@include styleH4;
+						color: #FFF;
+				  	}
+			  		.btn-arrow{
+						width: 17px;
+			  			fill: #FFF;
+			  		}
+			  	}
 				
 			}
 
@@ -344,31 +419,33 @@ main
 					transition: all 650ms cubic-bezier(0.805, 0.050, 0.230, 0.940);
 			  	}
 				
-				&.hover-left{
-					&:hover{
-						&:before{
-							transform: translateX(5%) scaleX(1.1);
-						}
-						.btn-arrow{
-							transform: translateX(20px) scaleX(1.3);
-						}
-						.btn-text{
-							transform: translateX(10px);
+				@media screen and (min-width: $breakPoint_tablet) {
+					&.hover-left{
+						&:hover{
+							&:before{
+								transform: translateX(5%) scaleX(1.1);
+							}
+							.btn-arrow{
+								transform: translateX(20px) scaleX(1.3);
+							}
+							.btn-text{
+								transform: translateX(10px);
+							}
 						}
 					}
-				}
 
-				&.hover-center{
-					&:hover{
-						&:before{
-							transform: scaleX(1.1);
-						}
-						.btn-arrow{
-							transform: translateX(10px) scaleX(1.3);
+					&.hover-center{
+						&:hover{
+							&:before{
+								transform: scaleX(1.1);
+							}
+							.btn-arrow{
+								transform: translateX(10px) scaleX(1.3);
+							}
 						}
 					}
 				}
-			  	
+		
 			}
 
 
@@ -413,8 +490,10 @@ main
 						transition: all 500ms cubic-bezier(0.155, 0.870, 0.340, 1.005);
 					}
 
-					&:hover svg{
-						transform: scale(1.3);
+					@media screen and (min-width: $breakPoint_tablet) {
+						&:hover svg{
+							transform: scale(1.3);
+						}
 					}
 				}
 			}
@@ -448,9 +527,11 @@ main
 				transform: scaleX(0);
 				transition: all 450ms cubic-bezier(0.805, 0.050, 0.230, 0.940);
 			}
-			&:hover{
-				&:before{
-					transform: scaleX(1);
+			@media screen and (min-width: $breakPoint_tablet) {
+				&:hover{
+					&:before{
+						transform: scaleX(1);
+					}
 				}
 			}
 		}
@@ -573,6 +654,143 @@ main
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile) {
+	#cm-section-demo .wrapper {
+		padding: 0 25px;
+		width: 100%;
+	}
+}
+
+#cm-section-management {
+
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	position: relative;
+	.wrapper {
+		@include styleGrid2;
+		h2 {
+			width: 520px;
+			@include styleH2;
+		}
+		.sep {
+			margin: 50px 0px 50px 0px;
+			height: 2px;
+			width: 100px;
+			background-color: $colorMain_1;
+		}
+
+		.content {
+
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			.container-photo {
+				position: relative;
+				width: 370px;
+
+				.bg {
+					position: relative;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;	
+				}
+
+				&:before {
+					content: " ";
+					position: absolute;
+					z-index: 0;
+					top: 12px;
+					left: 12px;
+
+					width: 100%;
+					height: 100%;
+
+					background-color: #A6B7C7;
+				}
+			}
+			.container-text {
+				width: 525px;
+				p {
+					@include styleParagraphMedium;
+				}
+				.container-el {
+					margin-top: 55px;
+
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+
+					.el {
+						width: 220px;
+						&:first-child {
+							margin-bottom: 65px;
+						}
+
+						h3 {
+							@include styleH4;
+						}
+						p {
+							@include styleParagraphSmall;
+						}
+					}
+				}
+				a {
+					margin-top: 95px;
+					@include styleButtonSmall;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
+	#cm-section-management .wrapper .content .container-photo {
+		margin-right: 50px;
+	}
+	#cm-section-management .wrapper .content .container-text {
+		width: auto;
+		flex: 1;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el .el:not(:last-child) {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#cm-section-management {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#cm-section-management .wrapper h2 {
+		width: 100%;
+	}
+	#cm-section-management .wrapper .content .container-photo {
+		display: none;
+	}
+	#cm-section-management .wrapper .content .container-text {
+		width: 100%;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el {
+		flex-direction: column;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el .el {
+		width: 100%;
+	}
+	#cm-section-management .wrapper .content .container-text .container-el .el:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	#cm-section-management .wrapper .content .container-text a {
+		margin-top: 60px;
+	}
+
+}
 
 /*=====  End of COMMON SECTION  ======*/
 
@@ -585,7 +803,7 @@ main
 		display: block;
 	    @include styleAnimation1;
 	    @for $i from 1 to 10 {
-			&:nth-child(#{$i}) { transition-delay: $i * 0.035s; }
+			&:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
 		}
 	}
 	&.anim{

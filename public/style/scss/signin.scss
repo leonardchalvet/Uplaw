@@ -1,0 +1,238 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*===================================
+=            PAGE SIGN IN           =
+====================================*/
+
+#section-form {
+
+	padding-top: 150px;
+	padding-bottom: 100px;
+	position: relative;
+
+	.obj-1, .obj-2 {
+		position: absolute;
+	}
+
+	.obj-1 {
+		position: absolute;
+		top: 250px;
+		right: 0;
+
+		width: 300px;
+		height: 300px;
+	}
+
+	.obj-2 {
+		position: absolute;
+		top: 400px;
+		right: 0;
+
+		width: 300px;
+		height: 425px;
+	}
+
+
+	.wrapper {
+
+		@include styleGrid4;
+
+		.container-text {
+			h1 {
+				@include styleH1;
+				width: 450px;
+			}
+			p {
+				margin-top: 20px;
+				@include styleParagraphBig;
+				width: 550px;
+			}
+		}
+
+		form {
+			width: 650px;
+			margin-top: 110px;
+
+			display: flex;
+			flex-direction: column;
+
+			.input {
+				position: relative;
+				padding-top: 25px;
+				label {
+					@include styleH5;
+					width: 100%;
+				}
+				input {
+					border: none;
+					margin-top: 10px;
+					outline: none;
+					@include styleParagraphSmall;
+					width: 100%;
+					&:focus ~ .sep {
+						background-color: $colorMain_1;
+					}
+				}
+				.sep {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background-color: $colorMain_7;
+					transition: all .25s ease;
+				}
+				span {
+					display: none;
+					@include styleParagraphTiny;
+					color: #EB5A5A;
+					width: 100%;
+				}
+				.cross, .check {
+					display: none;
+					position: absolute;
+					top: 50px;
+					right: 0;
+					width: 16px;
+					height: 16px;
+				}
+				&:before {
+					content: " ";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background-color: $colorMain_7;
+				}
+				&:focus {
+					&:before {
+						background-color: $colorMain_7;
+					}
+				}
+				&.good {
+					.check {
+						display: block;
+					}
+				}
+				&.bad {
+					.cross {
+						display: block;
+					}
+					span {
+						display: block;
+					}
+				}
+			}
+
+			.row {
+				display: flex;
+				justify-content: space-between;
+				&:not(:first-child) {
+					margin-top: 30px;
+				}
+				&:nth-last-child(4) {
+					margin-bottom: 25px;
+				}
+				.input {
+					width: 45%;
+				}
+			}
+
+			.checkbox {
+				position: relative;
+				padding-left: 35px;
+				margin-top: 50px;
+				input {
+					position: absolute;
+					opacity: 0;
+					width: 0;
+					height: 0;
+					&:checked ~ .checkmark {
+						background-color: #C6C6C6;
+					}
+				}
+				.text {
+					@include styleH5;
+					a {
+						text-decoration: none;
+						position: relative;
+						display: inline-block;
+						color: $colorMain_1;
+						&:before {
+							content: " ";
+							position: absolute;
+							bottom: -4px;
+							left: 0;
+
+							width: 100%;
+							height: 1px;
+							background-color: $colorMain_1;
+						}
+					}
+				}
+				.checkmark {
+					cursor: pointer;
+					position: absolute;
+					top: -2px;
+					left: 0;
+					height: 17px;
+					width: 17px;
+					border-radius: 5px;
+					border: 1px solid #C6C6C6;
+					background-color: $colorMain_7;
+				}
+			}
+
+			button {
+				margin: 50px 0 0 auto;
+				outline: none;
+				border: none;
+				@include styleButtonSmall;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	#section-form {
+		padding-top: 90px;
+		padding-bottom: 70px;
+	}
+	#section-form .obj-1,
+	#section-form .obj-2 {
+		display: none;
+	}
+	#section-form .wrapper .container-text h1 {
+		width: 100%;
+	}
+	#section-form .wrapper .container-text p {
+		width: 100%;
+	}
+	#section-form .wrapper form {
+		width: 100%;
+		margin-top: 70px;
+	}
+	#section-form .wrapper form .row {
+		flex-direction: column;
+	}
+	#section-form .wrapper form .row .input {
+		width: 100%;
+		&:first-child {
+			margin-bottom: 30px;
+		}
+	}
+	#section-form .wrapper form .checkbox .text a {
+		margin-top: 5px;
+	}
+	#section-form .wrapper form button {
+		margin: 40px auto 0 0;
+	}
+}
+
+/*=======================================
+=            END PAGE SIGN IN           =
+========================================*/
+
+@import 'footer.scss';

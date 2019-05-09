@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon-flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.36352201,20.5782997 C1.25896201,20.5782997 0.363522007,19.6828597 0.363522007,18.5782997 L0.363522007,2.57829969 C0.363522007,1.47373969 1.25896201,0.578299689 2.36352201,0.578299689 L26.363522,0.578299689 C27.468082,0.578299689 28.363522,1.47373969 28.363522,2.57829969 L28.363522,18.5782997 C28.363522,19.6828597 27.468082,20.5782997 26.363522,20.5782997 L2.36352201,20.5782997 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-1220.000000, -59.000000)">
+            <g id="Languages">
+                <g transform="translate(1219.000000, 58.000000)">
+                    <g id="icon-flag" transform="translate(0.636478, 0.421700)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="c" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <polygon id="Path" fill="#1035BB" mask="url(#mask-2)" points="1.93622895e-13 0 9.69685201 0 9.69685201 21.1565994 1.93622895e-13 21.1565994"></polygon>
+                        <polygon id="Path" fill="#F44653" mask="url(#mask-2)" points="19.030222 0 28.727074 0 28.727074 21.1565994 19.030222 21.1565994"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
