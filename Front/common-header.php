@@ -31,14 +31,14 @@
 		</div>
 
 		<div class="container-action">
-			<a class="signin">
+			<a class="login">
 				<img src="img/common/connect-icone.svg" alt="">
 				<span>
 					Connexion
 				</span>
 			</a>
 			<div class="sep"></div>
-			<a class="signup hover-left">
+			<a class="contact hover-left">
 				<span class="btn-text">
 					Contact
 				</span>
@@ -54,17 +54,16 @@
 					Entrez vos identifiants ci-dessous afin d'accéder à votre espace personnel
 				</p>
 				<form method="post" action="#">
-					<div class="sep"></div>
 					<div class="input">
 						<label>Adresse e-mail*</label>
 						<input type="email" name="mail" placeholder="Votre adresse e-mail">
+						<div class="sep"></div>
 					</div>
-					<div class="sep"></div>
 					<div class="input">
 						<label>Mot de passe*</label>
 						<input type="password" name="password" placeholder="********">
+						<div class="sep"></div>
 					</div>
-					<div class="sep"></div>
 					<a href="#">Mot de passe oublié ?</a>
 					<button class="hover-center">
 						<span class="btn-text">
@@ -122,7 +121,7 @@
 			</ul>
 
 			<div class="container-action">
-				<a class="signup hover-left">
+				<a class="contact hover-left">
 					<span class="btn-text">
 						Contact
 					</span>
@@ -130,7 +129,7 @@
 					   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
 					</svg>
 				</a>
-				<a class="signin">
+				<a class="login">
 					<img src="img/common/connect-icone.svg" alt="">
 					<span>
 						Connexion
@@ -139,6 +138,38 @@
 			</div>
 
 		</div>
+	</div>
+
+	<div class="lg-log-in">
+		<img class="cross" src="img/common/cross.svg">
+		<h3>Connextez-vous à votre espace</h3>
+		<p>
+			Entrez vos identifiants ci-dessous afin d'accéder à votre espace personnel
+		</p>
+		<form method="post" action="#">
+			<div class="sep"></div>
+			<div class="input">
+				<label>Adresse e-mail*</label>
+				<input type="email" name="mail" placeholder="Votre adresse e-mail">
+				<div class="sep"></div>
+			</div>
+			<div class="sep"></div>
+			<div class="input">
+				<label>Mot de passe*</label>
+				<input type="password" name="password" placeholder="********">
+				<div class="sep"></div>
+			</div>
+			<div class="sep"></div>
+			<a href="#">Mot de passe oublié ?</a>
+			<button class="hover-center">
+				<span class="btn-text">
+					Connexion
+				</span>
+				<svg class="btn-arrow" viewBox="0 0 13 6">
+				   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
+				</svg>
+			</button>
+		</form>
 	</div>
 
 </header>

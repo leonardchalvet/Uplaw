@@ -194,21 +194,43 @@ $(window).on('load', function() {
 	/****************/
 
 
-	$('#header-desktop .wrapper .container-action .signin').click(function(){
-		let pointer = $('#header-desktop .wrapper .container-action .lg-log-in');
+	$('#header-desktop .wrapper .container-action .login').click(function(){
+		openLogin('#header-desktop .wrapper .container-action .lg-log-in');
+	})
+
+	$('#header-mobile .container-nav .wrapper .cta-log-in').click(function(){
+		$('body').addClass('block');
+		openLogin('#header-mobile .lg-log-in');
+	})
+	$('#header-mobile .container-menu .wrapper .container-action .login').click(function(){
+		$('body').addClass('block');
+		openLogin('#header-mobile .lg-log-in');
+	})
+
+	function openLogin(link) {
+		let pointer = $(link);
 		pointer.addClass('block');
 		setTimeout(function(){
 			pointer.addClass('show');
 		}, 50);
-	})
+	}
 
 	$('#header-desktop .wrapper .container-action .lg-log-in .cross').click(function(){
-		let pointer = $('#header-desktop .wrapper .container-action .lg-log-in');
+		closeLogin('#header-desktop .wrapper .container-action .lg-log-in');
+	})
+	$('#header-mobile .lg-log-in .cross').click(function(){
+		$('body').removeClass('lightbox');
+		closeLogin('#header-mobile .lg-log-in');
+	})
+
+	function closeLogin(link) {
+		let pointer = $(link);
 		pointer.removeClass('show');
 		setTimeout(function(){
 			pointer.removeClass('block');
 		}, 100);
-	})
+	}
+
 	$('body').on('click', function(event) { 
 	    if (!$(event.target).closest('#header-desktop .wrapper .container-action .lg-log-in').length) {
 	    	if($('#header-desktop .wrapper .container-action .lg-log-in').hasClass('show'))
@@ -218,15 +240,23 @@ $(window).on('load', function() {
 
 	/***************/
 
-	$('#header-desktop .wrapper .container-action .signup').click(function () {
+	$('#header-desktop .wrapper .container-action .contact').click(function () {
+		$('body').addClass('lightbox');
+		openContact();
+	})
+
+	$('#header-mobile .container-menu .wrapper .container-action .contact').click(function(){
+		openContact();
+	})
+
+	function openContact() {
 		let pointer = $('.container-lg');
 		$('body').addClass('block');
-		$('body').addClass('lightbox');
 		pointer.addClass('block');
 		setTimeout(function(){
 			pointer.addClass('show');
 		}, 50);
-	})
+	}
 
 	$('.lg-contact .cross').click(function (){
 		let pointer = $('.container-lg');

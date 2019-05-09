@@ -134,7 +134,7 @@
 			a {
 				cursor: pointer;
 			}
-			.signin{
+			.login{
 				position: relative;
 
 				display: flex;
@@ -160,97 +160,8 @@
 				width: 3px;
 				border-radius: 3px;
 			}
-			.signup{
+			.contact{
 				@include styleButtonBig;
-			}
-			.lg-log-in {
-				position: absolute;
-				top: calc(100% + 40px);
-				left: 60px;
-				transform: translateX(-50%);
-				
-				padding: 32px;
-				width: 375px;
-
-				background-color: #FFF;
-				box-shadow: 0 2px 50px 0 rgba(89,93,93,0.35);
-
-				transition: all .5s ease;
-
-				display: none;
-				opacity: 0;
-
-				&.block {
-					display: block;
-				}
-				&.show {
-					opacity: 1;
-				}
-
-				&:before {
-					content: " ";
-					position: absolute;
-					top: -15px;
-					left: 50%;
-					transform: translateX(-50%);
-
-					width: 0;
-					height: 0;
-					border-style: solid;
-					border-width: 0 14.5px 16px 14.5px;
-					border-color: transparent transparent #ffffff transparent;
-				}
-				.cross {
-					cursor: pointer;
-					position: absolute;
-					top: 24px;
-					right: 24px;
-					transition: all .25s ease;
-					&:hover {
-						opacity: .8;
-					}
-				}
-				h3 {
-					@include styleH4;
-					width: 200px;
-				}
-				p {
-					margin-top: 16px;
-					@include styleParagraphMedium;
-				}
-				form {
-					display: flex;
-					flex-direction: column;
-					.sep {
-						margin: 40px 0 25px 0;
-						width: 100%;
-						height: 1px;
-						background-color: $colorMain_7;
-					}
-					.input {
-						label {
-							@include styleH5;
-							width: 100%;
-						}
-						input {
-							margin-top: 10px;
-							width: 100%;
-							@include styleParagraphSmall;
-							border: none;
-							outline: none;
-						}
-					}
-				}
-				a {
-					text-decoration: none;
-					@include styleParagraphMedium;
-				}
-				button {
-					margin: 35px 0 0 auto;
-					outline: none;
-					border: none;
-					@include styleButtonSmall;
-				}
 			}
 		}
 	}
@@ -258,162 +169,6 @@
 		background-color: #FFF;
 		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
 	}
-}
-
-.container-lg {
-	position: fixed;
-	z-index: 1000;
-
-	top: 0;
-	left: 0;
-
-	width: 100%;
-	height: 100vh;
-	overflow-y: scroll;
-
-	transition: all .25s ease;
-
-	display: none;
-	opacity: 0;
-	&.block {
-		display: block;
-	}
-	&.show {
-		opacity: 1;
-	}
-}
-.lg-contact {
-	position: absolute;
-	top: 150;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 900px;
-
-	margin-bottom: 100px;
-	padding: 125px 110px 75px 110px;
-	background-color: #FFF;
-
-	.cross {
-		cursor: pointer;
-		position: absolute;
-		top: 24px;
-		right: 24px;
-		transition: all .25s ease;
-		&:hover {
-			opacity: .8;
-		}
-	}
-	
-	.obj-1, .obj-2 {
-		position: absolute;
-	}
-
-	.obj-1 {
-		position: absolute;
-		top: 60px;
-		right: 0;
-
-		width: 245px;
-		height: 245px;
-	}
-
-	.obj-2 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 300px;
-		height: 350px;
-		opacity: .5;
-	}
-
-	.container-text {
-		padding-left: 65px;
-		padding-right: 200px;
-		h2 {
-			@include styleH1;
-		}
-		p {
-			margin-top: 10px;
-			@include styleParagraphBig;
-		}
-	}
-
-	form {
-		margin-top: 110px;
-
-		display: flex;
-		flex-direction: column;
-
-		.row {
-			display: flex;
-			justify-content: space-between;
-			&:not(:first-child) {
-				margin-top: 30px;
-			}
-			.input {
-				position: relative;
-				padding-top: 25px;
-				width: 45%;
-				label {
-					@include styleH5;
-					width: 100%;
-				}
-				input {
-					border: none;
-					margin-top: 10px;
-					outline: none;
-					@include styleParagraphSmall;
-					width: 100%;
-					&:focus ~ .sep {
-						background-color: $colorMain_1;
-					}
-				}
-				.sep {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 1px;
-					background-color: $colorMain_7;
-					transition: all .25s ease;
-				}
-				span {
-					display: none;
-					@include styleParagraphTiny;
-					color: #EB5A5A;
-					width: 100%;
-				}
-				.cross, .check {
-					display: none;
-					position: absolute;
-					top: 50px;
-					right: 0;
-					width: 16px;
-					height: 16px;
-				}
-				&.good {
-					.check {
-						display: block;
-					}
-				}
-				&.bad {
-					.cross {
-						display: block;
-					}
-					span {
-						display: block;
-					}
-				}
-			}
-		}
-		button {
-			margin: 50px 0 0 auto;
-			outline: none;
-			border: none;
-			@include styleButtonSmall;
-		}
-	}
-
 }
 
 #header-mobile {
@@ -558,7 +313,7 @@
 				a {
 					cursor: pointer;
 				}
-				.signin{
+				.login{
 					position: relative;
 
 					display: flex;
@@ -584,7 +339,7 @@
 					width: 3px;
 					border-radius: 3px;
 				}
-				.signup{
+				.contact{
 					@include styleButtonBig;
 				}
 			}
@@ -614,11 +369,347 @@
 	}
 }
 
+/*==============================
+=            LIGHBOX           =
+===============================*/
+
+#header-desktop .wrapper .container-action .lg-log-in,
+#header-mobile .lg-log-in {
+	background-color: #FFF;
+
+	transition: all .5s ease;
+
+	display: none;
+	opacity: 0;
+
+	&.block {
+		display: block;
+	}
+	&.show {
+		opacity: 1;
+	}
+
+	.cross {
+		cursor: pointer;
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		transition: all .25s ease;
+		&:hover {
+			opacity: .8;
+		}
+	}
+	h3 {
+		@include styleH4;
+		width: 200px;
+	}
+	p {
+		margin-top: 16px;
+		@include styleParagraphMedium;
+	}
+	form {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		.input {
+			position: relative;
+			padding: 40px 0 25px 0;
+			label {
+				@include styleH5;
+				width: 100%;
+			}
+			input {
+				margin-top: 10px;
+				width: 100%;
+				@include styleParagraphSmall;
+				border: none;
+				outline: none;
+				&:focus ~ .sep {
+					background-color: $colorMain_1;
+				}
+			}
+			.sep {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: $colorMain_7;
+				transition: all .25s ease;
+			}
+		}
+	}
+	a {
+		padding-top: 25px;
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+		@include styleParagraphMedium;
+
+		&:before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $colorMain_7;	
+		}
+	}
+	button {
+		outline: none;
+		border: none;
+		@include styleButtonSmall;
+	}
+}
+
+#header-desktop .wrapper .container-action .lg-log-in {
+	position: absolute;
+	top: calc(100% + 40px);
+	left: 60px;
+	transform: translateX(-50%);
+
+	padding: 32px;
+	width: 375px;
+
+	box-shadow: 0 2px 50px 0 rgba(89,93,93,0.35);
+
+	&:before {
+		content: " ";
+		position: absolute;
+		top: -15px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 14.5px 16px 14.5px;
+		border-color: transparent transparent #ffffff transparent;
+	}
+
+	button {
+		margin: 35px 0 0 auto;
+	}
+}
+
+#header-mobile .lg-log-in {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+	padding: 50px 25px;
+	width: 100%;
+	height: 100vh;
+
+	overflow-y: scroll;
+
+	button {
+		margin: 35px auto 0 0;
+	}
+}
+
+.container-lg {
+	position: fixed;
+	z-index: 1000;
+
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+
+	transition: all .25s ease;
+
+	display: none;
+	opacity: 0;
+	&.block {
+		display: block;
+	}
+	&.show {
+		opacity: 1;
+	}
+
+	.lg-contact {
+		position: absolute;
+		top: 150;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 900px;
+
+		margin-bottom: 100px;
+		padding: 125px 110px 75px 110px;
+		background-color: #FFF;
+
+		.cross {
+			cursor: pointer;
+			position: absolute;
+			top: 24px;
+			right: 24px;
+			transition: all .25s ease;
+			&:hover {
+				opacity: .8;
+			}
+		}
+		
+		.obj-1, .obj-2 {
+			position: absolute;
+		}
+
+		.obj-1 {
+			position: absolute;
+			top: 60px;
+			right: 0;
+
+			width: 245px;
+			height: 245px;
+		}
+
+		.obj-2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 300px;
+			height: 350px;
+			opacity: .5;
+		}
+
+		.container-text {
+			padding-left: 65px;
+			padding-right: 200px;
+			h2 {
+				@include styleH1;
+			}
+			p {
+				margin-top: 10px;
+				@include styleParagraphBig;
+			}
+		}
+
+		form {
+			margin-top: 110px;
+
+			display: flex;
+			flex-direction: column;
+
+			.row {
+				display: flex;
+				justify-content: space-between;
+				&:not(:first-child) {
+					margin-top: 30px;
+				}
+				.input {
+					position: relative;
+					padding-top: 25px;
+					width: 45%;
+					label {
+						@include styleH5;
+						width: 100%;
+					}
+					input {
+						border: none;
+						margin-top: 10px;
+						outline: none;
+						@include styleParagraphSmall;
+						width: 100%;
+						&:focus ~ .sep {
+							background-color: $colorMain_1;
+						}
+					}
+					.sep {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 1px;
+						background-color: $colorMain_7;
+						transition: all .25s ease;
+					}
+					span {
+						display: none;
+						@include styleParagraphTiny;
+						color: #EB5A5A;
+						width: 100%;
+					}
+					.cross, .check {
+						display: none;
+						position: absolute;
+						top: 50px;
+						right: 0;
+						width: 16px;
+						height: 16px;
+					}
+					&.good {
+						.check {
+							display: block;
+						}
+					}
+					&.bad {
+						.cross {
+							display: block;
+						}
+						span {
+							display: block;
+						}
+					}
+				}
+			}
+			button {
+				margin: 50px 0 0 auto;
+				outline: none;
+				border: none;
+				@include styleButtonSmall;
+			}
+		}
+
+	}
+}
+
+/*==================================
+=            END LIGHBOX           =
+===================================*/
+
 @media screen and (max-width: $breakPoint_tablet) {
 	#header-desktop {
 		display: none;
 	}
 	#header-mobile {
 		display: block;
+	}
+
+	.container-lg .lg-contact {
+		top: 0;
+	    width: 100%;
+	    margin-bottom: 0;
+	    padding: 25px;
+	    height: 100vh;
+	    overflow-y: scroll;
+	}
+	.container-lg .lg-contact .obj-1,
+	.container-lg .lg-contact .obj-2 {
+		display: none;
+	}
+	.container-lg .lg-contact .container-text {
+		padding: 0;
+	}
+	.container-lg .lg-contact .container-text p {
+		margin-top: 25px;
+	}
+	.container-lg .lg-contact form {
+		margin-top: 25px;
+	}
+	.container-lg .lg-contact form .row {
+		flex-direction: column;
+	}
+	.container-lg .lg-contact form .row .input {
+		width: 100%;
+	}
+	.container-lg .lg-contact form .row .input:first-child {
+		margin-bottom: 25px;
+	}
+	.container-lg .lg-contact form button {
+		margin: 50px auto 0 0;
 	}
 }
