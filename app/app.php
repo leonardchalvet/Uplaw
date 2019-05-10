@@ -24,7 +24,7 @@ require_once 'includes/http.php';
 
 // Index page
 $app->get('/', function ($request, $response) use ($app, $prismic) {
-    header('Location: /en/home');
+    header('Location: /fr/home');
     exit;
 });
 
@@ -34,7 +34,7 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     //PART 2 - Select languages
     $options = switchLanguages($args['lg']);
     if(!$options) {
-        header('Location: /en/'.$args['uid']);
+        header('Location: /');
         exit;
     }
 
@@ -45,8 +45,8 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     //PART 4 - Call current page
     $document = NULL;
     $nType = 0;
-    $arrayTypes = ['home', 'fonctionalities', 'services', 'legal_notices', 'about_us', 'sign_up']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
-    $arrayView = ['home', 'features', 'services', 'mentions', 'about', 'signin'];
+    $arrayTypes = ['home', 'fonctionalities', 'services', 'legal_notices', 'about_us', 'sign_up', 'solutions']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    $arrayView = ['home', 'features', 'services', 'mentions', 'about', 'signin', 'solutions'];
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid'], $options);
         $nType++;
@@ -74,31 +74,3 @@ function switchLanguages($lg) {
 
     return [ 'lang' => $lglg ];
 }
-
-
-/**
- * Webhook github
- * auto pull if push on master
- */
-$app->post('/github-webhook', function() use ($app) {
-    $data = json_decode(file_get_contents('php://input'), true);
-    $ref = $data["ref"] ?? "none";
-    $dir = __DIR__."/prod-test/prismic";
-    if ($ref != "refs/heads/master") {
-        shell_exec("cd $dir && echo $ref >> git.log 2>&1");
-    }
-    shell_exec("cd $dir && git pull >> git.log 2>&1");
-});
-
-/**
- * Webhook github
- * manual pull
- */
-$app->get('/github-webhook', function() use ($app) {
-    $dir = __DIR__."/prod-test/prismic";
-    echo "<pre>";
-    echo nl2br(shell_exec("cd $dir && git pull 2>&1"));
-    echo "<hr>";
-    echo nl2br(shell_exec("cd $dir && git log  --pretty=oneline -10"));
-    echo "<pre>";
-});
