@@ -40,13 +40,13 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
 
     //PART 3 - Call Header & Footer
     $header = $api->getByUID('header', 'header', $options);
-    $footer = NULL;
+    $footer = $api->getByUID('footer', 'footer', $options);
     
     //PART 4 - Call current page
     $document = NULL;
     $nType = 0;
-    $arrayTypes = ['home', 'fonctionalities', 'services']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
-    $arrayView = ['home', 'features', 'services'];
+    $arrayTypes = ['home', 'fonctionalities', 'services', 'legal_notices', 'about_us', 'sign_up']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    $arrayView = ['home', 'features', 'services', 'mentions', 'about', 'signin'];
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid'], $options);
         $nType++;
@@ -56,7 +56,7 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     }
 
     //PART 5 - Call good view
-    render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header));
+    render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer));
 });
 
 //ADD LANGUAGES FOR MORE POSSIBILITIES
