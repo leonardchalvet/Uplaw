@@ -134,9 +134,9 @@ $document = $WPGLOBAL['document']->data;
 					<div class="container-logos">
 						<?php 
 							foreach ($document->talkaboutus_all_logos as $logo) { ?>
-								<div class="logo">
+								<a href="<?= $logo->talkaboutus_url->url; ?>" class="logo">
 									<img src="<?= $logo->talkaboutus_logo->url; ?>">
-								</div>
+								</a>
 						<?php 
 							} 
 						?>
