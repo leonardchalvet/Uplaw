@@ -148,18 +148,18 @@
 						Ils parlents de nous dans la presse
 					</h2>
 					<div class="container-logos">
-						<div class="logo">
+						<a href="#" class="logo">
 							<img src="img/about/press-logo-1.svg">
-						</div>
-						<div class="logo">
+						</a>
+						<a href="#" class="logo">
 							<img src="img/about/press-logo-2.svg">
-						</div>
-						<div class="logo">
+						</a>
+						<a href="#" class="logo">
 							<img src="img/about/press-logo-3.svg">
-						</div>
-						<div class="logo">
+						</a>
+						<a href="#" class="logo">
 							<img src="img/about/press-logo-4.svg">
-						</div>
+						</a>
 					</div>
 				</div>
 			</section>

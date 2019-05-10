@@ -1086,6 +1086,33 @@ main {
         height: 1px;
         background-color: #F2F2F2;
         transition: all .25s ease; }
+      #header-desktop .wrapper .container-action .lg-log-in form .input span,
+      #header-mobile .lg-log-in form .input span {
+        display: none;
+        font-family: OpenSans-Regular;
+        color: #FFF;
+        font-size: 11px;
+        line-height: initial;
+        color: #EB5A5A;
+        width: 100%; }
+      #header-desktop .wrapper .container-action .lg-log-in form .input .cross, #header-desktop .wrapper .container-action .lg-log-in form .input .check,
+      #header-mobile .lg-log-in form .input .cross,
+      #header-mobile .lg-log-in form .input .check {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 16px;
+        height: 16px; }
+      #header-desktop .wrapper .container-action .lg-log-in form .input.good .check,
+      #header-mobile .lg-log-in form .input.good .check {
+        display: block; }
+      #header-desktop .wrapper .container-action .lg-log-in form .input.bad .cross,
+      #header-mobile .lg-log-in form .input.bad .cross {
+        display: block; }
+      #header-desktop .wrapper .container-action .lg-log-in form .input.bad span,
+      #header-mobile .lg-log-in form .input.bad span {
+        display: block; }
   #header-desktop .wrapper .container-action .lg-log-in a,
   #header-mobile .lg-log-in a {
     padding-top: 25px;
@@ -1798,9 +1825,11 @@ footer {
             font-size: 14px;
             line-height: 24px;
             text-decoration: none;
-            transition: all .25s ease; }
+            transition: all .25s ease;
+            color: #FFF;
+            opacity: .8; }
             footer .wrapper .container-links ul li a:hover {
-              color: #FFF; }
+              opacity: 1; }
     footer .wrapper .container-sn {
       margin-top: 20px;
       display: flex;
