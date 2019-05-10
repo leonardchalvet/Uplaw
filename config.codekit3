@@ -57,6 +57,14 @@
 		"oAP": "/app/views/404.php",
 		"oF": 0
 		},
+	"/app/views/about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/app/views/about.php",
+		"oF": 0
+		},
 	"/app/views/common-footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -89,12 +97,28 @@
 		"oAP": "/app/views/home.php",
 		"oF": 0
 		},
+	"/app/views/mentions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/app/views/mentions.php",
+		"oF": 0
+		},
 	"/app/views/services.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/app/views/services.php",
+		"oF": 0
+		},
+	"/app/views/signin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/app/views/signin.php",
 		"oF": 0
 		},
 	"/composer.json": {
@@ -3207,8 +3231,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/public/script/js/index-min.js",
-		"oF": 0,
+		"oAP": "/public/script/minify/index-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
