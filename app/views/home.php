@@ -38,7 +38,7 @@ $document = $WPGLOBAL['document']->data;
 						<p class="wrapLine">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
-						<a href="<?=$document->cover_cta_link->url; ?>" class="hover-left">
+						<a class="hover-left" onclick="openContact()">
 							<span class="btn-text">
 								<?= RichText::asText($document->cover_cta_text); ?>
 							</span>
@@ -215,7 +215,7 @@ $document = $WPGLOBAL['document']->data;
 						<div class="container-text">
 							<?= RichText::asHtml($sliceFooter->slice_demo_title); ?>
 							<?= RichText::asHtml($sliceFooter->slice_demo_text); ?>
-							<a href="<?=$sliceFooter->slice_demo_cta_link->url; ?>" class="style-white hover-center">
+							<a class="style-white hover-center" onclick="openContact()">
 								<span class="btn-text">
 									<?= RichText::asText($sliceFooter->slice_demo_cta_text); ?>
 								</span>
