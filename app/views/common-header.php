@@ -228,6 +228,7 @@ $header = $WPGLOBAL['header']->data;
 </header>
 
 <div class="container-lg">
+	<div class="background"></div>
 	<div class="lg-contact">
 		<img class="cross" src="/img/common/cross.svg">
 		<img class="obj-1" src="/img/contact/obj-1.svg">
