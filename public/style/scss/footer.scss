@@ -45,8 +45,10 @@ footer {
 						@include styleParagraphSmall;
 						text-decoration: none;
 						transition: all .25s ease;
+						color: #FFF;
+						opacity: .8;
 						&:hover {
-							color: #FFF;
+							opacity: 1;
 						}
 					}
 				}
