@@ -204,7 +204,61 @@ $document = $WPGLOBAL['document']->data;
 			}
 			?>
 
-			<?php //ICI SLICE COMMON ?>
+			<?php 
+			$slice = $document->body2[0]; 
+			if($slice != NULL) { ?>
+			<section id="cm-section-management">
+				<div class="wrapper">
+					
+					<h2>
+						<?= RichText::asText($slice->primary->slice_management_title); ?>
+					</h2>
+					<div class="sep"></div>
+
+					<div class="content">
+						
+						<div class="container-photo">
+						     <div class="bg" style="background-image: url(<?= $slice->primary->slice_management_picture->url; ?>);"></div>
+						</div>
+
+						<div class="container-text">
+							
+							<p>
+								<?= RichText::asText($slice->primary->slice_management_text); ?>
+							</p>
+
+							<div class="container-el">
+
+								<?php
+									foreach ($slice->items as $el) { ?>
+										<div class="el">
+											<h3>
+												<?= RichText::asText($el->slice_management_subtitle); ?>
+											</h3>
+											<p>
+												<?= RichText::asText($el->slice_management_text_subtitle); ?>
+											</p>
+										</div>
+								<?php
+									}
+								?>
+							</div>
+
+							<a class="hover-left" onclick="openContact()">
+								<span class="btn-text">
+									<?= RichText::asText($slice->primary->slice_management_cta_text); ?>
+								</span>
+								<svg class="btn-arrow" viewBox="0 0 13 6">
+								   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+								</svg>
+							</a>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<? } ?>
 
 			<?php 
 				$sliceFooter = $document->body1[0]->primary; ?>

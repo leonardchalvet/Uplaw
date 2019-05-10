@@ -68,6 +68,8 @@ function switchLanguages($lg) {
         case 'EN': $lglg = 'en-us'; break;
         case 'US': $lglg = 'en-us'; break;
         case 'DE': $lglg = 'de-de'; break;
+        case 'ES': $lglg = 'es-es'; break;
+        case 'JP': $lglg = 'ja-jp'; break;
         
         default: return false;
     }

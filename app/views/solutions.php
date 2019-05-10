@@ -34,7 +34,7 @@ $document = $WPGLOBAL['document']->data;
 
 				<?php
 				$n = rand(1, 3);
-				switch($input->type_input) {
+				switch(strtoupper($document->cover_color_tag)) {
 					case '#59C7DD' : $n = 1; break;
 					case '#F3C44F' : $n = 2; break;
 					case '#00585E' : $n = 3; break;
