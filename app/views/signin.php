@@ -25,7 +25,7 @@ $document = $WPGLOBAL['document']->data;
 
 		<?php 
 		$type = 'signin';
-		include('common-header.php') 
+		include('common-header.php');
 		?>
 
 		<main>
