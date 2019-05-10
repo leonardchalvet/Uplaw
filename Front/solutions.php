@@ -52,7 +52,7 @@
 							<p>
 								Réduisez vos coûts et gagnez en efficacité dans la gestion de votre documentation juridique
 							</p>
-							<a href="#" class="hover-left style-white">
+							<a class="hover-left style-white" onclick="openContact()">
 								<span class="btn-text">
 									Demander une démo
 								</span>
@@ -123,7 +123,7 @@
 								</div>
 							</div>
 
-							<a href="#" class="hover-left">
+							<a class="hover-left" onclick="openContact()">
 								<span class="btn-text">
 									Contact
 								</span>
@@ -150,7 +150,7 @@
 								<div class="bg" style="background-image: url(img/solutions/cta-photo-1.jpg)"></div>
 								<div class="gradient"></div>
 							</div>
-							<a href="#" class="hover-center style-transparent">
+							<a href="features.php" class="hover-center style-transparent">
 								<span class="btn-text">
 									Une gestion efficace
 								</span>
@@ -164,7 +164,7 @@
 								<div class="bg" style="background-image: url(img/solutions/cta-photo-2.jpg)"></div>
 								<div class="gradient"></div>
 							</div>
-							<a href="#" class="hover-center style-transparent">
+							<a href="features.php" class="hover-center style-transparent">
 								<span class="btn-text">
 									Un outil idéal
 								</span>
@@ -176,7 +176,7 @@
 					</div>
 
 					<div class="container-cta">
-						<a href="#" class="hover-center style-white">
+						<a class="hover-center style-white" onclick="openContact()">
 							<span class="btn-text">
 								Demander une démo
 							</span>

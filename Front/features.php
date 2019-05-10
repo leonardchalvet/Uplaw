@@ -149,7 +149,7 @@
 						<p>
 							Nous vous permettons d'avoir une vision à 360° de vos données corporate.
 						</p>
-						<a href="#" class="hover-left">
+						<a class="hover-left" onclick="openContact()">
 							<span class="btn-text">
 								Demander une démo
 							</span>
@@ -330,7 +330,7 @@
 						<p>
 							Bénéficiez de l'assistance de nos experts Uplaw. Notre objectif étant de vous faciliter la vie, nous serons toujours présents pour vous aider si vous rencontrez la moindre difficulté dans l'utilisation de notre solution.
 						</p>
-						<a href="#" class="style-white hover-center">
+						<a class="style-white hover-center" onclick="openContact()">
 							<span class="btn-text">
 								Demander une démo
 							</span>

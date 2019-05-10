@@ -241,7 +241,6 @@ $(window).on('load', function() {
 	/***************/
 
 	$('#header-desktop .wrapper .container-action .contact').click(function () {
-		$('body').addClass('lightbox');
 		openContact();
 	})
 
@@ -249,14 +248,7 @@ $(window).on('load', function() {
 		openContact();
 	})
 
-	function openContact() {
-		let pointer = $('.container-lg');
-		$('body').addClass('block');
-		pointer.addClass('block');
-		setTimeout(function(){
-			pointer.addClass('show');
-		}, 50);
-	}
+	
 
 	$('.lg-contact .cross').click(function (){
 		let pointer = $('.container-lg');
@@ -309,5 +301,15 @@ $(window).on('load', function() {
 })
 
 
-
+function openContact() {
+	if (window.matchMedia("(min-width: 1000px)").matches) {
+		$('body').addClass('lightbox');
+	}
+	let pointer = $('.container-lg');
+	$('body').addClass('block');
+	pointer.addClass('block');
+	setTimeout(function(){
+		pointer.addClass('show');
+	}, 50);
+}
 

@@ -49,7 +49,7 @@
 
 			<div class="lg-log-in">
 				<img class="cross" src="img/common/cross.svg">
-				<h3>Connextez-vous à votre espace</h3>
+				<h3>Connectez-vous à votre espace</h3>
 				<p>
 					Entrez vos identifiants ci-dessous afin d'accéder à votre espace personnel
 				</p>
@@ -58,11 +58,17 @@
 						<label>Adresse e-mail*</label>
 						<input type="email" name="mail" placeholder="Votre adresse e-mail">
 						<div class="sep"></div>
+						<span>Veuillez vérifier votre email</span>
+						<img class="cross" src="img/common/red-cross.svg">
+						<img class="check" src="img/common/check.svg">
 					</div>
 					<div class="input">
 						<label>Mot de passe*</label>
 						<input type="password" name="password" placeholder="********">
 						<div class="sep"></div>
+						<span>Veuillez vérifier votre mot de passe</span>
+						<img class="cross" src="img/common/red-cross.svg">
+						<img class="check" src="img/common/check.svg">
 					</div>
 					<a href="#">Mot de passe oublié ?</a>
 					<button class="hover-center">

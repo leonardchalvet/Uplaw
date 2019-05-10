@@ -37,7 +37,7 @@
 						<p class="wrapLine">
 							Uplaw est la solution idéale pour tous ceux qui ont besoin d'accéder de manière simple, fiable et rapide aux documents et aux données corporate, le tout certifié et garantie par un cabinet d’avocats.
 						</p>
-						<a href="#" class="hover-left">
+						<a class="hover-left" onclick="openContact()">
 							<span class="btn-text">
 								Demander une démo
 							</span>
@@ -338,7 +338,7 @@
 						<p>
 							Bénéficiez de l'assistance de nos experts Uplaw. Notre objectif étant de vous faciliter la vie, nous serons toujours présents pour vous aider si vous rencontrez la moindre difficulté dans l'utilisation de notre solution.
 						</p>
-						<a href="#" class="style-white hover-center">
+						<a class="style-white hover-center" onclick="openContact()">
 							<span class="btn-text">
 								Demander une démo
 							</span>

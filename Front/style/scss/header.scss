@@ -437,6 +437,33 @@
 				background-color: $colorMain_7;
 				transition: all .25s ease;
 			}
+			span {
+				display: none;
+				@include styleParagraphTiny;
+				color: #EB5A5A;
+				width: 100%;
+			}
+			.cross, .check {
+				display: none;
+				position: absolute;
+				top: 65px;
+				right: 0;
+				width: 16px;
+				height: 16px;
+			}
+			&.good {
+				.check {
+					display: block;
+				}
+			}
+			&.bad {
+				.cross {
+					display: block;
+				}
+				span {
+					display: block;
+				}
+			}
 		}
 	}
 	a {
