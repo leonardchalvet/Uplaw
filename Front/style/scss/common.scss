@@ -30,30 +30,11 @@ h1, h2, h3, h4, h5, h6, i
 	font-weight: normal;
 	font-style: normal;
 }
-body {
-	&:after {
-		content: " ";
-		position: fixed;
-		z-index: 100;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: rgba(0, 0, 0, .2);
-
-		transform: scale(0);
-		transition: all .30s ease;
-	}
-}
 body.block
 {
 	overflow:hidden;
 }
-body.lightbox {
-	&:after {
-		transform: scale(1);
-	}
-}
+
 
 /* ------------------------------------------------------------- */
 /* ********************* CONTAINER GENERAL ********************* */

@@ -259,7 +259,7 @@ $(window).on('load', function() {
 			pointer.removeClass('block');
 		}, 100);
 	})
-	$('body').on('click', function(event) {
+	$('.container-lg .background').on('click', function(event) {
 	    if (!$(event.target).closest('.container-lg .lg-contact').length) {
 	    	console.log(event.target);
 	    	if($('.container-lg').hasClass('show'))
@@ -302,9 +302,6 @@ $(window).on('load', function() {
 
 
 function openContact() {
-	if (window.matchMedia("(min-width: 1000px)").matches) {
-		$('body').addClass('lightbox');
-	}
 	let pointer = $('.container-lg');
 	$('body').addClass('block');
 	pointer.addClass('block');

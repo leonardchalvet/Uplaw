@@ -524,7 +524,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 10000;
 
 	padding: 50px 25px;
 	width: 100%;
@@ -539,7 +539,7 @@
 
 .container-lg {
 	position: fixed;
-	z-index: 1000;
+	z-index: 10000;
 
 	top: 0;
 	left: 0;
@@ -552,6 +552,8 @@
 
 	display: none;
 	opacity: 0;
+	
+
 	&.block {
 		display: block;
 	}
@@ -559,8 +561,18 @@
 		opacity: 1;
 	}
 
+	.background{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+
 	.lg-contact {
 		position: absolute;
+		z-index: 1;
 		top: 150;
 		left: 50%;
 		transform: translateX(-50%);
