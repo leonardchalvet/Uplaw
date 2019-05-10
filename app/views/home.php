@@ -66,7 +66,7 @@ $document = $WPGLOBAL['document']->data;
 					</div>
 					<div class="container-el">
 						<?php 
-							for($i=0;$i<6;$i++) { 
+							for($i=0;$i<5;$i++) { 
 								echo '<div class="el">';
 								foreach ($document->logos_all_parteners_logo as $logo) { ?>
 									<img src="<?= $logo->logos_partner_logo->url; ?>" alt="">
@@ -147,7 +147,7 @@ $document = $WPGLOBAL['document']->data;
 			</section>
 
 			<?php
-			$showSectionQuotes = strtolower(trim($document->quotes_show_or_hide[0]->text));
+			$showSectionQuotes = strtolower($document->quotes_show_or_hide);
 			if($showSectionQuotes === 'true') { 
 			?>
 
