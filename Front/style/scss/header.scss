@@ -3,7 +3,7 @@
 	left: 0px;
 	width: 100%;
 	position: fixed;
-	z-index: 100;
+	z-index: 20;
 	transition: all 0.25s ease;
 	.wrapper{
 		height: 90px;
@@ -12,6 +12,7 @@
 		align-items: center;
 		justify-content: space-between;
 		@include styleGrid1;
+		border-bottom: 1px solid $colorMain_7;
 		.container-link{
 			position: relative;
 			display: flex;
@@ -168,6 +169,9 @@
 	&.scroll{
 		background-color: #FFF;
 		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
+		.wrapper{
+			border-color: transparent;
+		}
 	}
 }
 
@@ -562,7 +566,7 @@
 	}
 
 	.background{
-		position: absolute;
+		position: fixed;
 		top: 0px;
 		left: 0px;
 		height: 100%;

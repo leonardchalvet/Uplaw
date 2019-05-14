@@ -67,4 +67,6 @@ $(window).on('load', function() {
 		}
 
 	}
+
+	$('#section-cover').addClass('ready');
 })

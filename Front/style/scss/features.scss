@@ -67,26 +67,26 @@ main{
 		.container-illu{
 			.illu{
 				.container-el-anim-1{
-					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition: all 800ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
 					transition-delay: 0s;
 					transform: translateY(40px);
 					opacity: 0;
 				}
 				.container-el-anim-2{
-					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
-					transition-delay: 0.05s;
+					transition: all 800ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.1s;
 					transform: translateY(50px);
 					opacity: 0;
 				}
 				.container-el-anim-3{
-					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
-					transition-delay: 0.1s;
+					transition: all 800ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.2s;
 					transform: translateY(30px);
 					opacity: 0;
 				}
 				.el-anim-4{
-					transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
-					transition-delay: 0.2s;
+					transition: all 800ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.3s;
 					transform: translateY(20px);
 					opacity: 0;
 				}
@@ -174,97 +174,97 @@ main{
 		display: flex;
 		flex-flow: row wrap;
 		align-items: flex-start;
-		.container-text{
-			position: sticky;
-			width: 445px;
-			margin-right: 80px;
-			h2{
-				@include styleH2;
-			}
-			.sep{
-				margin: 50px 0px 50px 0px;
-				height: 1px;
-				width: 100px;
-				background-color: $colorMain_1;
-			}
-			p{
-				max-width: 285px;
-				@include styleParagraphMedium;
-			}
-			a{
-				margin-top: 50px;
-				@include styleButtonBig;
-			}
+	}
+	.container-text{
+		position: sticky;
+		width: 445px;
+		margin-right: 80px;
+		h2{
+			@include styleH2;
 		}
-		.container-el{
-			flex: 1;
-			.el{
+		.sep{
+			margin: 50px 0px 50px 0px;
+			height: 1px;
+			width: 100px;
+			background-color: $colorMain_1;
+		}
+		p{
+			max-width: 285px;
+			@include styleParagraphMedium;
+		}
+		a{
+			margin-top: 50px;
+			@include styleButtonBig;
+		}
+	}
+	.container-el{
+		flex: 1;
+		.el{
+			position: relative;
+			width: 100%;
+			&:not(:last-child){
+				margin-bottom: 50vh;
+			}
+			.screen{
 				position: relative;
+				z-index: 1;
 				width: 100%;
-				&:not(:last-child){
-					margin-bottom: 50vh;
-				}
-				.screen{
-					position: relative;
-					z-index: 1;
-					width: 100%;
-					margin-bottom: 40px;
+				margin-bottom: 40px;
+
+				opacity: 0;
+				transform: translateY(30px);
+				transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+			}
+			.obj-1{
+				width: 240px;
+				position: absolute;
+				top: -100px;
+				right: -100px;
+
+				opacity: 0;
+				transform: translateY(30px);
+				transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+			}
+			.container-infos{
+				position: relative;
+				h3{
+					@include styleH4;
 
 					opacity: 0;
 					transform: translateY(30px);
 					transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+				}
+				p{
+					margin-top: 10px;
+					@include styleParagraphSmall
+
+					opacity: 0;
+					transform: translateY(30px);
+					transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+				}
+			}
+
+			&.reach{
+				.screen{
+					transition-delay: 0s;
+					opacity: 1;
+					transform: translateY(0px);
 				}
 				.obj-1{
-					width: 240px;
-					position: absolute;
-					top: -100px;
-					right: -100px;
-
-					opacity: 0;
-					transform: translateY(30px);
-					transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+					transition-delay: 0.1s;
+					opacity: 1;
+					transform: translateY(0px);
 				}
 				.container-infos{
-					position: relative;
 					h3{
-						@include styleH4;
-
-						opacity: 0;
-						transform: translateY(30px);
-						transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+						transition-delay: 0.2s;
+						opacity: 1;
+						transform: translateY(0px);
 					}
 					p{
-						margin-top: 10px;
-						@include styleParagraphSmall
-
-						opacity: 0;
-						transform: translateY(30px);
-						transition: all 400ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
-					}
-				}
-
-				&.reach{
-					.screen{
-						transition-delay: 0s;
+						transition-delay: 0.3s;
 						opacity: 1;
 						transform: translateY(0px);
-					}
-					.obj-1{
-						transition-delay: 0.1s;
-						opacity: 1;
-						transform: translateY(0px);
-					}
-					.container-infos{
-						h3{
-							transition-delay: 0.2s;
-							opacity: 1;
-							transform: translateY(0px);
-						}
-						p{
-							transition-delay: 0.3s;
-							opacity: 1;
-							transform: translateY(0px);
-						}
 					}
 				}
 			}
@@ -276,7 +276,7 @@ main{
 	padding: 120px 0px 120px 0px;
 	position: relative;
 	background-color: $colorMain_7;
-	margin-top: 120px;
+	margin-top: 220px;
 	.wrapper{
 		@include styleGrid2;
 	}
@@ -342,6 +342,76 @@ main{
 		right: 85%;
 		top: 25px;
 		width: 300px;
+	}
+}
+
+
+@media screen and (max-width: $breakPoint_mobile) {
+	#section-cover{
+		padding-top: 60px;
+		.wrapper{
+			padding-top: 40px;
+		}
+		.container-illu{
+			width: 100%;
+		}
+	}
+
+	#section-demo{
+		overflow: hidden;
+		padding-top: 40px;
+		.container-text{
+			width: 100%;
+			position: initial;
+			margin-right: 0px;
+		}
+		.container-el{
+			margin-top: 100px;
+			.el{
+				.obj-1{
+					width: 120px;
+					top: -50px;
+					right: -50px;
+				}
+				&:not(:last-child){
+					margin-bottom: 80px;
+				}
+			}
+		}
+	}
+
+	#section-features{
+		margin-top: 90px;
+		padding-bottom: 60px;
+		.obj-1{
+			display: none;
+		}
+		.obj-2{
+			display: none;
+		}
+		.container-text{
+			padding-left: 0px;
+			.container-title{
+				width: 100%;
+				margin-right: 0px;
+				h1{
+					text-align: left;
+				}
+			}
+			.container-paragraph{
+				margin-top: 20px;
+			}
+		}
+		.container-el{
+			margin-top: 70px;
+			padding-left: 0px;
+			.el{
+				width: 100%;
+				&:not(:last-child){
+					margin-bottom: 60px;
+				}
+			}
+		}
 	}
 }
 

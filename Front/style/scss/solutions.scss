@@ -36,77 +36,153 @@ main{
 	}
 
 	.wrapper {
+		overflow: hidden;
 		position: relative;
 		z-index: 1;
 		@include styleGrid1;
 		padding-top: 80px;
 		padding-bottom: 100px;
-		background-color: $colorMain_1;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			transform: translateY(-100%);
+		}
+	}
 
-		.container-title {
-			@include styleGrid4;
+	.container-title {
+		@include styleGrid4;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
 
-			display: flex;
-			justify-content: space-between;
-
-			.container-illu {
-				width: 420px;
-				height: 350px;
-				img {
-					height: 100%;
-				}
+		.container-illu {
+			width: 420px;
+			height: 350px;
+			img {
+				height: 100%;
 			}
-			.container-text {
-				width: 425px;
-				.tag {
-					padding: 3px 20px;
-					width: fit-content;
-					border-radius: 2px;
-					background-color: #59C7DD;
-					span {
-						@include styleParagraphSmall;
-						color: #FFF;
-					}
-				}
-				h1 {
-					margin-top: 20px;
-					@include styleH1;
+		}
+		.container-text {
+			width: 425px;
+			.tag {
+				padding: 2px 15px;
+				display: inline-block;
+				border-radius: 2px;
+				background-color: #59C7DD;
+				span {
+					@include styleParagraphSmall;
 					color: #FFF;
 				}
 			}
-		}
-
-		.container-cta {
-			@include styleGrid4;
-
-			display: flex;
-			justify-content: space-between;
-
-			.container-text {
-				margin-left: 45px;
-				width: 250px;
-				p {
-					margin-top: 60px;
-					@include styleParagraphMedium;
-					color: #FFF;
-				}
-				a {
-					margin-top: 50px;
-					@include styleButtonBig;
-				}
-			}
-			.container-illu {
-				margin-right: 45px;
-				width: 325px;
-				height: 280px;
-				img {
-					height: 100%;
-				}
+			h1 {
+				margin-top: 20px;
+				@include styleH1;
+				color: #FFF;
 			}
 		}
+	}
 
+	.container-cta {
+		@include styleGrid4;
+
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+
+		.container-text {
+			margin-left: 45px;
+			width: 250px;
+			p {
+				margin-top: 60px;
+				@include styleParagraphBig;
+				color: rgba(255, 255, 255, 0.8);
+			}
+			a {
+				margin-top: 50px;
+				@include styleButtonBig;
+			}
+		}
+		.container-illu {
+			margin-right: 45px;
+			width: 325px;
+			height: 280px;
+			img {
+				height: 100%;
+			}
+		}
 	}
 }
+
+/* ANIM */
+#section-cover{
+	.wrapper{
+		&:before{
+			background-color: $colorMain_1;
+			transform: translateY(-100%);
+			transition: all 500ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+		}
+	}
+	.container-title{
+		.container-illu{
+			transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+			transition-delay: 0s;
+			transform: translateY(40px);
+			opacity: 0;
+		}
+		.container-text{
+			transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+			transition-delay: 0.05s;
+			transform: translateY(40px);
+			opacity: 0;
+		}
+	}
+	.container-cta{
+		.container-text{
+			transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+			transition-delay: 0.1s;
+			transform: translateY(40px);
+			opacity: 0;
+		}
+		.container-illu{
+			transition: all 600ms cubic-bezier(1.000, 0.000, 0.280, 1.000);
+			transition-delay: 0.15s;
+			transform: translateY(40px);
+			opacity: 0;
+		}
+	}
+	&.ready{
+		.wrapper{
+			&:before{
+				transform: translateY(0%);
+			}
+		}
+		.container-title{
+			.container-illu{
+				transform: translateY(0px);
+				opacity: 1;
+			}
+			.container-text{
+				transform: translateY(0px);
+				opacity: 1;
+			}
+		}
+		.container-cta{
+			.container-text{
+				transform: translateY(0px);
+				opacity: 1;
+			}
+			.container-illu{
+				transform: translateY(0px);
+				opacity: 1;
+			}
+		}
+	}
+}
+
 
 #section-cta {
 	position: relative;
@@ -125,6 +201,7 @@ main{
 			display: flex;
 			justify-content: space-between;
 			.el {
+				overflow: hidden;
 				position: relative;
 				width: 500px;
 				height: 400px;
@@ -140,6 +217,7 @@ main{
 					background-size: cover;
 					background-repeat: no-repeat;
 					background-position: center center;
+					transition: all 1.5s ease;
 				}
 
 				.gradient {
@@ -165,6 +243,11 @@ main{
 					transform: translateX(-50%);
 
 					justify-content: center;
+				}
+				&:hover{
+					.bg{
+						transform: scale(1.05);
+					}
 				}
 			}
 		}
