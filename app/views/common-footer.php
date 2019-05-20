@@ -1,6 +1,7 @@
 <?php
 use Prismic\Dom\RichText;
 $footer = $WPGLOBAL['footer']->data;
+$allUrl = $WPGLOBAL['allUrl'];
 ?>
 <footer>
 	<div class="wrapper">
@@ -74,8 +75,28 @@ $footer = $WPGLOBAL['footer']->data;
 			<div class="dropdown">
 				<?php 
 					$i = 0;
-					foreach ($footer->footer_all_languages as $lg) { ?>
-						<a href="#" class="lg">
+					foreach ($footer->footer_all_languages as $lg) { 
+
+						$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+						$url = $actual_link;
+						
+						if($allUrl != NULL) {
+							$link_explode = explode('/', $actual_link);
+							$before_link = $link_explode[0].'//'.$link_explode[1].'/'.$link_explode[2].'/';
+
+							foreach ($allUrl as $lgUrl) { 
+								if($lgUrl[1] == $lg->footer_lang_name) {
+									$url = $before_link.''.$lgUrl[1].'/'.$lgUrl[0];
+								}
+								if($link_explode[2] == $lg->footer_lang_name) {
+									$url = $actual_link;
+								}
+							}
+						}
+
+						?>
+
+						<a href="<?= $url; ?>" class="lg">
 							<img src="<?= $lg->footer_flag_language->url; ?>">
 							<span>
 								<?= RichText::asText($lg->footer_name_language); ?>

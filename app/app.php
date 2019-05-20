@@ -24,6 +24,9 @@ require_once 'includes/http.php';
 
 // Index page
 $app->get('/', function ($request, $response) use ($app, $prismic) {
+
+
+
     header('Location: /fr/home');
     exit;
 });
@@ -49,6 +52,17 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     $arrayView = ['home', 'features', 'services', 'mentions', 'about', 'signin', 'solutions'];
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid'], $options);
+        $allLang = $api->getByUID($type, $args['uid'], [ 'lang' => '*' ] );
+        
+        $nUrl = 0;
+        $allUrl = NULL;
+        if($alternate_languages != NULL) {
+            foreach ($allLang->alternate_languages as $lang) {
+                $allUrl[$nUrl] = [ $lang->uid, invertSwitchLanguages($lang->lang) ];
+                $nUrl += 1;
+            }
+        }
+        
         $nType++;
         if($document != NULL) {
             break;
@@ -56,7 +70,7 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     }
 
     //PART 5 - Call good view
-    render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer));
+    render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'allUrl' => $allUrl));
 });
 
 //ADD LANGUAGES FOR MORE POSSIBILITIES
@@ -75,4 +89,21 @@ function switchLanguages($lg) {
     }
 
     return [ 'lang' => $lglg ];
+}
+
+//ADD LANGUAGES FOR MORE POSSIBILITIES
+function invertSwitchLanguages($lglg) {
+
+    $lg = '';
+    switch (strtolower($lglg)) {
+        case 'fr-fr': $lg = 'fr'; break;
+        case 'en-us': $lg = 'en'; break;
+        case 'de-de': $lg = 'de'; break;
+        case 'es-es': $lg = 'es'; break;
+        case 'ja-jp': $lg = 'jp'; break;
+        
+        default: return false;
+    }
+
+    return $lg;
 }
