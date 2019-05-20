@@ -1,10 +1,10 @@
 $(window).on('load', function() {
 
-	if (window.matchMedia("(min-width: 700px)").matches) {
+	if (window.matchMedia("(min-width: 1200px)").matches) {
 
 		$('#section-origin .obj-1').attr('data-parallax', '{"y": -50, "smoothness": 40}');
 
-		$('#section-team .obj').attr('data-parallax', '{"y": -150, "smoothness": 60}');
+		$('#section-team .obj').attr('data-parallax', '{"y": -70, "smoothness": 60}');
 
 		$('#section-press .obj').attr('data-parallax', '{"y": -60, "rotateZ": 40, "smoothness": 40}');
 
@@ -67,4 +67,10 @@ $(window).on('load', function() {
 		}
 
 	}
+
+	$('#section-cover .container-text a').click(function(){
+		openContact();
+	})
+
+	$('#section-cover').addClass('ready');
 })
