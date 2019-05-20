@@ -202,10 +202,10 @@ main{
 			.el {
 				width: 260px;
 				&:nth-child(odd) {
-					margin-bottom: 200px;
+					margin-bottom: 400px;
 				}
 				&:nth-child(even) {
-					transform: translateY(450px);
+					transform: translateY(500px);
 				}
 				&:last-child{
 					margin-bottom: 0px;
@@ -243,7 +243,7 @@ main{
 					padding-left: 20px;
 				}
 				.name {
-					margin-top: 25px;
+					margin-top: 40px;
 					@include styleH4;
 				}
 				.job {
@@ -274,6 +274,7 @@ main{
 		top: 0;
 		left: 0;
 		transform: translateX(20px);
+		transition: all 0.55s ease;
 		
 		height: 100%;
 
@@ -344,7 +345,57 @@ main{
 }
 
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
+	#section-origin {
+		.wrapper{
+			.container-text{
+				margin: auto;
+			}
+		}
+	}
 
+	#section-team{
+		.wrapper {
+
+			.container-el {
+				flex: 1;
+				justify-content: center;
+				.el {
+					width: 260px;
+					&:nth-child(odd) {
+						margin-bottom: 200px;
+					}
+					&:nth-child(even) {
+						transform: translateY(0px);
+					}
+					&:last-child{
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+
+	#section-press{
+		.obj{
+			width: 150px;
+		}
+		.wrapper{
+			h2{
+				margin-left: 0px;
+			}
+			.container-logos{
+				width: 300px;
+				flex-flow: row wrap;
+				.logo{
+					margin-bottom: 30px;
+					&:nth-child(3),
+					&:nth-child(4){
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $breakPoint_mobile) {
@@ -422,6 +473,7 @@ main{
 	#section-photos .container-photo {
 		overflow-x: scroll;
 		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
 		width: 100%;
 		transform: none;
 	}
