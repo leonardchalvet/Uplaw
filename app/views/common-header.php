@@ -117,13 +117,14 @@ $header = $WPGLOBAL['header']->data;
 			<div class="burger">
 				<div class="line"></div>
 				<div class="line"></div>
+				<div class="line"></div>
 			</div>
 			<a href="<?=$header->nav_logo_link->url; ?>" class="logo">
 				<img src="<?= $header->nav_logo->url; ?>" alt="">
 			</a>
 			<div class="cta-log-in">
 				<span>
-					<?= RichText::asText($header->action_text_signup); ?>
+					<?= RichText::asText($header->action_text_contact); ?>
 				</span>
 			</div>
 		</div>
@@ -167,14 +168,6 @@ $header = $WPGLOBAL['header']->data;
 			</ul>
 
 			<div class="container-action">
-				<a class="contact hover-left">
-					<span class="btn-text">
-						<?= RichText::asText($header->action_text_contact); ?>
-					</span>
-					<svg class="btn-arrow" viewBox="0 0 13 6">
-					   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-					</svg>
-				</a>
 				<a class="login">
 					<img src="<?= $header->action_icon_signup->url; ?>" alt="">
 					<span>
@@ -245,12 +238,17 @@ $header = $WPGLOBAL['header']->data;
 			<?php 
 				$i = 1;
 				foreach ($header->action_form_dropdown_contact as $input) { 
-					if($i == 1 || $i == 3) { echo('<div class="row">'); } ?>
+					if($i == 1 || $i == 3) { echo('<div class="row">'); }
+					else if($i > 4) { echo('<div class="row">'); }            ?>
 					<div class="input">
 						<label>
 							<?= RichText::asText($input->action_form_label_input_contact); ?>
 						</label>
-						<input type="<?= $input->action_type_input_contact; ?>" name="<?= RichText::asText($input->action_name_input_contact); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>">
+						<?php if($input->action_type_input_contact == 'textarea') { ?>
+							<textarea name="<?= RichText::asText($input->action_name_input_contact); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required></textarea>
+						<?php } else { ?>
+							<input type="<?= $input->action_type_input_contact; ?>" name="<?= RichText::asText($input->action_name_input_contact); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required>
+						<?php } ?>
 						<div class="sep"></div>
 						<span>
 							<?= RichText::asText($input->action_error_message_contact); ?>
@@ -260,6 +258,7 @@ $header = $WPGLOBAL['header']->data;
 					</div>		
 			<?php 
 					if($i == 2 || $i == 4) { echo('</div>'); }
+					else if($i > 4) { echo('</div>'); }           
 					$i++;
 				} 
 			?>
