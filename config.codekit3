@@ -49,14 +49,6 @@
 		"oAP": "/app/LinkResolver.php",
 		"oF": 0
 		},
-	"/app/views/404.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/app/views/404.php",
-		"oF": 0
-		},
 	"/app/views/about.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -119,6 +111,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/app/views/signin.php",
+		"oF": 0
+		},
+	"/app/views/solutions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/app/views/solutions.php",
 		"oF": 0
 		},
 	"/composer.json": {
@@ -845,149 +845,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/Front/img/home/section-logos/agrico.png": {
-		"ft": 32768,
-		"iS": 4225,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/agrico.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/bio.png": {
-		"ft": 32768,
-		"iS": 2975,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/bio.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/BonneGueule.png": {
-		"ft": 32768,
-		"iS": 4659,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/BonneGueule.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/care.png": {
-		"ft": 32768,
-		"iS": 5574,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/care.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/everoad.png": {
-		"ft": 32768,
-		"iS": 4286,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/everoad.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/finance.png": {
-		"ft": 32768,
-		"iS": 5820,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/finance.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/inops.png": {
-		"ft": 32768,
-		"iS": 2383,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/inops.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/lavoir.png": {
-		"ft": 32768,
-		"iS": 5282,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/lavoir.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/mobile.png": {
-		"ft": 32768,
-		"iS": 4703,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/mobile.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/payfit.png": {
-		"ft": 32768,
-		"iS": 3471,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/payfit.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/phantom.png": {
-		"ft": 32768,
-		"iS": 4840,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/phantom.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/plugwine.png": {
-		"ft": 32768,
-		"iS": 4486,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/plugwine.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/Front/img/home/section-logos/prestashop.png": {
-		"ft": 32768,
-		"iS": 5724,
-		"oA": 0,
-		"oAP": "/Front/img/home/section-logos/prestashop.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/Front/img/home/section-quotes/photo-1.jpg": {
 		"ft": 16384,
 		"iS": 127985,
@@ -1470,8 +1327,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/Front/script/minify/common-min.js",
-		"oF": 2,
+		"oAP": "/Front/script/js/common-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},

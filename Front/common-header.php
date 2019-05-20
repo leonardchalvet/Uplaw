@@ -225,10 +225,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="textarea">
-					<div class="sep"></div>
+				<div class="input">
 					<label>Méssage optionnel</label>
 					<textarea placeholder="Votre méssage optionnel"></textarea>
+					<div class="sep"></div>
+					<span>Veuillez vérifier votre méssage optionnel</span>
+					<img class="cross" src="img/common/red-cross.svg">
+					<img class="check" src="img/common/check.svg">
 				</div>
 				
 			</div>
