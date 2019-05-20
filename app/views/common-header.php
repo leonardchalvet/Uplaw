@@ -248,7 +248,7 @@ $header = $WPGLOBAL['header']->data;
 							<textarea name="<?= RichText::asText($input->action_name_input_contact); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required></textarea>
 						<?php } else { ?>
 							<input type="<?= $input->action_type_input_contact; ?>" name="<?= RichText::asText($input->action_name_input_contact); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required>
-						<?php } ?>
+						<?php } ?>
 						<div class="sep"></div>
 						<span>
 							<?= RichText::asText($input->action_error_message_contact); ?>
