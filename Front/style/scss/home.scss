@@ -59,45 +59,56 @@
 	margin-top: 70px;
 	.wrapper{
 		@include styleGrid2;
-		.container-text{
-			display: flex;
-			flex-flow: row wrap;
-			align-items: center;
-			.line{
-				flex: 1;
-				height: 1px;
-				background-color: $colorMain_7;
-			}
-			h2{
-				margin: 0px 30px 0px 30px;
-				text-align: center;
-				@include styleH6;
-			}
+	}
+	.container-text{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		.line{
+			flex: 1;
+			height: 1px;
+			background-color: $colorMain_7;
 		}
-		.container-el{
-			margin-top: 40px;
-			display: flex;
-			flex-flow: row wrap;
-			align-items: center;
-			.el{
-				position: relative;
-				width: calc(100% / 5);
-				height: 60px;
-				img{
-					max-width: 150px;
-					max-height: 60px;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					opacity: 0;
-					transition: all 0.75s ease;
-					transform: translate(-50%, -50%) scale(0.7);
-					&.active{
-						opacity: 1;
-						transform: translate(-50%, -50%) scale(1);
-					}
+		h2{
+			margin: 0px 30px 0px 30px;
+			text-align: center;
+			@include styleH6;
+		}
+	}
+	.container-el{
+		margin-top: 40px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		padding: 20px 0px 20px 0px;
+		.el{
+			position: relative;
+			width: calc(100% / 5);
+			img{
+				max-height: 30px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				opacity: 0;
+				transition: all 0.75s ease;
+				transform: translate(-50%, -50%) scale(0.7);
+				&.active{
+					opacity: 1;
+					transform: translate(-50%, -50%) scale(1);
 				}
 			}
+		}
+	}
+}
+/* ANIM */
+#section-logos{
+	.container-text{
+		opacity: 0;
+		transition: all 0.5s ease;
+	}
+	&.ready{
+		.container-text{
+			opacity: 1;
 		}
 	}
 }
@@ -429,8 +440,8 @@
 		height: 50px;
 	}
 	#section-logos .wrapper .container-el .el img {
-		max-width: 90px;
-		max-height: 50px;
+		max-width: 100px;
+		max-height: 60px;
 	}
 
 	#section-features .obj-2 {
@@ -508,8 +519,8 @@
 		height: 50px;
 	}
 	#section-logos .wrapper .container-el .el img {
-		max-width: 90px;
-		max-height: 50px;
+		max-width: 100px;
+		max-height: 60px;
 	}
 
 	#section-features {
@@ -543,6 +554,19 @@
 	}
 	#section-features .container-features .container-el .el {
 		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	#section-features .container-features .container-el .el .icn {
+		margin-right: 20px;
+	}
+	#section-features .container-features .container-el .el h3{
+		flex: 1;
+		margin-top: 0px;
 	}
 
 	#section-pres {

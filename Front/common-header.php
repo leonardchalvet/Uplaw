@@ -96,13 +96,14 @@
 			<div class="burger">
 				<div class="line"></div>
 				<div class="line"></div>
+				<div class="line"></div>
 			</div>
 			<a href="index.php" class="logo">
 				<img src="img/common/logo.svg" alt="">
 			</a>
 			<div class="cta-log-in">
 				<span>
-					Connexion
+					Contact
 				</span>
 			</div>
 		</div>
@@ -127,14 +128,6 @@
 			</ul>
 
 			<div class="container-action">
-				<a class="contact hover-left">
-					<span class="btn-text">
-						Contact
-					</span>
-					<svg class="btn-arrow" viewBox="0 0 13 6">
-					   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
-					</svg>
-				</a>
 				<a class="login">
 					<img src="img/common/connect-icone.svg" alt="">
 					<span>
@@ -169,7 +162,7 @@
 			<a href="#">Mot de passe oublié ?</a>
 			<button class="hover-center">
 				<span class="btn-text">
-					Connexion
+					Envoyer
 				</span>
 				<svg class="btn-arrow" viewBox="0 0 13 6">
 				   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
@@ -231,9 +224,17 @@
 					<img class="check" src="img/common/check.svg">
 				</div>
 			</div>
+			<div class="row">
+				<div class="textarea">
+					<div class="sep"></div>
+					<label>Méssage optionnel</label>
+					<textarea placeholder="Votre méssage optionnel"></textarea>
+				</div>
+				
+			</div>
 			<button class="hover-center">
 				<span class="btn-text">
-					Connexion
+					Envoyer
 				</span>
 				<svg class="btn-arrow" viewBox="0 0 13 6">
 				   <use xlink:href="img/common/arrow-1.svg#arrow-1"></use>

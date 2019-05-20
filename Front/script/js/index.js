@@ -51,10 +51,18 @@ $(window).on('load', function() {
 							  autoplay: true,
 							  path: 'script/animations/sectionCover-obj-desktop-3.json'
 							})
-						
-						}, 750);
 
-					}, 750);
+							/* SECTION LOGO */
+							$('#section-logos').addClass('ready');
+							sectionLogosCaroussel(
+								'#section-logos', 
+								'.container-el .el', 
+								2000
+							);
+						
+						}, 500);
+
+					}, 500);
 
 				}, delayP);
 
@@ -76,12 +84,7 @@ $(window).on('load', function() {
 	};
 
 
-	/* SECTION LOGO */
-	sectionLogosCaroussel(
-		'#section-logos', 
-		'.container-el .el', 
-		2000
-	);
+	
 
 
 	/* SECTION QUOTES */
