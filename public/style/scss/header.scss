@@ -649,8 +649,7 @@
 				&:not(:first-child) {
 					margin-top: 30px;
 				}
-				.input,
-				.textarea {
+				.input {
 					position: relative;
 					padding-top: 25px;
 					width: 45%;
@@ -707,8 +706,10 @@
 						}
 					}
 				}
-				.textarea{
-					width: 100%;
+				&:nth-child(1n + 3) {
+					.input {
+						width: 100%;
+					}
 				}
 
 			}
