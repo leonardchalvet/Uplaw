@@ -176,6 +176,7 @@ main{
 		align-items: flex-start;
 	}
 	.container-text{
+		position: -webkit-sticky;
 		position: sticky;
 		width: 445px;
 		margin-right: 80px;
