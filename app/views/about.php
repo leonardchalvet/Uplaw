@@ -179,7 +179,7 @@ $document = $WPGLOBAL['document']->data;
 					</div>
 				</div>
 			</section>
-			<? } ?>			
+			<?php } ?>			
 
 			<section id="section-press">
 				<img class="obj" src="/img/about/press-obj.svg">

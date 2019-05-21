@@ -68,7 +68,7 @@ $allUrl = $WPGLOBAL['allUrl'];
 							</span>
 							<img src="/img/footer/arrow-down.svg">
 						</div>
-					<? } ?>
+					<?php } ?>
 			<?php $i++;
 				} 
 			?>

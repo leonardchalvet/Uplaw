@@ -258,7 +258,7 @@ $document = $WPGLOBAL['document']->data;
 					</div>
 				</div>
 			</section>
-			<? } ?>
+			<?php } ?>
 
 			<?php 
 				$sliceFooter = $document->body1[0]->primary; ?>
