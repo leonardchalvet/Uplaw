@@ -3209,8 +3209,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/public/script/js/common-min.js",
-		"oF": 0,
+		"oAP": "/public/script/minify/common-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
