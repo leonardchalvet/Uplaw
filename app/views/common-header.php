@@ -47,7 +47,7 @@ $header = $WPGLOBAL['header']->data;
 		</div>
 
 		<div class="container-action">
-			<a class="login">
+			<a class="login" href="<?=$header->action_icon_signup_link->url; ?>" >
 
 				<img src="<?= $header->action_icon_signup->url; ?>" alt="">
 				<span>
@@ -64,6 +64,7 @@ $header = $WPGLOBAL['header']->data;
 				</svg>
 			</a>
 
+			<!--
 			<div class="lg-log-in">
 				<img class="cross" src="/img/common/cross.svg">
 				<h3>
@@ -103,6 +104,7 @@ $header = $WPGLOBAL['header']->data;
 					</button>
 				</form>
 			</div>
+			-->
 
 		</div>
 
@@ -168,7 +170,7 @@ $header = $WPGLOBAL['header']->data;
 			</ul>
 
 			<div class="container-action">
-				<a class="login">
+				<a class="login" href="<?=$header->action_icon_signup_link->url; ?>" >
 					<img src="<?= $header->action_icon_signup->url; ?>" alt="">
 					<span>
 						<?= RichText::asText($header->action_text_signup); ?>
@@ -178,6 +180,7 @@ $header = $WPGLOBAL['header']->data;
 		</div>
 	</div>
 
+	<!--
 	<div class="lg-log-in">
 		<img class="cross" src="/img/common/cross.svg">
 		<h3>
@@ -217,6 +220,7 @@ $header = $WPGLOBAL['header']->data;
 			</button>
 		</form>
 	</div>
+	-->
 
 </header>
 
