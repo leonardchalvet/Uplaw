@@ -234,7 +234,7 @@ $header = $WPGLOBAL['header']->data;
 				<?= RichText::asText($header->action_text_dropdown_contact); ?>
 			</p>
 		</div>
-		<form method="post" action="<?= $header->action_cta_link_dropdown_contact->url; ?>">
+		<form method="post" action="/mail.php">
 			<?php 
 				$i = 1;
 				foreach ($header->action_form_dropdown_contact as $input) { 
@@ -245,9 +245,9 @@ $header = $WPGLOBAL['header']->data;
 							<?= RichText::asText($input->action_form_label_input_contact); ?>
 						</label>
 						<?php if($input->action_type_input_contact == 'textarea') { ?>
-							<textarea name="<?= RichText::asText($input->action_name_input_contact); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required></textarea>
+							<textarea name="<?= trim(RichText::asText($input->action_name_input_contact)); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required></textarea>
 						<?php } else { ?>
-							<input type="<?= $input->action_type_input_contact; ?>" name="<?= RichText::asText($input->action_name_input_contact); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required>
+							<input type="<?= $input->action_type_input_contact; ?>" name="<?= trim(RichText::asText($input->action_name_input_contact)); ?>" placeholder="<?= RichText::asText($input->action_placeholder_input_contact); ?>" required>
 						<?php } ?>
 						<div class="sep"></div>
 						<span>
@@ -261,6 +261,19 @@ $header = $WPGLOBAL['header']->data;
 					else if($i > 4) { echo('</div>'); }           
 					$i++;
 				} 
+
+				$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+				echo '<textarea style="display:none" name="page">'.$actual_link.'</textarea>';
+
+
+				echo '<textarea name="allMail" style="display:none">';
+				foreach ($header->action_mails_dropdown_contact as $mail) {
+					echo trim(RichText::asText($mail->action_mail_contact_dropdown_contact)).', ';
+				}
+				echo '</textarea>';
+
+
 			?>
 			<button class="hover-center">
 				<span class="btn-text">

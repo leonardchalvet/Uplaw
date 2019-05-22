@@ -1916,14 +1916,6 @@
 		"oAP": "/public/.htaccess",
 		"oF": 0
 		},
-	"/public/.htpasswd": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/public/.htpasswd",
-		"oF": 0
-		},
 	"/public/fonts/Nexa-Bold.otf": {
 		"cB": 0,
 		"ft": 8192,
@@ -3149,6 +3141,14 @@
 		"oAP": "/public/index.php",
 		"oF": 0
 		},
+	"/public/mail.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/mail.php",
+		"oF": 0
+		},
 	"/public/script/animations/data.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3331,6 +3331,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/public/script/minify/common-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/script/minify/features-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/script/minify/features-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
